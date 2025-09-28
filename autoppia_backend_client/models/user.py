@@ -45,7 +45,9 @@ class User(object):
         'phone_num': 'str',
         'country': 'str',
         'language': 'str',
+        'credits': 'float',
         'is_allowed_in_dashboard': 'bool',
+        'is_superuser': 'bool',
         'messages_left': 'int'
     }
 
@@ -61,11 +63,13 @@ class User(object):
         'phone_num': 'phone_num',
         'country': 'country',
         'language': 'language',
+        'credits': 'credits',
         'is_allowed_in_dashboard': 'is_allowed_in_dashboard',
+        'is_superuser': 'is_superuser',
         'messages_left': 'messages_left'
     }
 
-    def __init__(self, id=None, first_name=None, last_name=None, email=None, username=None, title=None, company=None, about=None, phone_num=None, country=None, language=None, is_allowed_in_dashboard=None, messages_left=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, first_name=None, last_name=None, email=None, username=None, title=None, company=None, about=None, phone_num=None, country=None, language=None, credits=None, is_allowed_in_dashboard=None, is_superuser=None, messages_left=None, local_vars_configuration=None):  # noqa: E501
         """User - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -82,7 +86,9 @@ class User(object):
         self._phone_num = None
         self._country = None
         self._language = None
+        self._credits = None
         self._is_allowed_in_dashboard = None
+        self._is_superuser = None
         self._messages_left = None
         self.discriminator = None
 
@@ -104,7 +110,9 @@ class User(object):
             self.country = country
         if language is not None:
             self.language = language
+        self.credits = credits
         self.is_allowed_in_dashboard = is_allowed_in_dashboard
+        self.is_superuser = is_superuser
         self.messages_left = messages_left
 
     @property
@@ -377,6 +385,29 @@ class User(object):
         self._language = language
 
     @property
+    def credits(self):
+        """Gets the credits of this User.  # noqa: E501
+
+
+        :return: The credits of this User.  # noqa: E501
+        :rtype: float
+        """
+        return self._credits
+
+    @credits.setter
+    def credits(self, credits):
+        """Sets the credits of this User.
+
+
+        :param credits: The credits of this User.  # noqa: E501
+        :type: float
+        """
+        if self.local_vars_configuration.client_side_validation and credits is None:  # noqa: E501
+            raise ValueError("Invalid value for `credits`, must not be `None`")  # noqa: E501
+
+        self._credits = credits
+
+    @property
     def is_allowed_in_dashboard(self):
         """Gets the is_allowed_in_dashboard of this User.  # noqa: E501
 
@@ -398,6 +429,29 @@ class User(object):
             raise ValueError("Invalid value for `is_allowed_in_dashboard`, must not be `None`")  # noqa: E501
 
         self._is_allowed_in_dashboard = is_allowed_in_dashboard
+
+    @property
+    def is_superuser(self):
+        """Gets the is_superuser of this User.  # noqa: E501
+
+
+        :return: The is_superuser of this User.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_superuser
+
+    @is_superuser.setter
+    def is_superuser(self, is_superuser):
+        """Sets the is_superuser of this User.
+
+
+        :param is_superuser: The is_superuser of this User.  # noqa: E501
+        :type: bool
+        """
+        if self.local_vars_configuration.client_side_validation and is_superuser is None:  # noqa: E501
+            raise ValueError("Invalid value for `is_superuser`, must not be `None`")  # noqa: E501
+
+        self._is_superuser = is_superuser
 
     @property
     def messages_left(self):

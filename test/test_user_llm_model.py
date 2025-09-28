@@ -44,7 +44,7 @@ class TestUserLLMModel(unittest.TestCase):
                         id = 56, 
                         name = '0', 
                         description = '0', 
-                        provider_type = 'ANTHROPIC', ), 
+                        provider_type = 'OPENSOURCE', ), 
                     provider_id = 56, 
                     name = '0', 
                     description = '0', 

@@ -113,6 +113,7 @@ Class | Method | HTTP request | Description
 *AuthApi* | [**auth_login_create**](docs/AuthApi.md#auth_login_create) | **POST** /auth/login | 
 *AuthApi* | [**auth_login_jwt_create**](docs/AuthApi.md#auth_login_jwt_create) | **POST** /auth/login/jwt | 
 *AuthApi* | [**auth_login_jwt_refresh_create**](docs/AuthApi.md#auth_login_jwt_refresh_create) | **POST** /auth/login/jwt/refresh | 
+*AuthApi* | [**auth_login_jwt_verify_create**](docs/AuthApi.md#auth_login_jwt_verify_create) | **POST** /auth/login/jwt/verify | 
 *AuthApi* | [**auth_login_wallet_create**](docs/AuthApi.md#auth_login_wallet_create) | **POST** /auth/login/wallet | 
 *AuthApi* | [**auth_password_reset_confirm_create**](docs/AuthApi.md#auth_password_reset_confirm_create) | **POST** /auth/password_reset_confirm | 
 *AuthApi* | [**auth_password_reset_create**](docs/AuthApi.md#auth_password_reset_create) | **POST** /auth/password_reset | 
@@ -392,6 +393,7 @@ Class | Method | HTTP request | Description
  - [Team](docs/Team.md)
  - [Test](docs/Test.md)
  - [TokenRefresh](docs/TokenRefresh.md)
+ - [TokenVerify](docs/TokenVerify.md)
  - [Tool](docs/Tool.md)
  - [Toolkit](docs/Toolkit.md)
  - [ToolkitAttribute](docs/ToolkitAttribute.md)

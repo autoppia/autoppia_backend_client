@@ -156,6 +156,7 @@ class CredentialsApi(object):
     def credentials_delete(self, id, **kwargs):  # noqa: E501
         """credentials_delete  # noqa: E501
 
+        Override destroy method to check if credential is being used  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.credentials_delete(id, async_req=True)
@@ -180,6 +181,7 @@ class CredentialsApi(object):
     def credentials_delete_with_http_info(self, id, **kwargs):  # noqa: E501
         """credentials_delete  # noqa: E501
 
+        Override destroy method to check if credential is being used  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.credentials_delete_with_http_info(id, async_req=True)

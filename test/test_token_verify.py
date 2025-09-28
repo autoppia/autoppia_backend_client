@@ -17,11 +17,11 @@ import unittest
 import datetime
 
 import autoppia_backend_client
-from autoppia_backend_client.models.llm_provider import LLMProvider  # noqa: E501
+from autoppia_backend_client.models.token_verify import TokenVerify  # noqa: E501
 from autoppia_backend_client.rest import ApiException
 
-class TestLLMProvider(unittest.TestCase):
-    """LLMProvider unit test stubs"""
+class TestTokenVerify(unittest.TestCase):
+    """TokenVerify unit test stubs"""
 
     def setUp(self):
         pass
@@ -30,26 +30,22 @@ class TestLLMProvider(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test LLMProvider
+        """Test TokenVerify
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = autoppia_backend_client.models.llm_provider.LLMProvider()  # noqa: E501
+        # model = autoppia_backend_client.models.token_verify.TokenVerify()  # noqa: E501
         if include_optional :
-            return LLMProvider(
-                id = 56, 
-                name = '0', 
-                description = '0', 
-                provider_type = 'OPENSOURCE'
+            return TokenVerify(
+                token = '0'
             )
         else :
-            return LLMProvider(
-                name = '0',
-                provider_type = 'OPENSOURCE',
+            return TokenVerify(
+                token = '0',
         )
 
-    def testLLMProvider(self):
-        """Test LLMProvider"""
+    def testTokenVerify(self):
+        """Test TokenVerify"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

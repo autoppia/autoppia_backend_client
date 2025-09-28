@@ -48,7 +48,9 @@ class TestUser(unittest.TestCase):
                 phone_num = '0', 
                 country = '0', 
                 language = '0', 
+                credits = 1.337, 
                 is_allowed_in_dashboard = True, 
+                is_superuser = True, 
                 messages_left = 56
             )
         else :
@@ -57,7 +59,9 @@ class TestUser(unittest.TestCase):
                 first_name = '0',
                 last_name = '0',
                 email = '0',
+                credits = 1.337,
                 is_allowed_in_dashboard = True,
+                is_superuser = True,
                 messages_left = 56,
         )
 

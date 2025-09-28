@@ -88,6 +88,7 @@ from autoppia_backend_client.models.task import Task
 from autoppia_backend_client.models.team import Team
 from autoppia_backend_client.models.test import Test
 from autoppia_backend_client.models.token_refresh import TokenRefresh
+from autoppia_backend_client.models.token_verify import TokenVerify
 from autoppia_backend_client.models.tool import Tool
 from autoppia_backend_client.models.toolkit import Toolkit
 from autoppia_backend_client.models.toolkit_attribute import ToolkitAttribute

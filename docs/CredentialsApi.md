@@ -87,6 +87,8 @@ Name | Type | Description  | Notes
 
 
 
+Override destroy method to check if credential is being used
+
 ### Example
 
 * Basic Authentication (Basic):

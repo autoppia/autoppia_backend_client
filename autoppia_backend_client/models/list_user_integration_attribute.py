@@ -192,8 +192,8 @@ class ListUserIntegrationAttribute(object):
         :type: str
         """
         if (self.local_vars_configuration.client_side_validation and
-                value is not None and len(value) > 100):
-            raise ValueError("Invalid value for `value`, length must be less than or equal to `100`")  # noqa: E501
+                value is not None and len(value) > 255):
+            raise ValueError("Invalid value for `value`, length must be less than or equal to `255`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
                 value is not None and len(value) < 1):
             raise ValueError("Invalid value for `value`, length must be greater than or equal to `1`")  # noqa: E501

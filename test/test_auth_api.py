@@ -71,6 +71,12 @@ class TestAuthApi(unittest.TestCase):
         """
         pass
 
+    def test_auth_login_jwt_verify_create(self):
+        """Test case for auth_login_jwt_verify_create
+
+        """
+        pass
+
     def test_auth_login_wallet_create(self):
         """Test case for auth_login_wallet_create
 

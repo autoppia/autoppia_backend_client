@@ -113,7 +113,7 @@ class TestTeam(unittest.TestCase):
                                     id = 56, 
                                     name = '0', 
                                     description = '0', 
-                                    provider_type = 'ANTHROPIC', ), 
+                                    provider_type = 'OPENSOURCE', ), 
                                 provider_id = 56, 
                                 name = '0', 
                                 description = '0', 
@@ -222,7 +222,9 @@ class TestTeam(unittest.TestCase):
                     phone_num = '0', 
                     country = '0', 
                     language = '0', 
+                    credits = 1.337, 
                     is_allowed_in_dashboard = True, 
+                    is_superuser = True, 
                     messages_left = 56, ), 
                 created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                 updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f')
