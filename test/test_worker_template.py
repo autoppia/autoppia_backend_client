@@ -54,17 +54,17 @@ class TestWorkerTemplate(unittest.TestCase):
                 docker_image = '0', 
                 deployed_count = 56, 
                 developers_profile = '0', 
-                hourly_rate = '0', 
+                price = '0', 
                 llm_provider = '0', 
                 llm = '0', 
                 integrations_categories = '0', 
                 vectorstore_provider = '0', 
                 agentic_framework = '0', 
-                firewall = '0', 
                 gpu = True, 
                 gpu_type = '0', 
                 demo_video = '0', 
-                repo = '0'
+                repo = '0', 
+                config_yml = '0'
             )
         else :
             return WorkerTemplate(

@@ -14,6 +14,7 @@ from autoppia_backend_client.api.integration_api import IntegrationApi
 from autoppia_backend_client.api.llms_api import LlmsApi
 from autoppia_backend_client.api.maintenance_api import MaintenanceApi
 from autoppia_backend_client.api.mcp_api import McpApi
+from autoppia_backend_client.api.payments_api import PaymentsApi
 from autoppia_backend_client.api.teams_api import TeamsApi
 from autoppia_backend_client.api.templates_api import TemplatesApi
 from autoppia_backend_client.api.toolkit_api import ToolkitApi
