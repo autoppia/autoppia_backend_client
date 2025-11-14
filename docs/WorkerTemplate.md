@@ -16,17 +16,17 @@ Name | Type | Description | Notes
 **docker_image** | **str** |  | [optional] 
 **deployed_count** | **int** |  | [optional] [readonly] 
 **developers_profile** | **str** |  | [optional] [readonly] 
-**hourly_rate** | **str** |  | [optional] 
+**price** | **str** |  | [optional] 
 **llm_provider** | **str** |  | [optional] 
 **llm** | **str** |  | [optional] 
 **integrations_categories** | **str** |  | [optional] 
 **vectorstore_provider** | **str** |  | [optional] 
 **agentic_framework** | **str** |  | [optional] 
-**firewall** | **str** |  | [optional] 
 **gpu** | **bool** |  | [optional] 
 **gpu_type** | **str** |  | [optional] 
 **demo_video** | **str** |  | [optional] [readonly] 
 **repo** | **str** |  | 
+**config_yml** | **str** |  | [optional] [readonly] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

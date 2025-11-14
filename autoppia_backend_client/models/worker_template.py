@@ -47,17 +47,17 @@ class WorkerTemplate(object):
         'docker_image': 'str',
         'deployed_count': 'int',
         'developers_profile': 'str',
-        'hourly_rate': 'str',
+        'price': 'str',
         'llm_provider': 'str',
         'llm': 'str',
         'integrations_categories': 'str',
         'vectorstore_provider': 'str',
         'agentic_framework': 'str',
-        'firewall': 'str',
         'gpu': 'bool',
         'gpu_type': 'str',
         'demo_video': 'str',
-        'repo': 'str'
+        'repo': 'str',
+        'config_yml': 'str'
     }
 
     attribute_map = {
@@ -74,20 +74,20 @@ class WorkerTemplate(object):
         'docker_image': 'dockerImage',
         'deployed_count': 'deployedCount',
         'developers_profile': 'developers_profile',
-        'hourly_rate': 'hourly_rate',
+        'price': 'price',
         'llm_provider': 'llm_provider',
         'llm': 'llm',
         'integrations_categories': 'integrations_categories',
         'vectorstore_provider': 'vectorstore_provider',
         'agentic_framework': 'agentic_framework',
-        'firewall': 'firewall',
         'gpu': 'gpu',
         'gpu_type': 'gpu_type',
         'demo_video': 'demo_video',
-        'repo': 'repo'
+        'repo': 'repo',
+        'config_yml': 'config_yml'
     }
 
-    def __init__(self, id=None, developer=None, title=None, description=None, uploaded_at=None, favorited_by=None, favorited_by_profiles=None, categories=None, categories_name=None, image=None, docker_image=None, deployed_count=None, developers_profile=None, hourly_rate=None, llm_provider=None, llm=None, integrations_categories=None, vectorstore_provider=None, agentic_framework=None, firewall=None, gpu=None, gpu_type=None, demo_video=None, repo=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, developer=None, title=None, description=None, uploaded_at=None, favorited_by=None, favorited_by_profiles=None, categories=None, categories_name=None, image=None, docker_image=None, deployed_count=None, developers_profile=None, price=None, llm_provider=None, llm=None, integrations_categories=None, vectorstore_provider=None, agentic_framework=None, gpu=None, gpu_type=None, demo_video=None, repo=None, config_yml=None, local_vars_configuration=None):  # noqa: E501
         """WorkerTemplate - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -106,17 +106,17 @@ class WorkerTemplate(object):
         self._docker_image = None
         self._deployed_count = None
         self._developers_profile = None
-        self._hourly_rate = None
+        self._price = None
         self._llm_provider = None
         self._llm = None
         self._integrations_categories = None
         self._vectorstore_provider = None
         self._agentic_framework = None
-        self._firewall = None
         self._gpu = None
         self._gpu_type = None
         self._demo_video = None
         self._repo = None
+        self._config_yml = None
         self.discriminator = None
 
         if id is not None:
@@ -142,19 +142,20 @@ class WorkerTemplate(object):
             self.deployed_count = deployed_count
         if developers_profile is not None:
             self.developers_profile = developers_profile
-        if hourly_rate is not None:
-            self.hourly_rate = hourly_rate
+        if price is not None:
+            self.price = price
         self.llm_provider = llm_provider
         self.llm = llm
         self.integrations_categories = integrations_categories
         self.vectorstore_provider = vectorstore_provider
         self.agentic_framework = agentic_framework
-        self.firewall = firewall
         if gpu is not None:
             self.gpu = gpu
         self.gpu_type = gpu_type
         self.demo_video = demo_video
         self.repo = repo
+        if config_yml is not None:
+            self.config_yml = config_yml
 
     @property
     def id(self):
@@ -446,25 +447,25 @@ class WorkerTemplate(object):
         self._developers_profile = developers_profile
 
     @property
-    def hourly_rate(self):
-        """Gets the hourly_rate of this WorkerTemplate.  # noqa: E501
+    def price(self):
+        """Gets the price of this WorkerTemplate.  # noqa: E501
 
 
-        :return: The hourly_rate of this WorkerTemplate.  # noqa: E501
+        :return: The price of this WorkerTemplate.  # noqa: E501
         :rtype: str
         """
-        return self._hourly_rate
+        return self._price
 
-    @hourly_rate.setter
-    def hourly_rate(self, hourly_rate):
-        """Sets the hourly_rate of this WorkerTemplate.
+    @price.setter
+    def price(self, price):
+        """Sets the price of this WorkerTemplate.
 
 
-        :param hourly_rate: The hourly_rate of this WorkerTemplate.  # noqa: E501
+        :param price: The price of this WorkerTemplate.  # noqa: E501
         :type: str
         """
 
-        self._hourly_rate = hourly_rate
+        self._price = price
 
     @property
     def llm_provider(self):
@@ -584,30 +585,6 @@ class WorkerTemplate(object):
         self._agentic_framework = agentic_framework
 
     @property
-    def firewall(self):
-        """Gets the firewall of this WorkerTemplate.  # noqa: E501
-
-
-        :return: The firewall of this WorkerTemplate.  # noqa: E501
-        :rtype: str
-        """
-        return self._firewall
-
-    @firewall.setter
-    def firewall(self, firewall):
-        """Sets the firewall of this WorkerTemplate.
-
-
-        :param firewall: The firewall of this WorkerTemplate.  # noqa: E501
-        :type: str
-        """
-        if (self.local_vars_configuration.client_side_validation and
-                firewall is not None and len(firewall) > 500):
-            raise ValueError("Invalid value for `firewall`, length must be less than or equal to `500`")  # noqa: E501
-
-        self._firewall = firewall
-
-    @property
     def gpu(self):
         """Gets the gpu of this WorkerTemplate.  # noqa: E501
 
@@ -701,6 +678,27 @@ class WorkerTemplate(object):
             raise ValueError("Invalid value for `repo`, length must be greater than or equal to `1`")  # noqa: E501
 
         self._repo = repo
+
+    @property
+    def config_yml(self):
+        """Gets the config_yml of this WorkerTemplate.  # noqa: E501
+
+
+        :return: The config_yml of this WorkerTemplate.  # noqa: E501
+        :rtype: str
+        """
+        return self._config_yml
+
+    @config_yml.setter
+    def config_yml(self, config_yml):
+        """Sets the config_yml of this WorkerTemplate.
+
+
+        :param config_yml: The config_yml of this WorkerTemplate.  # noqa: E501
+        :type: str
+        """
+
+        self._config_yml = config_yml
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -83,6 +83,18 @@ class TestTemplatesApi(unittest.TestCase):
         """
         pass
 
+    def test_templates_worker_templates_generate_ecr_credentials(self):
+        """Test case for templates_worker_templates_generate_ecr_credentials
+
+        """
+        pass
+
+    def test_templates_worker_templates_generate_upload_urls(self):
+        """Test case for templates_worker_templates_generate_upload_urls
+
+        """
+        pass
+
     def test_templates_worker_templates_get_deployed_count(self):
         """Test case for templates_worker_templates_get_deployed_count
 
@@ -113,6 +125,12 @@ class TestTemplatesApi(unittest.TestCase):
         """
         pass
 
+    def test_templates_worker_templates_test_s3_connection(self):
+        """Test case for templates_worker_templates_test_s3_connection
+
+        """
+        pass
+
     def test_templates_worker_templates_unfavorite(self):
         """Test case for templates_worker_templates_unfavorite
 
@@ -121,6 +139,12 @@ class TestTemplatesApi(unittest.TestCase):
 
     def test_templates_worker_templates_update(self):
         """Test case for templates_worker_templates_update
+
+        """
+        pass
+
+    def test_templates_worker_templates_upload_file(self):
+        """Test case for templates_worker_templates_upload_file
 
         """
         pass

@@ -355,32 +355,16 @@ class TemplatesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def templates_worker_templates_create(self, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_create(self, data, **kwargs):  # noqa: E501
         """templates_worker_templates_create  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_create(title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_create(data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -393,34 +377,18 @@ class TemplatesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.templates_worker_templates_create_with_http_info(title, description, repo, **kwargs)  # noqa: E501
+        return self.templates_worker_templates_create_with_http_info(data, **kwargs)  # noqa: E501
 
-    def templates_worker_templates_create_with_http_info(self, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_create_with_http_info(self, data, **kwargs):  # noqa: E501
         """templates_worker_templates_create  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_create_with_http_info(title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_create_with_http_info(data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -438,23 +406,7 @@ class TemplatesApi(object):
         local_var_params = locals()
 
         all_params = [
-            'title',
-            'description',
-            'repo',
-            'favorited_by',
-            'categories',
-            'image',
-            'docker_image',
-            'hourly_rate',
-            'llm_provider',
-            'llm',
-            'integrations_categories',
-            'vectorstore_provider',
-            'agentic_framework',
-            'firewall',
-            'gpu',
-            'gpu_type',
-            'demo_video'
+            'data'
         ]
         all_params.extend(
             [
@@ -473,55 +425,11 @@ class TemplatesApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'title' is set
-        if self.api_client.client_side_validation and ('title' not in local_var_params or  # noqa: E501
-                                                        local_var_params['title'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `title` when calling `templates_worker_templates_create`")  # noqa: E501
-        # verify the required parameter 'description' is set
-        if self.api_client.client_side_validation and ('description' not in local_var_params or  # noqa: E501
-                                                        local_var_params['description'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `description` when calling `templates_worker_templates_create`")  # noqa: E501
-        # verify the required parameter 'repo' is set
-        if self.api_client.client_side_validation and ('repo' not in local_var_params or  # noqa: E501
-                                                        local_var_params['repo'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `repo` when calling `templates_worker_templates_create`")  # noqa: E501
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_create`")  # noqa: E501
 
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_create`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_create`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('description' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['description']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `description` when calling `templates_worker_templates_create`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_create`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_create`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('docker_image' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['docker_image']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `docker_image` when calling `templates_worker_templates_create`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm_provider` when calling `templates_worker_templates_create`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm` when calling `templates_worker_templates_create`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('vectorstore_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['vectorstore_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `vectorstore_provider` when calling `templates_worker_templates_create`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('agentic_framework' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['agentic_framework']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `agentic_framework` when calling `templates_worker_templates_create`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('firewall' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['firewall']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `firewall` when calling `templates_worker_templates_create`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('gpu_type' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['gpu_type']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `gpu_type` when calling `templates_worker_templates_create`, length must be less than or equal to `255`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -532,51 +440,17 @@ class TemplatesApi(object):
 
         form_params = []
         local_var_files = {}
-        if 'title' in local_var_params:
-            form_params.append(('title', local_var_params['title']))  # noqa: E501
-        if 'description' in local_var_params:
-            form_params.append(('description', local_var_params['description']))  # noqa: E501
-        if 'favorited_by' in local_var_params:
-            form_params.append(('favorited_by', local_var_params['favorited_by']))  # noqa: E501
-            collection_formats['favorited_by'] = 'csv'  # noqa: E501
-        if 'categories' in local_var_params:
-            form_params.append(('categories', local_var_params['categories']))  # noqa: E501
-            collection_formats['categories'] = 'csv'  # noqa: E501
-        if 'image' in local_var_params:
-            local_var_files['image'] = local_var_params['image']  # noqa: E501
-        if 'docker_image' in local_var_params:
-            form_params.append(('dockerImage', local_var_params['docker_image']))  # noqa: E501
-        if 'hourly_rate' in local_var_params:
-            form_params.append(('hourly_rate', local_var_params['hourly_rate']))  # noqa: E501
-        if 'llm_provider' in local_var_params:
-            form_params.append(('llm_provider', local_var_params['llm_provider']))  # noqa: E501
-        if 'llm' in local_var_params:
-            form_params.append(('llm', local_var_params['llm']))  # noqa: E501
-        if 'integrations_categories' in local_var_params:
-            form_params.append(('integrations_categories', local_var_params['integrations_categories']))  # noqa: E501
-        if 'vectorstore_provider' in local_var_params:
-            form_params.append(('vectorstore_provider', local_var_params['vectorstore_provider']))  # noqa: E501
-        if 'agentic_framework' in local_var_params:
-            form_params.append(('agentic_framework', local_var_params['agentic_framework']))  # noqa: E501
-        if 'firewall' in local_var_params:
-            form_params.append(('firewall', local_var_params['firewall']))  # noqa: E501
-        if 'gpu' in local_var_params:
-            form_params.append(('gpu', local_var_params['gpu']))  # noqa: E501
-        if 'gpu_type' in local_var_params:
-            form_params.append(('gpu_type', local_var_params['gpu_type']))  # noqa: E501
-        if 'demo_video' in local_var_params:
-            local_var_files['demo_video'] = local_var_params['demo_video']  # noqa: E501
-        if 'repo' in local_var_params:
-            form_params.append(('repo', local_var_params['repo']))  # noqa: E501
 
         body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['multipart/form-data', 'application/x-www-form-urlencoded'])  # noqa: E501
+            ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Basic']  # noqa: E501
@@ -705,33 +579,17 @@ class TemplatesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def templates_worker_templates_deploy(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_deploy(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_deploy  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_deploy(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_deploy(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -744,35 +602,19 @@ class TemplatesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.templates_worker_templates_deploy_with_http_info(id, title, description, repo, **kwargs)  # noqa: E501
+        return self.templates_worker_templates_deploy_with_http_info(id, data, **kwargs)  # noqa: E501
 
-    def templates_worker_templates_deploy_with_http_info(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_deploy_with_http_info(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_deploy  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_deploy_with_http_info(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_deploy_with_http_info(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -791,23 +633,7 @@ class TemplatesApi(object):
 
         all_params = [
             'id',
-            'title',
-            'description',
-            'repo',
-            'favorited_by',
-            'categories',
-            'image',
-            'docker_image',
-            'hourly_rate',
-            'llm_provider',
-            'llm',
-            'integrations_categories',
-            'vectorstore_provider',
-            'agentic_framework',
-            'firewall',
-            'gpu',
-            'gpu_type',
-            'demo_video'
+            'data'
         ]
         all_params.extend(
             [
@@ -830,55 +656,11 @@ class TemplatesApi(object):
         if self.api_client.client_side_validation and ('id' not in local_var_params or  # noqa: E501
                                                         local_var_params['id'] is None):  # noqa: E501
             raise ApiValueError("Missing the required parameter `id` when calling `templates_worker_templates_deploy`")  # noqa: E501
-        # verify the required parameter 'title' is set
-        if self.api_client.client_side_validation and ('title' not in local_var_params or  # noqa: E501
-                                                        local_var_params['title'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `title` when calling `templates_worker_templates_deploy`")  # noqa: E501
-        # verify the required parameter 'description' is set
-        if self.api_client.client_side_validation and ('description' not in local_var_params or  # noqa: E501
-                                                        local_var_params['description'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `description` when calling `templates_worker_templates_deploy`")  # noqa: E501
-        # verify the required parameter 'repo' is set
-        if self.api_client.client_side_validation and ('repo' not in local_var_params or  # noqa: E501
-                                                        local_var_params['repo'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `repo` when calling `templates_worker_templates_deploy`")  # noqa: E501
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_deploy`")  # noqa: E501
 
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_deploy`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_deploy`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('description' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['description']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `description` when calling `templates_worker_templates_deploy`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_deploy`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_deploy`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('docker_image' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['docker_image']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `docker_image` when calling `templates_worker_templates_deploy`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm_provider` when calling `templates_worker_templates_deploy`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm` when calling `templates_worker_templates_deploy`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('vectorstore_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['vectorstore_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `vectorstore_provider` when calling `templates_worker_templates_deploy`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('agentic_framework' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['agentic_framework']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `agentic_framework` when calling `templates_worker_templates_deploy`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('firewall' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['firewall']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `firewall` when calling `templates_worker_templates_deploy`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('gpu_type' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['gpu_type']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `gpu_type` when calling `templates_worker_templates_deploy`, length must be less than or equal to `255`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -891,51 +673,17 @@ class TemplatesApi(object):
 
         form_params = []
         local_var_files = {}
-        if 'title' in local_var_params:
-            form_params.append(('title', local_var_params['title']))  # noqa: E501
-        if 'description' in local_var_params:
-            form_params.append(('description', local_var_params['description']))  # noqa: E501
-        if 'favorited_by' in local_var_params:
-            form_params.append(('favorited_by', local_var_params['favorited_by']))  # noqa: E501
-            collection_formats['favorited_by'] = 'csv'  # noqa: E501
-        if 'categories' in local_var_params:
-            form_params.append(('categories', local_var_params['categories']))  # noqa: E501
-            collection_formats['categories'] = 'csv'  # noqa: E501
-        if 'image' in local_var_params:
-            local_var_files['image'] = local_var_params['image']  # noqa: E501
-        if 'docker_image' in local_var_params:
-            form_params.append(('dockerImage', local_var_params['docker_image']))  # noqa: E501
-        if 'hourly_rate' in local_var_params:
-            form_params.append(('hourly_rate', local_var_params['hourly_rate']))  # noqa: E501
-        if 'llm_provider' in local_var_params:
-            form_params.append(('llm_provider', local_var_params['llm_provider']))  # noqa: E501
-        if 'llm' in local_var_params:
-            form_params.append(('llm', local_var_params['llm']))  # noqa: E501
-        if 'integrations_categories' in local_var_params:
-            form_params.append(('integrations_categories', local_var_params['integrations_categories']))  # noqa: E501
-        if 'vectorstore_provider' in local_var_params:
-            form_params.append(('vectorstore_provider', local_var_params['vectorstore_provider']))  # noqa: E501
-        if 'agentic_framework' in local_var_params:
-            form_params.append(('agentic_framework', local_var_params['agentic_framework']))  # noqa: E501
-        if 'firewall' in local_var_params:
-            form_params.append(('firewall', local_var_params['firewall']))  # noqa: E501
-        if 'gpu' in local_var_params:
-            form_params.append(('gpu', local_var_params['gpu']))  # noqa: E501
-        if 'gpu_type' in local_var_params:
-            form_params.append(('gpu_type', local_var_params['gpu_type']))  # noqa: E501
-        if 'demo_video' in local_var_params:
-            local_var_files['demo_video'] = local_var_params['demo_video']  # noqa: E501
-        if 'repo' in local_var_params:
-            form_params.append(('repo', local_var_params['repo']))  # noqa: E501
 
         body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['multipart/form-data', 'application/x-www-form-urlencoded'])  # noqa: E501
+            ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Basic']  # noqa: E501
@@ -956,33 +704,17 @@ class TemplatesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def templates_worker_templates_favorite(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_favorite(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_favorite  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_favorite(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_favorite(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -995,35 +727,19 @@ class TemplatesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.templates_worker_templates_favorite_with_http_info(id, title, description, repo, **kwargs)  # noqa: E501
+        return self.templates_worker_templates_favorite_with_http_info(id, data, **kwargs)  # noqa: E501
 
-    def templates_worker_templates_favorite_with_http_info(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_favorite_with_http_info(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_favorite  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_favorite_with_http_info(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_favorite_with_http_info(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1042,23 +758,7 @@ class TemplatesApi(object):
 
         all_params = [
             'id',
-            'title',
-            'description',
-            'repo',
-            'favorited_by',
-            'categories',
-            'image',
-            'docker_image',
-            'hourly_rate',
-            'llm_provider',
-            'llm',
-            'integrations_categories',
-            'vectorstore_provider',
-            'agentic_framework',
-            'firewall',
-            'gpu',
-            'gpu_type',
-            'demo_video'
+            'data'
         ]
         all_params.extend(
             [
@@ -1081,55 +781,11 @@ class TemplatesApi(object):
         if self.api_client.client_side_validation and ('id' not in local_var_params or  # noqa: E501
                                                         local_var_params['id'] is None):  # noqa: E501
             raise ApiValueError("Missing the required parameter `id` when calling `templates_worker_templates_favorite`")  # noqa: E501
-        # verify the required parameter 'title' is set
-        if self.api_client.client_side_validation and ('title' not in local_var_params or  # noqa: E501
-                                                        local_var_params['title'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `title` when calling `templates_worker_templates_favorite`")  # noqa: E501
-        # verify the required parameter 'description' is set
-        if self.api_client.client_side_validation and ('description' not in local_var_params or  # noqa: E501
-                                                        local_var_params['description'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `description` when calling `templates_worker_templates_favorite`")  # noqa: E501
-        # verify the required parameter 'repo' is set
-        if self.api_client.client_side_validation and ('repo' not in local_var_params or  # noqa: E501
-                                                        local_var_params['repo'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `repo` when calling `templates_worker_templates_favorite`")  # noqa: E501
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_favorite`")  # noqa: E501
 
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_favorite`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_favorite`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('description' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['description']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `description` when calling `templates_worker_templates_favorite`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_favorite`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_favorite`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('docker_image' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['docker_image']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `docker_image` when calling `templates_worker_templates_favorite`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm_provider` when calling `templates_worker_templates_favorite`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm` when calling `templates_worker_templates_favorite`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('vectorstore_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['vectorstore_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `vectorstore_provider` when calling `templates_worker_templates_favorite`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('agentic_framework' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['agentic_framework']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `agentic_framework` when calling `templates_worker_templates_favorite`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('firewall' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['firewall']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `firewall` when calling `templates_worker_templates_favorite`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('gpu_type' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['gpu_type']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `gpu_type` when calling `templates_worker_templates_favorite`, length must be less than or equal to `255`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1142,51 +798,17 @@ class TemplatesApi(object):
 
         form_params = []
         local_var_files = {}
-        if 'title' in local_var_params:
-            form_params.append(('title', local_var_params['title']))  # noqa: E501
-        if 'description' in local_var_params:
-            form_params.append(('description', local_var_params['description']))  # noqa: E501
-        if 'favorited_by' in local_var_params:
-            form_params.append(('favorited_by', local_var_params['favorited_by']))  # noqa: E501
-            collection_formats['favorited_by'] = 'csv'  # noqa: E501
-        if 'categories' in local_var_params:
-            form_params.append(('categories', local_var_params['categories']))  # noqa: E501
-            collection_formats['categories'] = 'csv'  # noqa: E501
-        if 'image' in local_var_params:
-            local_var_files['image'] = local_var_params['image']  # noqa: E501
-        if 'docker_image' in local_var_params:
-            form_params.append(('dockerImage', local_var_params['docker_image']))  # noqa: E501
-        if 'hourly_rate' in local_var_params:
-            form_params.append(('hourly_rate', local_var_params['hourly_rate']))  # noqa: E501
-        if 'llm_provider' in local_var_params:
-            form_params.append(('llm_provider', local_var_params['llm_provider']))  # noqa: E501
-        if 'llm' in local_var_params:
-            form_params.append(('llm', local_var_params['llm']))  # noqa: E501
-        if 'integrations_categories' in local_var_params:
-            form_params.append(('integrations_categories', local_var_params['integrations_categories']))  # noqa: E501
-        if 'vectorstore_provider' in local_var_params:
-            form_params.append(('vectorstore_provider', local_var_params['vectorstore_provider']))  # noqa: E501
-        if 'agentic_framework' in local_var_params:
-            form_params.append(('agentic_framework', local_var_params['agentic_framework']))  # noqa: E501
-        if 'firewall' in local_var_params:
-            form_params.append(('firewall', local_var_params['firewall']))  # noqa: E501
-        if 'gpu' in local_var_params:
-            form_params.append(('gpu', local_var_params['gpu']))  # noqa: E501
-        if 'gpu_type' in local_var_params:
-            form_params.append(('gpu_type', local_var_params['gpu_type']))  # noqa: E501
-        if 'demo_video' in local_var_params:
-            local_var_files['demo_video'] = local_var_params['demo_video']  # noqa: E501
-        if 'repo' in local_var_params:
-            form_params.append(('repo', local_var_params['repo']))  # noqa: E501
 
         body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['multipart/form-data', 'application/x-www-form-urlencoded'])  # noqa: E501
+            ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Basic']  # noqa: E501
@@ -1406,6 +1028,242 @@ class TemplatesApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='list[WorkerTemplate]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def templates_worker_templates_generate_ecr_credentials(self, data, **kwargs):  # noqa: E501
+        """templates_worker_templates_generate_ecr_credentials  # noqa: E501
+
+        Generate temporary AWS credentials for ECR push access ONLY Fixed 1-hour duration for maximum security  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_generate_ecr_credentials(data, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param WorkerTemplate data: (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: WorkerTemplate
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.templates_worker_templates_generate_ecr_credentials_with_http_info(data, **kwargs)  # noqa: E501
+
+    def templates_worker_templates_generate_ecr_credentials_with_http_info(self, data, **kwargs):  # noqa: E501
+        """templates_worker_templates_generate_ecr_credentials  # noqa: E501
+
+        Generate temporary AWS credentials for ECR push access ONLY Fixed 1-hour duration for maximum security  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_generate_ecr_credentials_with_http_info(data, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param WorkerTemplate data: (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(WorkerTemplate, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'data'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method templates_worker_templates_generate_ecr_credentials" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_generate_ecr_credentials`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Basic']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/templates/worker-templates/generate_ecr_credentials/', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='WorkerTemplate',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def templates_worker_templates_generate_upload_urls(self, data, **kwargs):  # noqa: E501
+        """templates_worker_templates_generate_upload_urls  # noqa: E501
+
+        Generate presigned S3 URLs for direct client upload  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_generate_upload_urls(data, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param WorkerTemplate data: (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: WorkerTemplate
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.templates_worker_templates_generate_upload_urls_with_http_info(data, **kwargs)  # noqa: E501
+
+    def templates_worker_templates_generate_upload_urls_with_http_info(self, data, **kwargs):  # noqa: E501
+        """templates_worker_templates_generate_upload_urls  # noqa: E501
+
+        Generate presigned S3 URLs for direct client upload  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_generate_upload_urls_with_http_info(data, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param WorkerTemplate data: (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(WorkerTemplate, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'data'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method templates_worker_templates_generate_upload_urls" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_generate_upload_urls`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Basic']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/templates/worker-templates/generate_upload_urls/', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='WorkerTemplate',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
@@ -1722,33 +1580,17 @@ class TemplatesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def templates_worker_templates_partial_update(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_partial_update(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_partial_update  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_partial_update(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_partial_update(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1761,35 +1603,19 @@ class TemplatesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.templates_worker_templates_partial_update_with_http_info(id, title, description, repo, **kwargs)  # noqa: E501
+        return self.templates_worker_templates_partial_update_with_http_info(id, data, **kwargs)  # noqa: E501
 
-    def templates_worker_templates_partial_update_with_http_info(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_partial_update_with_http_info(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_partial_update  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_partial_update_with_http_info(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_partial_update_with_http_info(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1808,23 +1634,7 @@ class TemplatesApi(object):
 
         all_params = [
             'id',
-            'title',
-            'description',
-            'repo',
-            'favorited_by',
-            'categories',
-            'image',
-            'docker_image',
-            'hourly_rate',
-            'llm_provider',
-            'llm',
-            'integrations_categories',
-            'vectorstore_provider',
-            'agentic_framework',
-            'firewall',
-            'gpu',
-            'gpu_type',
-            'demo_video'
+            'data'
         ]
         all_params.extend(
             [
@@ -1847,55 +1657,11 @@ class TemplatesApi(object):
         if self.api_client.client_side_validation and ('id' not in local_var_params or  # noqa: E501
                                                         local_var_params['id'] is None):  # noqa: E501
             raise ApiValueError("Missing the required parameter `id` when calling `templates_worker_templates_partial_update`")  # noqa: E501
-        # verify the required parameter 'title' is set
-        if self.api_client.client_side_validation and ('title' not in local_var_params or  # noqa: E501
-                                                        local_var_params['title'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `title` when calling `templates_worker_templates_partial_update`")  # noqa: E501
-        # verify the required parameter 'description' is set
-        if self.api_client.client_side_validation and ('description' not in local_var_params or  # noqa: E501
-                                                        local_var_params['description'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `description` when calling `templates_worker_templates_partial_update`")  # noqa: E501
-        # verify the required parameter 'repo' is set
-        if self.api_client.client_side_validation and ('repo' not in local_var_params or  # noqa: E501
-                                                        local_var_params['repo'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `repo` when calling `templates_worker_templates_partial_update`")  # noqa: E501
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_partial_update`")  # noqa: E501
 
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_partial_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('description' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['description']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `description` when calling `templates_worker_templates_partial_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_partial_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('docker_image' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['docker_image']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `docker_image` when calling `templates_worker_templates_partial_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm_provider` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('vectorstore_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['vectorstore_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `vectorstore_provider` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('agentic_framework' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['agentic_framework']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `agentic_framework` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('firewall' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['firewall']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `firewall` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('gpu_type' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['gpu_type']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `gpu_type` when calling `templates_worker_templates_partial_update`, length must be less than or equal to `255`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1908,51 +1674,17 @@ class TemplatesApi(object):
 
         form_params = []
         local_var_files = {}
-        if 'title' in local_var_params:
-            form_params.append(('title', local_var_params['title']))  # noqa: E501
-        if 'description' in local_var_params:
-            form_params.append(('description', local_var_params['description']))  # noqa: E501
-        if 'favorited_by' in local_var_params:
-            form_params.append(('favorited_by', local_var_params['favorited_by']))  # noqa: E501
-            collection_formats['favorited_by'] = 'csv'  # noqa: E501
-        if 'categories' in local_var_params:
-            form_params.append(('categories', local_var_params['categories']))  # noqa: E501
-            collection_formats['categories'] = 'csv'  # noqa: E501
-        if 'image' in local_var_params:
-            local_var_files['image'] = local_var_params['image']  # noqa: E501
-        if 'docker_image' in local_var_params:
-            form_params.append(('dockerImage', local_var_params['docker_image']))  # noqa: E501
-        if 'hourly_rate' in local_var_params:
-            form_params.append(('hourly_rate', local_var_params['hourly_rate']))  # noqa: E501
-        if 'llm_provider' in local_var_params:
-            form_params.append(('llm_provider', local_var_params['llm_provider']))  # noqa: E501
-        if 'llm' in local_var_params:
-            form_params.append(('llm', local_var_params['llm']))  # noqa: E501
-        if 'integrations_categories' in local_var_params:
-            form_params.append(('integrations_categories', local_var_params['integrations_categories']))  # noqa: E501
-        if 'vectorstore_provider' in local_var_params:
-            form_params.append(('vectorstore_provider', local_var_params['vectorstore_provider']))  # noqa: E501
-        if 'agentic_framework' in local_var_params:
-            form_params.append(('agentic_framework', local_var_params['agentic_framework']))  # noqa: E501
-        if 'firewall' in local_var_params:
-            form_params.append(('firewall', local_var_params['firewall']))  # noqa: E501
-        if 'gpu' in local_var_params:
-            form_params.append(('gpu', local_var_params['gpu']))  # noqa: E501
-        if 'gpu_type' in local_var_params:
-            form_params.append(('gpu_type', local_var_params['gpu_type']))  # noqa: E501
-        if 'demo_video' in local_var_params:
-            local_var_files['demo_video'] = local_var_params['demo_video']  # noqa: E501
-        if 'repo' in local_var_params:
-            form_params.append(('repo', local_var_params['repo']))  # noqa: E501
 
         body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['multipart/form-data', 'application/x-www-form-urlencoded'])  # noqa: E501
+            ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Basic']  # noqa: E501
@@ -2085,6 +1817,111 @@ class TemplatesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def templates_worker_templates_test_s3_connection(self, **kwargs):  # noqa: E501
+        """templates_worker_templates_test_s3_connection  # noqa: E501
+
+        Test S3 connection and configuration  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_test_s3_connection(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: list[WorkerTemplate]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.templates_worker_templates_test_s3_connection_with_http_info(**kwargs)  # noqa: E501
+
+    def templates_worker_templates_test_s3_connection_with_http_info(self, **kwargs):  # noqa: E501
+        """templates_worker_templates_test_s3_connection  # noqa: E501
+
+        Test S3 connection and configuration  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_test_s3_connection_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(list[WorkerTemplate], status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method templates_worker_templates_test_s3_connection" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Basic']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/templates/worker-templates/test_s3_connection/', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[WorkerTemplate]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def templates_worker_templates_unfavorite(self, id, **kwargs):  # noqa: E501
         """templates_worker_templates_unfavorite  # noqa: E501
 
@@ -2193,33 +2030,17 @@ class TemplatesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def templates_worker_templates_update(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_update(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_update  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_update(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_update(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2232,35 +2053,19 @@ class TemplatesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.templates_worker_templates_update_with_http_info(id, title, description, repo, **kwargs)  # noqa: E501
+        return self.templates_worker_templates_update_with_http_info(id, data, **kwargs)  # noqa: E501
 
-    def templates_worker_templates_update_with_http_info(self, id, title, description, repo, **kwargs):  # noqa: E501
+    def templates_worker_templates_update_with_http_info(self, id, data, **kwargs):  # noqa: E501
         """templates_worker_templates_update  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.templates_worker_templates_update_with_http_info(id, title, description, repo, async_req=True)
+        >>> thread = api.templates_worker_templates_update_with_http_info(id, data, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
         :param int id: A unique integer value identifying this worker template. (required)
-        :param str title: (required)
-        :param str description: (required)
-        :param str repo: (required)
-        :param list[int] favorited_by:
-        :param list[int] categories:
-        :param file image:
-        :param str docker_image:
-        :param str hourly_rate:
-        :param str llm_provider:
-        :param str llm:
-        :param str integrations_categories:
-        :param str vectorstore_provider:
-        :param str agentic_framework:
-        :param str firewall:
-        :param bool gpu:
-        :param str gpu_type:
-        :param file demo_video:
+        :param WorkerTemplate data: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2279,23 +2084,7 @@ class TemplatesApi(object):
 
         all_params = [
             'id',
-            'title',
-            'description',
-            'repo',
-            'favorited_by',
-            'categories',
-            'image',
-            'docker_image',
-            'hourly_rate',
-            'llm_provider',
-            'llm',
-            'integrations_categories',
-            'vectorstore_provider',
-            'agentic_framework',
-            'firewall',
-            'gpu',
-            'gpu_type',
-            'demo_video'
+            'data'
         ]
         all_params.extend(
             [
@@ -2318,55 +2107,11 @@ class TemplatesApi(object):
         if self.api_client.client_side_validation and ('id' not in local_var_params or  # noqa: E501
                                                         local_var_params['id'] is None):  # noqa: E501
             raise ApiValueError("Missing the required parameter `id` when calling `templates_worker_templates_update`")  # noqa: E501
-        # verify the required parameter 'title' is set
-        if self.api_client.client_side_validation and ('title' not in local_var_params or  # noqa: E501
-                                                        local_var_params['title'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `title` when calling `templates_worker_templates_update`")  # noqa: E501
-        # verify the required parameter 'description' is set
-        if self.api_client.client_side_validation and ('description' not in local_var_params or  # noqa: E501
-                                                        local_var_params['description'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `description` when calling `templates_worker_templates_update`")  # noqa: E501
-        # verify the required parameter 'repo' is set
-        if self.api_client.client_side_validation and ('repo' not in local_var_params or  # noqa: E501
-                                                        local_var_params['repo'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `repo` when calling `templates_worker_templates_update`")  # noqa: E501
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_update`")  # noqa: E501
 
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('title' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['title']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `title` when calling `templates_worker_templates_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('description' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['description']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `description` when calling `templates_worker_templates_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_update`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('repo' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['repo']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `repo` when calling `templates_worker_templates_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('docker_image' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['docker_image']) < 1):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `docker_image` when calling `templates_worker_templates_update`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm_provider` when calling `templates_worker_templates_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('llm' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['llm']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `llm` when calling `templates_worker_templates_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('vectorstore_provider' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['vectorstore_provider']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `vectorstore_provider` when calling `templates_worker_templates_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('agentic_framework' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['agentic_framework']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `agentic_framework` when calling `templates_worker_templates_update`, length must be less than or equal to `255`")  # noqa: E501
-        if self.api_client.client_side_validation and ('firewall' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['firewall']) > 500):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `firewall` when calling `templates_worker_templates_update`, length must be less than or equal to `500`")  # noqa: E501
-        if self.api_client.client_side_validation and ('gpu_type' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['gpu_type']) > 255):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `gpu_type` when calling `templates_worker_templates_update`, length must be less than or equal to `255`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -2379,57 +2124,141 @@ class TemplatesApi(object):
 
         form_params = []
         local_var_files = {}
-        if 'title' in local_var_params:
-            form_params.append(('title', local_var_params['title']))  # noqa: E501
-        if 'description' in local_var_params:
-            form_params.append(('description', local_var_params['description']))  # noqa: E501
-        if 'favorited_by' in local_var_params:
-            form_params.append(('favorited_by', local_var_params['favorited_by']))  # noqa: E501
-            collection_formats['favorited_by'] = 'csv'  # noqa: E501
-        if 'categories' in local_var_params:
-            form_params.append(('categories', local_var_params['categories']))  # noqa: E501
-            collection_formats['categories'] = 'csv'  # noqa: E501
-        if 'image' in local_var_params:
-            local_var_files['image'] = local_var_params['image']  # noqa: E501
-        if 'docker_image' in local_var_params:
-            form_params.append(('dockerImage', local_var_params['docker_image']))  # noqa: E501
-        if 'hourly_rate' in local_var_params:
-            form_params.append(('hourly_rate', local_var_params['hourly_rate']))  # noqa: E501
-        if 'llm_provider' in local_var_params:
-            form_params.append(('llm_provider', local_var_params['llm_provider']))  # noqa: E501
-        if 'llm' in local_var_params:
-            form_params.append(('llm', local_var_params['llm']))  # noqa: E501
-        if 'integrations_categories' in local_var_params:
-            form_params.append(('integrations_categories', local_var_params['integrations_categories']))  # noqa: E501
-        if 'vectorstore_provider' in local_var_params:
-            form_params.append(('vectorstore_provider', local_var_params['vectorstore_provider']))  # noqa: E501
-        if 'agentic_framework' in local_var_params:
-            form_params.append(('agentic_framework', local_var_params['agentic_framework']))  # noqa: E501
-        if 'firewall' in local_var_params:
-            form_params.append(('firewall', local_var_params['firewall']))  # noqa: E501
-        if 'gpu' in local_var_params:
-            form_params.append(('gpu', local_var_params['gpu']))  # noqa: E501
-        if 'gpu_type' in local_var_params:
-            form_params.append(('gpu_type', local_var_params['gpu_type']))  # noqa: E501
-        if 'demo_video' in local_var_params:
-            local_var_files['demo_video'] = local_var_params['demo_video']  # noqa: E501
-        if 'repo' in local_var_params:
-            form_params.append(('repo', local_var_params['repo']))  # noqa: E501
 
         body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
             ['application/json'])  # noqa: E501
 
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['multipart/form-data', 'application/x-www-form-urlencoded'])  # noqa: E501
+            ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['Basic']  # noqa: E501
 
         return self.api_client.call_api(
             '/templates/worker-templates/{id}/', 'PUT',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='WorkerTemplate',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def templates_worker_templates_upload_file(self, data, **kwargs):  # noqa: E501
+        """templates_worker_templates_upload_file  # noqa: E501
+
+        Upload a single file to S3 and return the URL  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_upload_file(data, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param WorkerTemplate data: (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: WorkerTemplate
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.templates_worker_templates_upload_file_with_http_info(data, **kwargs)  # noqa: E501
+
+    def templates_worker_templates_upload_file_with_http_info(self, data, **kwargs):  # noqa: E501
+        """templates_worker_templates_upload_file  # noqa: E501
+
+        Upload a single file to S3 and return the URL  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.templates_worker_templates_upload_file_with_http_info(data, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param WorkerTemplate data: (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(WorkerTemplate, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'data'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method templates_worker_templates_upload_file" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'data' is set
+        if self.api_client.client_side_validation and ('data' not in local_var_params or  # noqa: E501
+                                                        local_var_params['data'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `data` when calling `templates_worker_templates_upload_file`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'data' in local_var_params:
+            body_params = local_var_params['data']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Basic']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/templates/worker-templates/upload_file/', 'POST',
             path_params,
             query_params,
             header_params,
