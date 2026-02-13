@@ -37,11 +37,11 @@ class TestUserConfigurationAttribute(unittest.TestCase):
         # model = autoppia_backend_client.models.user_configuration_attribute.UserConfigurationAttribute()  # noqa: E501
         if include_optional :
             return UserConfigurationAttribute(
-                id = 56, 
-                value = '0', 
-                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                user_configuration = 56, 
+                id = 56,
+                value = '0',
+                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                user_configuration = 56,
                 toolkit_attribute = 56
             )
         else :

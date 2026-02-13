@@ -37,17 +37,17 @@ class TestListIntegrationAttribute(unittest.TestCase):
         # model = autoppia_backend_client.models.list_integration_attribute.ListIntegrationAttribute()  # noqa: E501
         if include_optional :
             return ListIntegrationAttribute(
-                id = 56, 
-                integration = 56, 
-                name = '0', 
-                description = '0', 
-                variable_type = 'string', 
-                required = True, 
-                is_credential = True, 
-                credential_type = 'password', 
-                credential_name = '0', 
-                editable = True, 
-                default_value = '0', 
+                id = 56,
+                integration = 56,
+                name = '0',
+                description = '0',
+                variable_type = 'string',
+                required = True,
+                is_credential = True,
+                credential_type = 'password',
+                credential_name = '0',
+                editable = True,
+                default_value = '0',
                 is_document = True
             )
         else :

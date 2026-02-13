@@ -37,10 +37,10 @@ class TestIntegration(unittest.TestCase):
         # model = autoppia_backend_client.models.integration.Integration()  # noqa: E501
         if include_optional :
             return Integration(
-                id = 56, 
-                name = '0', 
-                image_url = '0', 
-                category = 'social', 
+                id = 56,
+                name = '0',
+                image_url = '0',
+                category = 'social',
                 unique = True
             )
         else :

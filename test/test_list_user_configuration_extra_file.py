@@ -37,19 +37,19 @@ class TestListUserConfigurationExtraFile(unittest.TestCase):
         # model = autoppia_backend_client.models.list_user_configuration_extra_file.ListUserConfigurationExtraFile()  # noqa: E501
         if include_optional :
             return ListUserConfigurationExtraFile(
-                id = 56, 
-                user_configuration = 56, 
+                id = 56,
+                user_configuration = 56,
                 document = autoppia_backend_client.models.document.Document(
-                    id = 56, 
-                    user = 56, 
-                    name = '0', 
-                    file = '0', 
-                    created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                    updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                    id = 56,
+                    user = 56,
+                    name = '0',
+                    file = '0',
+                    created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                    updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                     tags = [
                         56
-                        ], 
-                    s3_object_key = '0', 
+                        ],
+                    s3_object_key = '0',
                     open_ai_id = '0', )
             )
         else :
@@ -57,16 +57,16 @@ class TestListUserConfigurationExtraFile(unittest.TestCase):
                 id = 56,
                 user_configuration = 56,
                 document = autoppia_backend_client.models.document.Document(
-                    id = 56, 
-                    user = 56, 
-                    name = '0', 
-                    file = '0', 
-                    created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                    updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                    id = 56,
+                    user = 56,
+                    name = '0',
+                    file = '0',
+                    created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                    updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                     tags = [
                         56
-                        ], 
-                    s3_object_key = '0', 
+                        ],
+                    s3_object_key = '0',
                     open_ai_id = '0', ),
         )
 

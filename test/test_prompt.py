@@ -37,15 +37,15 @@ class TestPrompt(unittest.TestCase):
         # model = autoppia_backend_client.models.prompt.Prompt()  # noqa: E501
         if include_optional :
             return Prompt(
-                id = 56, 
+                id = 56,
                 category = autoppia_backend_client.models.prompt_category.PromptCategory(
-                    id = 56, 
-                    name = '0', ), 
-                category_id = 56, 
-                name = '0', 
-                prompt = '0', 
-                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                    id = 56,
+                    name = '0', ),
+                category_id = 56,
+                name = '0',
+                prompt = '0',
+                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 user = 56
             )
         else :

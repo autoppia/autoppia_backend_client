@@ -37,9 +37,9 @@ class TestLLMProvider(unittest.TestCase):
         # model = autoppia_backend_client.models.llm_provider.LLMProvider()  # noqa: E501
         if include_optional :
             return LLMProvider(
-                id = 56, 
-                name = '0', 
-                description = '0', 
+                id = 56,
+                name = '0',
+                description = '0',
                 provider_type = 'OPENSOURCE'
             )
         else :

@@ -37,15 +37,15 @@ class TestTask(unittest.TestCase):
         # model = autoppia_backend_client.models.task.Task()  # noqa: E501
         if include_optional :
             return Task(
-                id = 56, 
-                description = '0', 
-                expected_output = '0', 
-                expected_tool_called = '0', 
-                evaluation_criteria = '0', 
-                category = 'web_search', 
-                completed = True, 
-                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                id = 56,
+                description = '0',
+                expected_output = '0',
+                expected_tool_called = '0',
+                evaluation_criteria = '0',
+                category = 'web_search',
+                completed = True,
+                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 user = 56
             )
         else :

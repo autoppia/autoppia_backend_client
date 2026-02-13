@@ -441,8 +441,7 @@ class WorkerConfig(object):
         :param template_id: The template_id of this WorkerConfig.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and template_id is None:  # noqa: E501
-            raise ValueError("Invalid value for `template_id`, must not be `None`")  # noqa: E501
+        # template_id is optional - removed None validation
         if (self.local_vars_configuration.client_side_validation and
                 template_id is not None and len(template_id) > 255):
             raise ValueError("Invalid value for `template_id`, length must be less than or equal to `255`")  # noqa: E501
@@ -470,8 +469,7 @@ class WorkerConfig(object):
         :param repo: The repo of this WorkerConfig.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and repo is None:  # noqa: E501
-            raise ValueError("Invalid value for `repo`, must not be `None`")  # noqa: E501
+        # repo is optional - removed None validation
         if (self.local_vars_configuration.client_side_validation and
                 repo is not None and len(repo) > 255):
             raise ValueError("Invalid value for `repo`, length must be less than or equal to `255`")  # noqa: E501
@@ -499,8 +497,7 @@ class WorkerConfig(object):
         :param docker_image: The docker_image of this WorkerConfig.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and docker_image is None:  # noqa: E501
-            raise ValueError("Invalid value for `docker_image`, must not be `None`")  # noqa: E501
+        # docker_image is optional - removed None validation
         if (self.local_vars_configuration.client_side_validation and
                 docker_image is not None and len(docker_image) > 255):
             raise ValueError("Invalid value for `docker_image`, length must be less than or equal to `255`")  # noqa: E501
@@ -627,7 +624,7 @@ class WorkerConfig(object):
         :param state: The state of this WorkerConfig.  # noqa: E501
         :type: str
         """
-        allowed_values = ["Idle", "Pending", "Completed"]  # noqa: E501
+        allowed_values = ["Deploying", "Running", "Stopped", "Terminated"]  # noqa: E501
         if self.local_vars_configuration.client_side_validation and state not in allowed_values:  # noqa: E501
             raise ValueError(
                 "Invalid value for `state` ({0}), must be one of {1}"  # noqa: E501

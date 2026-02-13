@@ -37,10 +37,10 @@ class TestApiKey(unittest.TestCase):
         # model = autoppia_backend_client.models.api_key.ApiKey()  # noqa: E501
         if include_optional :
             return ApiKey(
-                id = 56, 
-                user = 56, 
-                name = '0', 
-                credential = '0', 
+                id = 56,
+                user = 56,
+                name = '0',
+                credential = '0',
                 created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f')
             )
         else :

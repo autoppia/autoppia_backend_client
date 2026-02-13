@@ -37,17 +37,17 @@ class TestIntegrationAttribute(unittest.TestCase):
         # model = autoppia_backend_client.models.integration_attribute.IntegrationAttribute()  # noqa: E501
         if include_optional :
             return IntegrationAttribute(
-                id = 56, 
-                credential_name = '0', 
-                name = '0', 
-                description = '0', 
-                variable_type = 'string', 
-                required = True, 
-                is_credential = True, 
-                credential_type = 'password', 
-                editable = True, 
-                default_value = '0', 
-                is_document = True, 
+                id = 56,
+                credential_name = '0',
+                name = '0',
+                description = '0',
+                variable_type = 'string',
+                required = True,
+                is_credential = True,
+                credential_type = 'password',
+                editable = True,
+                default_value = '0',
+                is_document = True,
                 integration = 56
             )
         else :

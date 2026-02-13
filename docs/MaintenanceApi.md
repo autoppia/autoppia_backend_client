@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**maintenance_list**](MaintenanceApi.md#maintenance_list) | **GET** /maintenance/ | 
+[**maintenance_list**](MaintenanceApi.md#maintenance_list) | **GET** /maintenance/ |
 
 
 # **maintenance_list**
@@ -42,7 +42,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.MaintenanceApi(api_client)
-    
+
     try:
         api_instance.maintenance_list()
     except ApiException as e:
@@ -71,4 +71,3 @@ void (empty response body)
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

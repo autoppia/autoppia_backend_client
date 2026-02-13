@@ -37,10 +37,10 @@ class TestToolkit(unittest.TestCase):
         # model = autoppia_backend_client.models.toolkit.Toolkit()  # noqa: E501
         if include_optional :
             return Toolkit(
-                id = 56, 
-                name = '0', 
-                description = '0', 
-                image_url = '0', 
+                id = 56,
+                name = '0',
+                description = '0',
+                image_url = '0',
                 tools = [
                     56
                     ]

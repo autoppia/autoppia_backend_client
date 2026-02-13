@@ -4,24 +4,24 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**llms_llm_create**](LlmsApi.md#llms_llm_create) | **POST** /llms/llm/ | 
-[**llms_llm_delete**](LlmsApi.md#llms_llm_delete) | **DELETE** /llms/llm/{id}/ | 
-[**llms_llm_list**](LlmsApi.md#llms_llm_list) | **GET** /llms/llm/ | 
-[**llms_llm_partial_update**](LlmsApi.md#llms_llm_partial_update) | **PATCH** /llms/llm/{id}/ | 
-[**llms_llm_provider_create**](LlmsApi.md#llms_llm_provider_create) | **POST** /llms/llm-provider/ | 
-[**llms_llm_provider_delete**](LlmsApi.md#llms_llm_provider_delete) | **DELETE** /llms/llm-provider/{id}/ | 
-[**llms_llm_provider_list**](LlmsApi.md#llms_llm_provider_list) | **GET** /llms/llm-provider/ | 
-[**llms_llm_provider_partial_update**](LlmsApi.md#llms_llm_provider_partial_update) | **PATCH** /llms/llm-provider/{id}/ | 
-[**llms_llm_provider_read**](LlmsApi.md#llms_llm_provider_read) | **GET** /llms/llm-provider/{id}/ | 
-[**llms_llm_provider_update**](LlmsApi.md#llms_llm_provider_update) | **PUT** /llms/llm-provider/{id}/ | 
-[**llms_llm_read**](LlmsApi.md#llms_llm_read) | **GET** /llms/llm/{id}/ | 
-[**llms_llm_update**](LlmsApi.md#llms_llm_update) | **PUT** /llms/llm/{id}/ | 
-[**llms_user_llm_create**](LlmsApi.md#llms_user_llm_create) | **POST** /llms/user-llm/ | 
-[**llms_user_llm_delete**](LlmsApi.md#llms_user_llm_delete) | **DELETE** /llms/user-llm/{id}/ | 
-[**llms_user_llm_list**](LlmsApi.md#llms_user_llm_list) | **GET** /llms/user-llm/ | 
-[**llms_user_llm_partial_update**](LlmsApi.md#llms_user_llm_partial_update) | **PATCH** /llms/user-llm/{id}/ | 
-[**llms_user_llm_read**](LlmsApi.md#llms_user_llm_read) | **GET** /llms/user-llm/{id}/ | 
-[**llms_user_llm_update**](LlmsApi.md#llms_user_llm_update) | **PUT** /llms/user-llm/{id}/ | 
+[**llms_llm_create**](LlmsApi.md#llms_llm_create) | **POST** /llms/llm/ |
+[**llms_llm_delete**](LlmsApi.md#llms_llm_delete) | **DELETE** /llms/llm/{id}/ |
+[**llms_llm_list**](LlmsApi.md#llms_llm_list) | **GET** /llms/llm/ |
+[**llms_llm_partial_update**](LlmsApi.md#llms_llm_partial_update) | **PATCH** /llms/llm/{id}/ |
+[**llms_llm_provider_create**](LlmsApi.md#llms_llm_provider_create) | **POST** /llms/llm-provider/ |
+[**llms_llm_provider_delete**](LlmsApi.md#llms_llm_provider_delete) | **DELETE** /llms/llm-provider/{id}/ |
+[**llms_llm_provider_list**](LlmsApi.md#llms_llm_provider_list) | **GET** /llms/llm-provider/ |
+[**llms_llm_provider_partial_update**](LlmsApi.md#llms_llm_provider_partial_update) | **PATCH** /llms/llm-provider/{id}/ |
+[**llms_llm_provider_read**](LlmsApi.md#llms_llm_provider_read) | **GET** /llms/llm-provider/{id}/ |
+[**llms_llm_provider_update**](LlmsApi.md#llms_llm_provider_update) | **PUT** /llms/llm-provider/{id}/ |
+[**llms_llm_read**](LlmsApi.md#llms_llm_read) | **GET** /llms/llm/{id}/ |
+[**llms_llm_update**](LlmsApi.md#llms_llm_update) | **PUT** /llms/llm/{id}/ |
+[**llms_user_llm_create**](LlmsApi.md#llms_user_llm_create) | **POST** /llms/user-llm/ |
+[**llms_user_llm_delete**](LlmsApi.md#llms_user_llm_delete) | **DELETE** /llms/user-llm/{id}/ |
+[**llms_user_llm_list**](LlmsApi.md#llms_user_llm_list) | **GET** /llms/user-llm/ |
+[**llms_user_llm_partial_update**](LlmsApi.md#llms_user_llm_partial_update) | **PATCH** /llms/user-llm/{id}/ |
+[**llms_user_llm_read**](LlmsApi.md#llms_user_llm_read) | **GET** /llms/user-llm/{id}/ |
+[**llms_user_llm_update**](LlmsApi.md#llms_user_llm_update) | **PUT** /llms/user-llm/{id}/ |
 
 
 # **llms_llm_create**
@@ -61,7 +61,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
-    data = autoppia_backend_client.LLMModel() # LLMModel | 
+    data = autoppia_backend_client.LLMModel() # LLMModel |
 
     try:
         api_response = api_instance.llms_llm_create(data)
@@ -74,7 +74,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**LLMModel**](LLMModel.md)|  | 
+ **data** | [**LLMModel**](LLMModel.md)|  |
 
 ### Return type
 
@@ -145,7 +145,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm model. | 
+ **id** | **int**| A unique integer value identifying this llm model. |
 
 ### Return type
 
@@ -204,7 +204,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
-    
+
     try:
         api_response = api_instance.llms_llm_list()
         pprint(api_response)
@@ -273,7 +273,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
     id = 56 # int | A unique integer value identifying this llm model.
-data = autoppia_backend_client.LLMModel() # LLMModel | 
+data = autoppia_backend_client.LLMModel() # LLMModel |
 
     try:
         api_response = api_instance.llms_llm_partial_update(id, data)
@@ -286,8 +286,8 @@ data = autoppia_backend_client.LLMModel() # LLMModel |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm model. | 
- **data** | [**LLMModel**](LLMModel.md)|  | 
+ **id** | **int**| A unique integer value identifying this llm model. |
+ **data** | [**LLMModel**](LLMModel.md)|  |
 
 ### Return type
 
@@ -346,7 +346,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
-    data = autoppia_backend_client.LLMProvider() # LLMProvider | 
+    data = autoppia_backend_client.LLMProvider() # LLMProvider |
 
     try:
         api_response = api_instance.llms_llm_provider_create(data)
@@ -359,7 +359,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**LLMProvider**](LLMProvider.md)|  | 
+ **data** | [**LLMProvider**](LLMProvider.md)|  |
 
 ### Return type
 
@@ -430,7 +430,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm provider. | 
+ **id** | **int**| A unique integer value identifying this llm provider. |
 
 ### Return type
 
@@ -489,7 +489,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
-    
+
     try:
         api_response = api_instance.llms_llm_provider_list()
         pprint(api_response)
@@ -558,7 +558,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
     id = 56 # int | A unique integer value identifying this llm provider.
-data = autoppia_backend_client.LLMProvider() # LLMProvider | 
+data = autoppia_backend_client.LLMProvider() # LLMProvider |
 
     try:
         api_response = api_instance.llms_llm_provider_partial_update(id, data)
@@ -571,8 +571,8 @@ data = autoppia_backend_client.LLMProvider() # LLMProvider |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm provider. | 
- **data** | [**LLMProvider**](LLMProvider.md)|  | 
+ **id** | **int**| A unique integer value identifying this llm provider. |
+ **data** | [**LLMProvider**](LLMProvider.md)|  |
 
 ### Return type
 
@@ -644,7 +644,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm provider. | 
+ **id** | **int**| A unique integer value identifying this llm provider. |
 
 ### Return type
 
@@ -704,7 +704,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
     id = 56 # int | A unique integer value identifying this llm provider.
-data = autoppia_backend_client.LLMProvider() # LLMProvider | 
+data = autoppia_backend_client.LLMProvider() # LLMProvider |
 
     try:
         api_response = api_instance.llms_llm_provider_update(id, data)
@@ -717,8 +717,8 @@ data = autoppia_backend_client.LLMProvider() # LLMProvider |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm provider. | 
- **data** | [**LLMProvider**](LLMProvider.md)|  | 
+ **id** | **int**| A unique integer value identifying this llm provider. |
+ **data** | [**LLMProvider**](LLMProvider.md)|  |
 
 ### Return type
 
@@ -790,7 +790,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm model. | 
+ **id** | **int**| A unique integer value identifying this llm model. |
 
 ### Return type
 
@@ -850,7 +850,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
     id = 56 # int | A unique integer value identifying this llm model.
-data = autoppia_backend_client.LLMModel() # LLMModel | 
+data = autoppia_backend_client.LLMModel() # LLMModel |
 
     try:
         api_response = api_instance.llms_llm_update(id, data)
@@ -863,8 +863,8 @@ data = autoppia_backend_client.LLMModel() # LLMModel |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm model. | 
- **data** | [**LLMModel**](LLMModel.md)|  | 
+ **id** | **int**| A unique integer value identifying this llm model. |
+ **data** | [**LLMModel**](LLMModel.md)|  |
 
 ### Return type
 
@@ -923,7 +923,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
-    data = autoppia_backend_client.UserLLMModel() # UserLLMModel | 
+    data = autoppia_backend_client.UserLLMModel() # UserLLMModel |
 
     try:
         api_response = api_instance.llms_user_llm_create(data)
@@ -936,7 +936,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**UserLLMModel**](UserLLMModel.md)|  | 
+ **data** | [**UserLLMModel**](UserLLMModel.md)|  |
 
 ### Return type
 
@@ -1007,7 +1007,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user llm model. | 
+ **id** | **int**| A unique integer value identifying this user llm model. |
 
 ### Return type
 
@@ -1066,7 +1066,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
-    
+
     try:
         api_response = api_instance.llms_user_llm_list()
         pprint(api_response)
@@ -1135,7 +1135,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
     id = 56 # int | A unique integer value identifying this user llm model.
-data = autoppia_backend_client.UserLLMModel() # UserLLMModel | 
+data = autoppia_backend_client.UserLLMModel() # UserLLMModel |
 
     try:
         api_response = api_instance.llms_user_llm_partial_update(id, data)
@@ -1148,8 +1148,8 @@ data = autoppia_backend_client.UserLLMModel() # UserLLMModel |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user llm model. | 
- **data** | [**UserLLMModel**](UserLLMModel.md)|  | 
+ **id** | **int**| A unique integer value identifying this user llm model. |
+ **data** | [**UserLLMModel**](UserLLMModel.md)|  |
 
 ### Return type
 
@@ -1221,7 +1221,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user llm model. | 
+ **id** | **int**| A unique integer value identifying this user llm model. |
 
 ### Return type
 
@@ -1281,7 +1281,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.LlmsApi(api_client)
     id = 56 # int | A unique integer value identifying this user llm model.
-data = autoppia_backend_client.UserLLMModel() # UserLLMModel | 
+data = autoppia_backend_client.UserLLMModel() # UserLLMModel |
 
     try:
         api_response = api_instance.llms_user_llm_update(id, data)
@@ -1294,8 +1294,8 @@ data = autoppia_backend_client.UserLLMModel() # UserLLMModel |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user llm model. | 
- **data** | [**UserLLMModel**](UserLLMModel.md)|  | 
+ **id** | **int**| A unique integer value identifying this user llm model. |
+ **data** | [**UserLLMModel**](UserLLMModel.md)|  |
 
 ### Return type
 
@@ -1316,4 +1316,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

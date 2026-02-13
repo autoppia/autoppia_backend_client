@@ -37,7 +37,7 @@ class TestTag(unittest.TestCase):
         # model = autoppia_backend_client.models.tag.Tag()  # noqa: E501
         if include_optional :
             return Tag(
-                id = 56, 
+                id = 56,
                 name = '0'
             )
         else :

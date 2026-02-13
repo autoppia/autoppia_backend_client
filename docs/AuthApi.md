@@ -4,21 +4,21 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**auth_get_credits_create**](AuthApi.md#auth_get_credits_create) | **POST** /auth/get-credits | 
-[**auth_get_wallet_create**](AuthApi.md#auth_get_wallet_create) | **POST** /auth/get-wallet | 
-[**auth_getnonce_list**](AuthApi.md#auth_getnonce_list) | **GET** /auth/getnonce | 
-[**auth_google_create**](AuthApi.md#auth_google_create) | **POST** /auth/google | 
-[**auth_login_create**](AuthApi.md#auth_login_create) | **POST** /auth/login | 
-[**auth_login_jwt_create**](AuthApi.md#auth_login_jwt_create) | **POST** /auth/login/jwt | 
-[**auth_login_jwt_refresh_create**](AuthApi.md#auth_login_jwt_refresh_create) | **POST** /auth/login/jwt/refresh | 
-[**auth_login_jwt_verify_create**](AuthApi.md#auth_login_jwt_verify_create) | **POST** /auth/login/jwt/verify | 
-[**auth_login_wallet_create**](AuthApi.md#auth_login_wallet_create) | **POST** /auth/login/wallet | 
-[**auth_password_reset_confirm_create**](AuthApi.md#auth_password_reset_confirm_create) | **POST** /auth/password_reset_confirm | 
-[**auth_password_reset_create**](AuthApi.md#auth_password_reset_create) | **POST** /auth/password_reset | 
-[**auth_register_create**](AuthApi.md#auth_register_create) | **POST** /auth/register | 
-[**auth_resend_verification_email_create**](AuthApi.md#auth_resend_verification_email_create) | **POST** /auth/resend-verification-email | 
-[**auth_verify_create**](AuthApi.md#auth_verify_create) | **POST** /auth/verify | 
-[**auth_verify_wallet_create**](AuthApi.md#auth_verify_wallet_create) | **POST** /auth/verify-wallet | 
+[**auth_get_credits_create**](AuthApi.md#auth_get_credits_create) | **POST** /auth/get-credits |
+[**auth_get_wallet_create**](AuthApi.md#auth_get_wallet_create) | **POST** /auth/get-wallet |
+[**auth_getnonce_list**](AuthApi.md#auth_getnonce_list) | **GET** /auth/getnonce |
+[**auth_google_create**](AuthApi.md#auth_google_create) | **POST** /auth/google |
+[**auth_login_create**](AuthApi.md#auth_login_create) | **POST** /auth/login |
+[**auth_login_jwt_create**](AuthApi.md#auth_login_jwt_create) | **POST** /auth/login/jwt |
+[**auth_login_jwt_refresh_create**](AuthApi.md#auth_login_jwt_refresh_create) | **POST** /auth/login/jwt/refresh |
+[**auth_login_jwt_verify_create**](AuthApi.md#auth_login_jwt_verify_create) | **POST** /auth/login/jwt/verify |
+[**auth_login_wallet_create**](AuthApi.md#auth_login_wallet_create) | **POST** /auth/login/wallet |
+[**auth_password_reset_confirm_create**](AuthApi.md#auth_password_reset_confirm_create) | **POST** /auth/password_reset_confirm |
+[**auth_password_reset_create**](AuthApi.md#auth_password_reset_create) | **POST** /auth/password_reset |
+[**auth_register_create**](AuthApi.md#auth_register_create) | **POST** /auth/register |
+[**auth_resend_verification_email_create**](AuthApi.md#auth_resend_verification_email_create) | **POST** /auth/resend-verification-email |
+[**auth_verify_create**](AuthApi.md#auth_verify_create) | **POST** /auth/verify |
+[**auth_verify_wallet_create**](AuthApi.md#auth_verify_wallet_create) | **POST** /auth/verify-wallet |
 
 
 # **auth_get_credits_create**
@@ -56,7 +56,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    
+
     try:
         api_instance.auth_get_credits_create()
     except ApiException as e:
@@ -121,7 +121,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    
+
     try:
         api_instance.auth_get_wallet_create()
     except ApiException as e:
@@ -186,7 +186,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    
+
     try:
         api_instance.auth_getnonce_list()
     except ApiException as e:
@@ -253,7 +253,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.InlineObject() # InlineObject | 
+    data = autoppia_backend_client.InlineObject() # InlineObject |
 
     try:
         api_instance.auth_google_create(data)
@@ -265,7 +265,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**InlineObject**](InlineObject.md)|  | 
+ **data** | [**InlineObject**](InlineObject.md)|  |
 
 ### Return type
 
@@ -325,7 +325,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.InlineObject1() # InlineObject1 | 
+    data = autoppia_backend_client.InlineObject1() # InlineObject1 |
 
     try:
         api_instance.auth_login_create(data)
@@ -337,7 +337,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**InlineObject1**](InlineObject1.md)|  | 
+ **data** | [**InlineObject1**](InlineObject1.md)|  |
 
 ### Return type
 
@@ -397,7 +397,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.InlineObject2() # InlineObject2 | 
+    data = autoppia_backend_client.InlineObject2() # InlineObject2 |
 
     try:
         api_instance.auth_login_jwt_create(data)
@@ -409,7 +409,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**InlineObject2**](InlineObject2.md)|  | 
+ **data** | [**InlineObject2**](InlineObject2.md)|  |
 
 ### Return type
 
@@ -469,7 +469,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.TokenRefresh() # TokenRefresh | 
+    data = autoppia_backend_client.TokenRefresh() # TokenRefresh |
 
     try:
         api_response = api_instance.auth_login_jwt_refresh_create(data)
@@ -482,7 +482,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**TokenRefresh**](TokenRefresh.md)|  | 
+ **data** | [**TokenRefresh**](TokenRefresh.md)|  |
 
 ### Return type
 
@@ -541,7 +541,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.TokenVerify() # TokenVerify | 
+    data = autoppia_backend_client.TokenVerify() # TokenVerify |
 
     try:
         api_response = api_instance.auth_login_jwt_verify_create(data)
@@ -554,7 +554,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**TokenVerify**](TokenVerify.md)|  | 
+ **data** | [**TokenVerify**](TokenVerify.md)|  |
 
 ### Return type
 
@@ -611,7 +611,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    
+
     try:
         api_instance.auth_login_wallet_create()
     except ApiException as e:
@@ -676,7 +676,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.PasswordResetConfirm() # PasswordResetConfirm | 
+    data = autoppia_backend_client.PasswordResetConfirm() # PasswordResetConfirm |
 
     try:
         api_instance.auth_password_reset_confirm_create(data)
@@ -688,7 +688,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**PasswordResetConfirm**](PasswordResetConfirm.md)|  | 
+ **data** | [**PasswordResetConfirm**](PasswordResetConfirm.md)|  |
 
 ### Return type
 
@@ -746,7 +746,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.PasswordReset() # PasswordReset | 
+    data = autoppia_backend_client.PasswordReset() # PasswordReset |
 
     try:
         api_instance.auth_password_reset_create(data)
@@ -758,7 +758,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**PasswordReset**](PasswordReset.md)|  | 
+ **data** | [**PasswordReset**](PasswordReset.md)|  |
 
 ### Return type
 
@@ -815,7 +815,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.CreateUser() # CreateUser | 
+    data = autoppia_backend_client.CreateUser() # CreateUser |
 
     try:
         api_response = api_instance.auth_register_create(data)
@@ -828,7 +828,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**CreateUser**](CreateUser.md)|  | 
+ **data** | [**CreateUser**](CreateUser.md)|  |
 
 ### Return type
 
@@ -887,7 +887,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    data = autoppia_backend_client.InlineObject3() # InlineObject3 | 
+    data = autoppia_backend_client.InlineObject3() # InlineObject3 |
 
     try:
         api_instance.auth_resend_verification_email_create(data)
@@ -899,7 +899,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**InlineObject3**](InlineObject3.md)|  | 
+ **data** | [**InlineObject3**](InlineObject3.md)|  |
 
 ### Return type
 
@@ -959,7 +959,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    
+
     try:
         api_instance.auth_verify_create()
     except ApiException as e:
@@ -1024,7 +1024,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AuthApi(api_client)
-    
+
     try:
         api_instance.auth_verify_wallet_create()
     except ApiException as e:
@@ -1053,4 +1053,3 @@ void (empty response body)
 **201** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

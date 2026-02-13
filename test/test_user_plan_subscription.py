@@ -37,8 +37,8 @@ class TestUserPlanSubscription(unittest.TestCase):
         # model = autoppia_backend_client.models.user_plan_subscription.UserPlanSubscription()  # noqa: E501
         if include_optional :
             return UserPlanSubscription(
-                id = 56, 
-                user = 56, 
+                id = 56,
+                user = 56,
                 plan = 56
             )
         else :

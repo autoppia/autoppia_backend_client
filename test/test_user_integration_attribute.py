@@ -37,14 +37,14 @@ class TestUserIntegrationAttribute(unittest.TestCase):
         # model = autoppia_backend_client.models.user_integration_attribute.UserIntegrationAttribute()  # noqa: E501
         if include_optional :
             return UserIntegrationAttribute(
-                id = 56, 
-                credential_data = '0', 
-                value = '0', 
-                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                user_integration = 56, 
-                integration_attribute = 56, 
-                credential = 56, 
+                id = 56,
+                credential_data = '0',
+                value = '0',
+                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                user_integration = 56,
+                integration_attribute = 56,
+                credential = 56,
                 document = 56
             )
         else :

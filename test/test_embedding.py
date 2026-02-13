@@ -37,13 +37,13 @@ class TestEmbedding(unittest.TestCase):
         # model = autoppia_backend_client.models.embedding.Embedding()  # noqa: E501
         if include_optional :
             return Embedding(
-                id = 56, 
+                id = 56,
                 provider = autoppia_backend_client.models.embedding_provider.EmbeddingProvider(
-                    id = 56, 
-                    name = '0', 
-                    description = '0', ), 
-                provider_id = 56, 
-                name = '0', 
+                    id = 56,
+                    name = '0',
+                    description = '0', ),
+                provider_id = 56,
+                name = '0',
                 url = '0'
             )
         else :

@@ -4,44 +4,44 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**toolkit_admin_toolkit_attribute_create**](ToolkitApi.md#toolkit_admin_toolkit_attribute_create) | **POST** /toolkit/admin/toolkit_attribute/ | 
-[**toolkit_admin_toolkit_attribute_delete**](ToolkitApi.md#toolkit_admin_toolkit_attribute_delete) | **DELETE** /toolkit/admin/toolkit_attribute/{id}/ | 
-[**toolkit_admin_toolkit_attribute_list**](ToolkitApi.md#toolkit_admin_toolkit_attribute_list) | **GET** /toolkit/admin/toolkit_attribute/ | 
-[**toolkit_admin_toolkit_attribute_partial_update**](ToolkitApi.md#toolkit_admin_toolkit_attribute_partial_update) | **PATCH** /toolkit/admin/toolkit_attribute/{id}/ | 
-[**toolkit_admin_toolkit_attribute_read**](ToolkitApi.md#toolkit_admin_toolkit_attribute_read) | **GET** /toolkit/admin/toolkit_attribute/{id}/ | 
-[**toolkit_admin_toolkit_attribute_update**](ToolkitApi.md#toolkit_admin_toolkit_attribute_update) | **PUT** /toolkit/admin/toolkit_attribute/{id}/ | 
-[**toolkit_admin_toolkit_create**](ToolkitApi.md#toolkit_admin_toolkit_create) | **POST** /toolkit/admin/toolkit/ | 
-[**toolkit_admin_toolkit_delete**](ToolkitApi.md#toolkit_admin_toolkit_delete) | **DELETE** /toolkit/admin/toolkit/{id}/ | 
-[**toolkit_admin_toolkit_linked_integration_create**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_create) | **POST** /toolkit/admin/toolkit_linked_integration/ | 
-[**toolkit_admin_toolkit_linked_integration_delete**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_delete) | **DELETE** /toolkit/admin/toolkit_linked_integration/{id}/ | 
-[**toolkit_admin_toolkit_linked_integration_list**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_list) | **GET** /toolkit/admin/toolkit_linked_integration/ | 
-[**toolkit_admin_toolkit_linked_integration_partial_update**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_partial_update) | **PATCH** /toolkit/admin/toolkit_linked_integration/{id}/ | 
-[**toolkit_admin_toolkit_linked_integration_read**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_read) | **GET** /toolkit/admin/toolkit_linked_integration/{id}/ | 
-[**toolkit_admin_toolkit_linked_integration_update**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_update) | **PUT** /toolkit/admin/toolkit_linked_integration/{id}/ | 
-[**toolkit_admin_toolkit_list**](ToolkitApi.md#toolkit_admin_toolkit_list) | **GET** /toolkit/admin/toolkit/ | 
-[**toolkit_admin_toolkit_partial_update**](ToolkitApi.md#toolkit_admin_toolkit_partial_update) | **PATCH** /toolkit/admin/toolkit/{id}/ | 
-[**toolkit_admin_toolkit_read**](ToolkitApi.md#toolkit_admin_toolkit_read) | **GET** /toolkit/admin/toolkit/{id}/ | 
-[**toolkit_admin_toolkit_update**](ToolkitApi.md#toolkit_admin_toolkit_update) | **PUT** /toolkit/admin/toolkit/{id}/ | 
-[**toolkit_tool_create**](ToolkitApi.md#toolkit_tool_create) | **POST** /toolkit/tool/ | 
-[**toolkit_tool_delete**](ToolkitApi.md#toolkit_tool_delete) | **DELETE** /toolkit/tool/{id}/ | 
-[**toolkit_tool_list**](ToolkitApi.md#toolkit_tool_list) | **GET** /toolkit/tool/ | 
-[**toolkit_tool_partial_update**](ToolkitApi.md#toolkit_tool_partial_update) | **PATCH** /toolkit/tool/{id}/ | 
-[**toolkit_tool_read**](ToolkitApi.md#toolkit_tool_read) | **GET** /toolkit/tool/{id}/ | 
-[**toolkit_tool_update**](ToolkitApi.md#toolkit_tool_update) | **PUT** /toolkit/tool/{id}/ | 
-[**toolkit_toolkit_list**](ToolkitApi.md#toolkit_toolkit_list) | **GET** /toolkit/toolkit/ | 
-[**toolkit_toolkit_read**](ToolkitApi.md#toolkit_toolkit_read) | **GET** /toolkit/toolkit/{id}/ | 
-[**toolkit_user_configuration_create**](ToolkitApi.md#toolkit_user_configuration_create) | **POST** /toolkit/user_configuration/ | 
-[**toolkit_user_configuration_delete**](ToolkitApi.md#toolkit_user_configuration_delete) | **DELETE** /toolkit/user_configuration/{id}/ | 
-[**toolkit_user_configuration_list**](ToolkitApi.md#toolkit_user_configuration_list) | **GET** /toolkit/user_configuration/ | 
-[**toolkit_user_configuration_partial_update**](ToolkitApi.md#toolkit_user_configuration_partial_update) | **PATCH** /toolkit/user_configuration/{id}/ | 
-[**toolkit_user_configuration_read**](ToolkitApi.md#toolkit_user_configuration_read) | **GET** /toolkit/user_configuration/{id}/ | 
-[**toolkit_user_configuration_update**](ToolkitApi.md#toolkit_user_configuration_update) | **PUT** /toolkit/user_configuration/{id}/ | 
-[**toolkit_user_toolkit_create**](ToolkitApi.md#toolkit_user_toolkit_create) | **POST** /toolkit/user_toolkit/ | 
-[**toolkit_user_toolkit_delete**](ToolkitApi.md#toolkit_user_toolkit_delete) | **DELETE** /toolkit/user_toolkit/{id}/ | 
-[**toolkit_user_toolkit_list**](ToolkitApi.md#toolkit_user_toolkit_list) | **GET** /toolkit/user_toolkit/ | 
-[**toolkit_user_toolkit_partial_update**](ToolkitApi.md#toolkit_user_toolkit_partial_update) | **PATCH** /toolkit/user_toolkit/{id}/ | 
-[**toolkit_user_toolkit_read**](ToolkitApi.md#toolkit_user_toolkit_read) | **GET** /toolkit/user_toolkit/{id}/ | 
-[**toolkit_user_toolkit_update**](ToolkitApi.md#toolkit_user_toolkit_update) | **PUT** /toolkit/user_toolkit/{id}/ | 
+[**toolkit_admin_toolkit_attribute_create**](ToolkitApi.md#toolkit_admin_toolkit_attribute_create) | **POST** /toolkit/admin/toolkit_attribute/ |
+[**toolkit_admin_toolkit_attribute_delete**](ToolkitApi.md#toolkit_admin_toolkit_attribute_delete) | **DELETE** /toolkit/admin/toolkit_attribute/{id}/ |
+[**toolkit_admin_toolkit_attribute_list**](ToolkitApi.md#toolkit_admin_toolkit_attribute_list) | **GET** /toolkit/admin/toolkit_attribute/ |
+[**toolkit_admin_toolkit_attribute_partial_update**](ToolkitApi.md#toolkit_admin_toolkit_attribute_partial_update) | **PATCH** /toolkit/admin/toolkit_attribute/{id}/ |
+[**toolkit_admin_toolkit_attribute_read**](ToolkitApi.md#toolkit_admin_toolkit_attribute_read) | **GET** /toolkit/admin/toolkit_attribute/{id}/ |
+[**toolkit_admin_toolkit_attribute_update**](ToolkitApi.md#toolkit_admin_toolkit_attribute_update) | **PUT** /toolkit/admin/toolkit_attribute/{id}/ |
+[**toolkit_admin_toolkit_create**](ToolkitApi.md#toolkit_admin_toolkit_create) | **POST** /toolkit/admin/toolkit/ |
+[**toolkit_admin_toolkit_delete**](ToolkitApi.md#toolkit_admin_toolkit_delete) | **DELETE** /toolkit/admin/toolkit/{id}/ |
+[**toolkit_admin_toolkit_linked_integration_create**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_create) | **POST** /toolkit/admin/toolkit_linked_integration/ |
+[**toolkit_admin_toolkit_linked_integration_delete**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_delete) | **DELETE** /toolkit/admin/toolkit_linked_integration/{id}/ |
+[**toolkit_admin_toolkit_linked_integration_list**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_list) | **GET** /toolkit/admin/toolkit_linked_integration/ |
+[**toolkit_admin_toolkit_linked_integration_partial_update**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_partial_update) | **PATCH** /toolkit/admin/toolkit_linked_integration/{id}/ |
+[**toolkit_admin_toolkit_linked_integration_read**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_read) | **GET** /toolkit/admin/toolkit_linked_integration/{id}/ |
+[**toolkit_admin_toolkit_linked_integration_update**](ToolkitApi.md#toolkit_admin_toolkit_linked_integration_update) | **PUT** /toolkit/admin/toolkit_linked_integration/{id}/ |
+[**toolkit_admin_toolkit_list**](ToolkitApi.md#toolkit_admin_toolkit_list) | **GET** /toolkit/admin/toolkit/ |
+[**toolkit_admin_toolkit_partial_update**](ToolkitApi.md#toolkit_admin_toolkit_partial_update) | **PATCH** /toolkit/admin/toolkit/{id}/ |
+[**toolkit_admin_toolkit_read**](ToolkitApi.md#toolkit_admin_toolkit_read) | **GET** /toolkit/admin/toolkit/{id}/ |
+[**toolkit_admin_toolkit_update**](ToolkitApi.md#toolkit_admin_toolkit_update) | **PUT** /toolkit/admin/toolkit/{id}/ |
+[**toolkit_tool_create**](ToolkitApi.md#toolkit_tool_create) | **POST** /toolkit/tool/ |
+[**toolkit_tool_delete**](ToolkitApi.md#toolkit_tool_delete) | **DELETE** /toolkit/tool/{id}/ |
+[**toolkit_tool_list**](ToolkitApi.md#toolkit_tool_list) | **GET** /toolkit/tool/ |
+[**toolkit_tool_partial_update**](ToolkitApi.md#toolkit_tool_partial_update) | **PATCH** /toolkit/tool/{id}/ |
+[**toolkit_tool_read**](ToolkitApi.md#toolkit_tool_read) | **GET** /toolkit/tool/{id}/ |
+[**toolkit_tool_update**](ToolkitApi.md#toolkit_tool_update) | **PUT** /toolkit/tool/{id}/ |
+[**toolkit_toolkit_list**](ToolkitApi.md#toolkit_toolkit_list) | **GET** /toolkit/toolkit/ |
+[**toolkit_toolkit_read**](ToolkitApi.md#toolkit_toolkit_read) | **GET** /toolkit/toolkit/{id}/ |
+[**toolkit_user_configuration_create**](ToolkitApi.md#toolkit_user_configuration_create) | **POST** /toolkit/user_configuration/ |
+[**toolkit_user_configuration_delete**](ToolkitApi.md#toolkit_user_configuration_delete) | **DELETE** /toolkit/user_configuration/{id}/ |
+[**toolkit_user_configuration_list**](ToolkitApi.md#toolkit_user_configuration_list) | **GET** /toolkit/user_configuration/ |
+[**toolkit_user_configuration_partial_update**](ToolkitApi.md#toolkit_user_configuration_partial_update) | **PATCH** /toolkit/user_configuration/{id}/ |
+[**toolkit_user_configuration_read**](ToolkitApi.md#toolkit_user_configuration_read) | **GET** /toolkit/user_configuration/{id}/ |
+[**toolkit_user_configuration_update**](ToolkitApi.md#toolkit_user_configuration_update) | **PUT** /toolkit/user_configuration/{id}/ |
+[**toolkit_user_toolkit_create**](ToolkitApi.md#toolkit_user_toolkit_create) | **POST** /toolkit/user_toolkit/ |
+[**toolkit_user_toolkit_delete**](ToolkitApi.md#toolkit_user_toolkit_delete) | **DELETE** /toolkit/user_toolkit/{id}/ |
+[**toolkit_user_toolkit_list**](ToolkitApi.md#toolkit_user_toolkit_list) | **GET** /toolkit/user_toolkit/ |
+[**toolkit_user_toolkit_partial_update**](ToolkitApi.md#toolkit_user_toolkit_partial_update) | **PATCH** /toolkit/user_toolkit/{id}/ |
+[**toolkit_user_toolkit_read**](ToolkitApi.md#toolkit_user_toolkit_read) | **GET** /toolkit/user_toolkit/{id}/ |
+[**toolkit_user_toolkit_update**](ToolkitApi.md#toolkit_user_toolkit_update) | **PUT** /toolkit/user_toolkit/{id}/ |
 
 
 # **toolkit_admin_toolkit_attribute_create**
@@ -79,7 +79,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute | 
+    data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_attribute_create(data)
@@ -92,7 +92,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**ToolkitAttribute**](ToolkitAttribute.md)|  | 
+ **data** | [**ToolkitAttribute**](ToolkitAttribute.md)|  |
 
 ### Return type
 
@@ -161,7 +161,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit attribute. | 
+ **id** | **int**| A unique integer value identifying this toolkit attribute. |
 
 ### Return type
 
@@ -218,7 +218,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    
+
     try:
         api_response = api_instance.toolkit_admin_toolkit_attribute_list()
         pprint(api_response)
@@ -285,7 +285,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this toolkit attribute.
-data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute | 
+data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_attribute_partial_update(id, data)
@@ -298,8 +298,8 @@ data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit attribute. | 
- **data** | [**ToolkitAttribute**](ToolkitAttribute.md)|  | 
+ **id** | **int**| A unique integer value identifying this toolkit attribute. |
+ **data** | [**ToolkitAttribute**](ToolkitAttribute.md)|  |
 
 ### Return type
 
@@ -369,7 +369,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit attribute. | 
+ **id** | **int**| A unique integer value identifying this toolkit attribute. |
 
 ### Return type
 
@@ -427,7 +427,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this toolkit attribute.
-data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute | 
+data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_attribute_update(id, data)
@@ -440,8 +440,8 @@ data = autoppia_backend_client.ToolkitAttribute() # ToolkitAttribute |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit attribute. | 
- **data** | [**ToolkitAttribute**](ToolkitAttribute.md)|  | 
+ **id** | **int**| A unique integer value identifying this toolkit attribute. |
+ **data** | [**ToolkitAttribute**](ToolkitAttribute.md)|  |
 
 ### Return type
 
@@ -498,7 +498,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    data = autoppia_backend_client.Toolkit() # Toolkit | 
+    data = autoppia_backend_client.Toolkit() # Toolkit |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_create(data)
@@ -511,7 +511,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Toolkit**](Toolkit.md)|  | 
+ **data** | [**Toolkit**](Toolkit.md)|  |
 
 ### Return type
 
@@ -580,7 +580,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit. | 
+ **id** | **int**| A unique integer value identifying this toolkit. |
 
 ### Return type
 
@@ -637,7 +637,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegration | 
+    data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegration |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_linked_integration_create(data)
@@ -650,7 +650,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**ToolkitLinkedIntegration**](ToolkitLinkedIntegration.md)|  | 
+ **data** | [**ToolkitLinkedIntegration**](ToolkitLinkedIntegration.md)|  |
 
 ### Return type
 
@@ -719,7 +719,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit linked integration. | 
+ **id** | **int**| A unique integer value identifying this toolkit linked integration. |
 
 ### Return type
 
@@ -776,7 +776,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    
+
     try:
         api_response = api_instance.toolkit_admin_toolkit_linked_integration_list()
         pprint(api_response)
@@ -843,7 +843,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this toolkit linked integration.
-data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegration | 
+data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegration |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_linked_integration_partial_update(id, data)
@@ -856,8 +856,8 @@ data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegra
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit linked integration. | 
- **data** | [**ToolkitLinkedIntegration**](ToolkitLinkedIntegration.md)|  | 
+ **id** | **int**| A unique integer value identifying this toolkit linked integration. |
+ **data** | [**ToolkitLinkedIntegration**](ToolkitLinkedIntegration.md)|  |
 
 ### Return type
 
@@ -927,7 +927,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit linked integration. | 
+ **id** | **int**| A unique integer value identifying this toolkit linked integration. |
 
 ### Return type
 
@@ -985,7 +985,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this toolkit linked integration.
-data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegration | 
+data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegration |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_linked_integration_update(id, data)
@@ -998,8 +998,8 @@ data = autoppia_backend_client.ToolkitLinkedIntegration() # ToolkitLinkedIntegra
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit linked integration. | 
- **data** | [**ToolkitLinkedIntegration**](ToolkitLinkedIntegration.md)|  | 
+ **id** | **int**| A unique integer value identifying this toolkit linked integration. |
+ **data** | [**ToolkitLinkedIntegration**](ToolkitLinkedIntegration.md)|  |
 
 ### Return type
 
@@ -1056,7 +1056,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    
+
     try:
         api_response = api_instance.toolkit_admin_toolkit_list()
         pprint(api_response)
@@ -1123,7 +1123,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this toolkit.
-data = autoppia_backend_client.Toolkit() # Toolkit | 
+data = autoppia_backend_client.Toolkit() # Toolkit |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_partial_update(id, data)
@@ -1136,8 +1136,8 @@ data = autoppia_backend_client.Toolkit() # Toolkit |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit. | 
- **data** | [**Toolkit**](Toolkit.md)|  | 
+ **id** | **int**| A unique integer value identifying this toolkit. |
+ **data** | [**Toolkit**](Toolkit.md)|  |
 
 ### Return type
 
@@ -1207,7 +1207,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit. | 
+ **id** | **int**| A unique integer value identifying this toolkit. |
 
 ### Return type
 
@@ -1265,7 +1265,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this toolkit.
-data = autoppia_backend_client.Toolkit() # Toolkit | 
+data = autoppia_backend_client.Toolkit() # Toolkit |
 
     try:
         api_response = api_instance.toolkit_admin_toolkit_update(id, data)
@@ -1278,8 +1278,8 @@ data = autoppia_backend_client.Toolkit() # Toolkit |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit. | 
- **data** | [**Toolkit**](Toolkit.md)|  | 
+ **id** | **int**| A unique integer value identifying this toolkit. |
+ **data** | [**Toolkit**](Toolkit.md)|  |
 
 ### Return type
 
@@ -1338,7 +1338,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    data = autoppia_backend_client.Tool() # Tool | 
+    data = autoppia_backend_client.Tool() # Tool |
 
     try:
         api_response = api_instance.toolkit_tool_create(data)
@@ -1351,7 +1351,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Tool**](Tool.md)|  | 
+ **data** | [**Tool**](Tool.md)|  |
 
 ### Return type
 
@@ -1420,7 +1420,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this tool. | 
+ **id** | **int**| A unique integer value identifying this tool. |
 
 ### Return type
 
@@ -1479,7 +1479,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    
+
     try:
         api_response = api_instance.toolkit_tool_list()
         pprint(api_response)
@@ -1546,7 +1546,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this tool.
-data = autoppia_backend_client.Tool() # Tool | 
+data = autoppia_backend_client.Tool() # Tool |
 
     try:
         api_response = api_instance.toolkit_tool_partial_update(id, data)
@@ -1559,8 +1559,8 @@ data = autoppia_backend_client.Tool() # Tool |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this tool. | 
- **data** | [**Tool**](Tool.md)|  | 
+ **id** | **int**| A unique integer value identifying this tool. |
+ **data** | [**Tool**](Tool.md)|  |
 
 ### Return type
 
@@ -1630,7 +1630,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this tool. | 
+ **id** | **int**| A unique integer value identifying this tool. |
 
 ### Return type
 
@@ -1688,7 +1688,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this tool.
-data = autoppia_backend_client.Tool() # Tool | 
+data = autoppia_backend_client.Tool() # Tool |
 
     try:
         api_response = api_instance.toolkit_tool_update(id, data)
@@ -1701,8 +1701,8 @@ data = autoppia_backend_client.Tool() # Tool |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this tool. | 
- **data** | [**Tool**](Tool.md)|  | 
+ **id** | **int**| A unique integer value identifying this tool. |
+ **data** | [**Tool**](Tool.md)|  |
 
 ### Return type
 
@@ -1761,7 +1761,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    
+
     try:
         api_response = api_instance.toolkit_toolkit_list()
         pprint(api_response)
@@ -1842,7 +1842,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this toolkit. | 
+ **id** | **int**| A unique integer value identifying this toolkit. |
 
 ### Return type
 
@@ -1899,7 +1899,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    data = autoppia_backend_client.UserConfiguration() # UserConfiguration | 
+    data = autoppia_backend_client.UserConfiguration() # UserConfiguration |
 
     try:
         api_response = api_instance.toolkit_user_configuration_create(data)
@@ -1912,7 +1912,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**UserConfiguration**](UserConfiguration.md)|  | 
+ **data** | [**UserConfiguration**](UserConfiguration.md)|  |
 
 ### Return type
 
@@ -1981,7 +1981,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user configuration. | 
+ **id** | **int**| A unique integer value identifying this user configuration. |
 
 ### Return type
 
@@ -2038,7 +2038,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    
+
     try:
         api_response = api_instance.toolkit_user_configuration_list()
         pprint(api_response)
@@ -2105,7 +2105,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this user configuration.
-data = autoppia_backend_client.UserConfiguration() # UserConfiguration | 
+data = autoppia_backend_client.UserConfiguration() # UserConfiguration |
 
     try:
         api_response = api_instance.toolkit_user_configuration_partial_update(id, data)
@@ -2118,8 +2118,8 @@ data = autoppia_backend_client.UserConfiguration() # UserConfiguration |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user configuration. | 
- **data** | [**UserConfiguration**](UserConfiguration.md)|  | 
+ **id** | **int**| A unique integer value identifying this user configuration. |
+ **data** | [**UserConfiguration**](UserConfiguration.md)|  |
 
 ### Return type
 
@@ -2189,7 +2189,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user configuration. | 
+ **id** | **int**| A unique integer value identifying this user configuration. |
 
 ### Return type
 
@@ -2247,7 +2247,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this user configuration.
-data = autoppia_backend_client.UserConfiguration() # UserConfiguration | 
+data = autoppia_backend_client.UserConfiguration() # UserConfiguration |
 
     try:
         api_response = api_instance.toolkit_user_configuration_update(id, data)
@@ -2260,8 +2260,8 @@ data = autoppia_backend_client.UserConfiguration() # UserConfiguration |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user configuration. | 
- **data** | [**UserConfiguration**](UserConfiguration.md)|  | 
+ **id** | **int**| A unique integer value identifying this user configuration. |
+ **data** | [**UserConfiguration**](UserConfiguration.md)|  |
 
 ### Return type
 
@@ -2320,7 +2320,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    data = autoppia_backend_client.UserToolkit() # UserToolkit | 
+    data = autoppia_backend_client.UserToolkit() # UserToolkit |
 
     try:
         api_response = api_instance.toolkit_user_toolkit_create(data)
@@ -2333,7 +2333,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**UserToolkit**](UserToolkit.md)|  | 
+ **data** | [**UserToolkit**](UserToolkit.md)|  |
 
 ### Return type
 
@@ -2404,7 +2404,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user toolkit. | 
+ **id** | **int**| A unique integer value identifying this user toolkit. |
 
 ### Return type
 
@@ -2463,7 +2463,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
-    
+
     try:
         api_response = api_instance.toolkit_user_toolkit_list()
         pprint(api_response)
@@ -2532,7 +2532,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this user toolkit.
-data = autoppia_backend_client.UserToolkit() # UserToolkit | 
+data = autoppia_backend_client.UserToolkit() # UserToolkit |
 
     try:
         api_response = api_instance.toolkit_user_toolkit_partial_update(id, data)
@@ -2545,8 +2545,8 @@ data = autoppia_backend_client.UserToolkit() # UserToolkit |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user toolkit. | 
- **data** | [**UserToolkit**](UserToolkit.md)|  | 
+ **id** | **int**| A unique integer value identifying this user toolkit. |
+ **data** | [**UserToolkit**](UserToolkit.md)|  |
 
 ### Return type
 
@@ -2616,7 +2616,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user toolkit. | 
+ **id** | **int**| A unique integer value identifying this user toolkit. |
 
 ### Return type
 
@@ -2676,7 +2676,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ToolkitApi(api_client)
     id = 56 # int | A unique integer value identifying this user toolkit.
-data = autoppia_backend_client.UserToolkit() # UserToolkit | 
+data = autoppia_backend_client.UserToolkit() # UserToolkit |
 
     try:
         api_response = api_instance.toolkit_user_toolkit_update(id, data)
@@ -2689,8 +2689,8 @@ data = autoppia_backend_client.UserToolkit() # UserToolkit |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user toolkit. | 
- **data** | [**UserToolkit**](UserToolkit.md)|  | 
+ **id** | **int**| A unique integer value identifying this user toolkit. |
+ **data** | [**UserToolkit**](UserToolkit.md)|  |
 
 ### Return type
 
@@ -2711,4 +2711,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

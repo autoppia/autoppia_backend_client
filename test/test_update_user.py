@@ -37,15 +37,15 @@ class TestUpdateUser(unittest.TestCase):
         # model = autoppia_backend_client.models.update_user.UpdateUser()  # noqa: E501
         if include_optional :
             return UpdateUser(
-                first_name = 'a', 
-                last_name = 'a', 
-                email = '0', 
-                username = '0', 
-                title = '0', 
-                company = '0', 
-                about = '0', 
-                phone_num = '0', 
-                country = '0', 
+                first_name = 'a',
+                last_name = 'a',
+                email = '0',
+                username = '0',
+                title = '0',
+                company = '0',
+                about = '0',
+                phone_num = '0',
+                country = '0',
                 language = '0'
             )
         else :

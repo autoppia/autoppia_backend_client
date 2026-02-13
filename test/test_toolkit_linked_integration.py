@@ -37,8 +37,8 @@ class TestToolkitLinkedIntegration(unittest.TestCase):
         # model = autoppia_backend_client.models.toolkit_linked_integration.ToolkitLinkedIntegration()  # noqa: E501
         if include_optional :
             return ToolkitLinkedIntegration(
-                id = 56, 
-                category = 'social', 
+                id = 56,
+                category = 'social',
                 toolkit = 56
             )
         else :

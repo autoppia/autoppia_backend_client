@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**mcp_mcps_connect**](McpApi.md#mcp_mcps_connect) | **POST** /mcp/mcps/{id}/connect/ | 
-[**mcp_mcps_create**](McpApi.md#mcp_mcps_create) | **POST** /mcp/mcps/ | 
-[**mcp_mcps_delete**](McpApi.md#mcp_mcps_delete) | **DELETE** /mcp/mcps/{id}/ | 
-[**mcp_mcps_list**](McpApi.md#mcp_mcps_list) | **GET** /mcp/mcps/ | 
-[**mcp_mcps_partial_update**](McpApi.md#mcp_mcps_partial_update) | **PATCH** /mcp/mcps/{id}/ | 
-[**mcp_mcps_read**](McpApi.md#mcp_mcps_read) | **GET** /mcp/mcps/{id}/ | 
-[**mcp_mcps_update**](McpApi.md#mcp_mcps_update) | **PUT** /mcp/mcps/{id}/ | 
+[**mcp_mcps_connect**](McpApi.md#mcp_mcps_connect) | **POST** /mcp/mcps/{id}/connect/ |
+[**mcp_mcps_create**](McpApi.md#mcp_mcps_create) | **POST** /mcp/mcps/ |
+[**mcp_mcps_delete**](McpApi.md#mcp_mcps_delete) | **DELETE** /mcp/mcps/{id}/ |
+[**mcp_mcps_list**](McpApi.md#mcp_mcps_list) | **GET** /mcp/mcps/ |
+[**mcp_mcps_partial_update**](McpApi.md#mcp_mcps_partial_update) | **PATCH** /mcp/mcps/{id}/ |
+[**mcp_mcps_read**](McpApi.md#mcp_mcps_read) | **GET** /mcp/mcps/{id}/ |
+[**mcp_mcps_update**](McpApi.md#mcp_mcps_update) | **PUT** /mcp/mcps/{id}/ |
 
 
 # **mcp_mcps_connect**
@@ -49,7 +49,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.McpApi(api_client)
     id = 56 # int | A unique integer value identifying this mcp.
-data = autoppia_backend_client.MCP() # MCP | 
+data = autoppia_backend_client.MCP() # MCP |
 
     try:
         api_response = api_instance.mcp_mcps_connect(id, data)
@@ -62,8 +62,8 @@ data = autoppia_backend_client.MCP() # MCP |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this mcp. | 
- **data** | [**MCP**](MCP.md)|  | 
+ **id** | **int**| A unique integer value identifying this mcp. |
+ **data** | [**MCP**](MCP.md)|  |
 
 ### Return type
 
@@ -120,7 +120,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.McpApi(api_client)
-    data = autoppia_backend_client.MCP() # MCP | 
+    data = autoppia_backend_client.MCP() # MCP |
 
     try:
         api_response = api_instance.mcp_mcps_create(data)
@@ -133,7 +133,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**MCP**](MCP.md)|  | 
+ **data** | [**MCP**](MCP.md)|  |
 
 ### Return type
 
@@ -202,7 +202,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this mcp. | 
+ **id** | **int**| A unique integer value identifying this mcp. |
 
 ### Return type
 
@@ -259,7 +259,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.McpApi(api_client)
-    
+
     try:
         api_response = api_instance.mcp_mcps_list()
         pprint(api_response)
@@ -326,7 +326,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.McpApi(api_client)
     id = 56 # int | A unique integer value identifying this mcp.
-data = autoppia_backend_client.MCP() # MCP | 
+data = autoppia_backend_client.MCP() # MCP |
 
     try:
         api_response = api_instance.mcp_mcps_partial_update(id, data)
@@ -339,8 +339,8 @@ data = autoppia_backend_client.MCP() # MCP |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this mcp. | 
- **data** | [**MCP**](MCP.md)|  | 
+ **id** | **int**| A unique integer value identifying this mcp. |
+ **data** | [**MCP**](MCP.md)|  |
 
 ### Return type
 
@@ -410,7 +410,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this mcp. | 
+ **id** | **int**| A unique integer value identifying this mcp. |
 
 ### Return type
 
@@ -468,7 +468,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.McpApi(api_client)
     id = 56 # int | A unique integer value identifying this mcp.
-data = autoppia_backend_client.MCP() # MCP | 
+data = autoppia_backend_client.MCP() # MCP |
 
     try:
         api_response = api_instance.mcp_mcps_update(id, data)
@@ -481,8 +481,8 @@ data = autoppia_backend_client.MCP() # MCP |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this mcp. | 
- **data** | [**MCP**](MCP.md)|  | 
+ **id** | **int**| A unique integer value identifying this mcp. |
+ **data** | [**MCP**](MCP.md)|  |
 
 ### Return type
 
@@ -503,4 +503,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

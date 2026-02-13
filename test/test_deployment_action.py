@@ -37,14 +37,14 @@ class TestDeploymentAction(unittest.TestCase):
         # model = autoppia_backend_client.models.deployment_action.DeploymentAction()  # noqa: E501
         if include_optional :
             return DeploymentAction(
-                id = 56, 
+                id = 56,
                 worker_config = autoppia_backend_client.models.worker_config_nested.WorkerConfigNested(
-                    id = 56, 
-                    name = '0', ), 
-                action = 'DEPLOY', 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                duration = '0', 
-                cost = '0', 
+                    id = 56,
+                    name = '0', ),
+                action = 'DEPLOY',
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                duration = '0',
+                cost = '0',
                 user = 56
             )
         else :

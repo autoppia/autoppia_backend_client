@@ -37,11 +37,11 @@ class TestChatSession(unittest.TestCase):
         # model = autoppia_backend_client.models.chat_session.ChatSession()  # noqa: E501
         if include_optional :
             return ChatSession(
-                id = 56, 
-                name = '0', 
-                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                user = 56, 
+                id = 56,
+                name = '0',
+                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                user = 56,
                 worker = 56
             )
         else :

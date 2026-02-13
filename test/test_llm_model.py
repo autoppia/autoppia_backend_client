@@ -37,18 +37,18 @@ class TestLLMModel(unittest.TestCase):
         # model = autoppia_backend_client.models.llm_model.LLMModel()  # noqa: E501
         if include_optional :
             return LLMModel(
-                id = 56, 
+                id = 56,
                 provider = autoppia_backend_client.models.llm_provider.LLMProvider(
-                    id = 56, 
-                    name = '0', 
-                    description = '0', 
-                    provider_type = 'OPENSOURCE', ), 
-                provider_id = 56, 
-                name = '0', 
-                description = '0', 
-                open_source = True, 
-                cost_per_1000_tokens = 1.337, 
-                available = True, 
+                    id = 56,
+                    name = '0',
+                    description = '0',
+                    provider_type = 'OPENSOURCE', ),
+                provider_id = 56,
+                name = '0',
+                description = '0',
+                open_source = True,
+                cost_per_1000_tokens = 1.337,
+                available = True,
                 image_url = '0'
             )
         else :

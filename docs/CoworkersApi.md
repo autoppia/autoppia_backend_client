@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**coworkers_configuration_coworkers_create**](CoworkersApi.md#coworkers_configuration_coworkers_create) | **POST** /coworkers/configuration/coworkers/ | 
-[**coworkers_configuration_coworkers_delete**](CoworkersApi.md#coworkers_configuration_coworkers_delete) | **DELETE** /coworkers/configuration/coworkers/{id}/ | 
-[**coworkers_configuration_coworkers_list**](CoworkersApi.md#coworkers_configuration_coworkers_list) | **GET** /coworkers/configuration/coworkers/ | 
-[**coworkers_configuration_coworkers_partial_update**](CoworkersApi.md#coworkers_configuration_coworkers_partial_update) | **PATCH** /coworkers/configuration/coworkers/{id}/ | 
-[**coworkers_configuration_coworkers_read**](CoworkersApi.md#coworkers_configuration_coworkers_read) | **GET** /coworkers/configuration/coworkers/{id}/ | 
-[**coworkers_configuration_coworkers_update**](CoworkersApi.md#coworkers_configuration_coworkers_update) | **PUT** /coworkers/configuration/coworkers/{id}/ | 
+[**coworkers_configuration_coworkers_create**](CoworkersApi.md#coworkers_configuration_coworkers_create) | **POST** /coworkers/configuration/coworkers/ |
+[**coworkers_configuration_coworkers_delete**](CoworkersApi.md#coworkers_configuration_coworkers_delete) | **DELETE** /coworkers/configuration/coworkers/{id}/ |
+[**coworkers_configuration_coworkers_list**](CoworkersApi.md#coworkers_configuration_coworkers_list) | **GET** /coworkers/configuration/coworkers/ |
+[**coworkers_configuration_coworkers_partial_update**](CoworkersApi.md#coworkers_configuration_coworkers_partial_update) | **PATCH** /coworkers/configuration/coworkers/{id}/ |
+[**coworkers_configuration_coworkers_read**](CoworkersApi.md#coworkers_configuration_coworkers_read) | **GET** /coworkers/configuration/coworkers/{id}/ |
+[**coworkers_configuration_coworkers_update**](CoworkersApi.md#coworkers_configuration_coworkers_update) | **PUT** /coworkers/configuration/coworkers/{id}/ |
 
 
 # **coworkers_configuration_coworkers_create**
@@ -47,7 +47,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CoworkersApi(api_client)
-    data = autoppia_backend_client.Coworker() # Coworker | 
+    data = autoppia_backend_client.Coworker() # Coworker |
 
     try:
         api_response = api_instance.coworkers_configuration_coworkers_create(data)
@@ -60,7 +60,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Coworker**](Coworker.md)|  | 
+ **data** | [**Coworker**](Coworker.md)|  |
 
 ### Return type
 
@@ -129,7 +129,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this coworker. | 
+ **id** | **int**| A unique integer value identifying this coworker. |
 
 ### Return type
 
@@ -186,7 +186,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CoworkersApi(api_client)
-    
+
     try:
         api_response = api_instance.coworkers_configuration_coworkers_list()
         pprint(api_response)
@@ -253,7 +253,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CoworkersApi(api_client)
     id = 56 # int | A unique integer value identifying this coworker.
-data = autoppia_backend_client.Coworker() # Coworker | 
+data = autoppia_backend_client.Coworker() # Coworker |
 
     try:
         api_response = api_instance.coworkers_configuration_coworkers_partial_update(id, data)
@@ -266,8 +266,8 @@ data = autoppia_backend_client.Coworker() # Coworker |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this coworker. | 
- **data** | [**Coworker**](Coworker.md)|  | 
+ **id** | **int**| A unique integer value identifying this coworker. |
+ **data** | [**Coworker**](Coworker.md)|  |
 
 ### Return type
 
@@ -337,7 +337,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this coworker. | 
+ **id** | **int**| A unique integer value identifying this coworker. |
 
 ### Return type
 
@@ -395,7 +395,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CoworkersApi(api_client)
     id = 56 # int | A unique integer value identifying this coworker.
-data = autoppia_backend_client.Coworker() # Coworker | 
+data = autoppia_backend_client.Coworker() # Coworker |
 
     try:
         api_response = api_instance.coworkers_configuration_coworkers_update(id, data)
@@ -408,8 +408,8 @@ data = autoppia_backend_client.Coworker() # Coworker |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this coworker. | 
- **data** | [**Coworker**](Coworker.md)|  | 
+ **id** | **int**| A unique integer value identifying this coworker. |
+ **data** | [**Coworker**](Coworker.md)|  |
 
 ### Return type
 
@@ -430,4 +430,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

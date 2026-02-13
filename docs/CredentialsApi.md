@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**credentials_create**](CredentialsApi.md#credentials_create) | **POST** /credentials/ | 
-[**credentials_delete**](CredentialsApi.md#credentials_delete) | **DELETE** /credentials/{id}/ | 
-[**credentials_list**](CredentialsApi.md#credentials_list) | **GET** /credentials/ | 
-[**credentials_partial_update**](CredentialsApi.md#credentials_partial_update) | **PATCH** /credentials/{id}/ | 
-[**credentials_read**](CredentialsApi.md#credentials_read) | **GET** /credentials/{id}/ | 
-[**credentials_update**](CredentialsApi.md#credentials_update) | **PUT** /credentials/{id}/ | 
+[**credentials_create**](CredentialsApi.md#credentials_create) | **POST** /credentials/ |
+[**credentials_delete**](CredentialsApi.md#credentials_delete) | **DELETE** /credentials/{id}/ |
+[**credentials_list**](CredentialsApi.md#credentials_list) | **GET** /credentials/ |
+[**credentials_partial_update**](CredentialsApi.md#credentials_partial_update) | **PATCH** /credentials/{id}/ |
+[**credentials_read**](CredentialsApi.md#credentials_read) | **GET** /credentials/{id}/ |
+[**credentials_update**](CredentialsApi.md#credentials_update) | **PUT** /credentials/{id}/ |
 
 
 # **credentials_create**
@@ -47,7 +47,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CredentialsApi(api_client)
-    data = autoppia_backend_client.Credential() # Credential | 
+    data = autoppia_backend_client.Credential() # Credential |
 
     try:
         api_response = api_instance.credentials_create(data)
@@ -60,7 +60,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Credential**](Credential.md)|  | 
+ **data** | [**Credential**](Credential.md)|  |
 
 ### Return type
 
@@ -131,7 +131,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this credential. | 
+ **id** | **int**| A unique integer value identifying this credential. |
 
 ### Return type
 
@@ -188,7 +188,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CredentialsApi(api_client)
-    
+
     try:
         api_response = api_instance.credentials_list()
         pprint(api_response)
@@ -255,7 +255,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CredentialsApi(api_client)
     id = 56 # int | A unique integer value identifying this credential.
-data = autoppia_backend_client.Credential() # Credential | 
+data = autoppia_backend_client.Credential() # Credential |
 
     try:
         api_response = api_instance.credentials_partial_update(id, data)
@@ -268,8 +268,8 @@ data = autoppia_backend_client.Credential() # Credential |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this credential. | 
- **data** | [**Credential**](Credential.md)|  | 
+ **id** | **int**| A unique integer value identifying this credential. |
+ **data** | [**Credential**](Credential.md)|  |
 
 ### Return type
 
@@ -339,7 +339,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this credential. | 
+ **id** | **int**| A unique integer value identifying this credential. |
 
 ### Return type
 
@@ -397,7 +397,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.CredentialsApi(api_client)
     id = 56 # int | A unique integer value identifying this credential.
-data = autoppia_backend_client.Credential() # Credential | 
+data = autoppia_backend_client.Credential() # Credential |
 
     try:
         api_response = api_instance.credentials_update(id, data)
@@ -410,8 +410,8 @@ data = autoppia_backend_client.Credential() # Credential |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this credential. | 
- **data** | [**Credential**](Credential.md)|  | 
+ **id** | **int**| A unique integer value identifying this credential. |
+ **data** | [**Credential**](Credential.md)|  |
 
 ### Return type
 
@@ -432,4 +432,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

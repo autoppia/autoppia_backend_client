@@ -169,7 +169,7 @@ class Integration(object):
         """
         if self.local_vars_configuration.client_side_validation and category is None:  # noqa: E501
             raise ValueError("Invalid value for `category`, must not be `None`")  # noqa: E501
-        allowed_values = ["social", "software", "email", "api", "database", "code repo", "document repo", "web app"]  # noqa: E501
+        allowed_values = ["social", "software", "email", "api", "database", "code repo", "document repo", "web app", "cloud", "communication"]  # noqa: E501
         if self.local_vars_configuration.client_side_validation and category not in allowed_values:  # noqa: E501
             raise ValueError(
                 "Invalid value for `category` ({0}), must be one of {1}"  # noqa: E501

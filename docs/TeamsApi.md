@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**teams_create**](TeamsApi.md#teams_create) | **POST** /teams/ | 
-[**teams_delete**](TeamsApi.md#teams_delete) | **DELETE** /teams/{id}/ | 
-[**teams_list**](TeamsApi.md#teams_list) | **GET** /teams/ | 
-[**teams_partial_update**](TeamsApi.md#teams_partial_update) | **PATCH** /teams/{id}/ | 
-[**teams_read**](TeamsApi.md#teams_read) | **GET** /teams/{id}/ | 
-[**teams_update**](TeamsApi.md#teams_update) | **PUT** /teams/{id}/ | 
+[**teams_create**](TeamsApi.md#teams_create) | **POST** /teams/ |
+[**teams_delete**](TeamsApi.md#teams_delete) | **DELETE** /teams/{id}/ |
+[**teams_list**](TeamsApi.md#teams_list) | **GET** /teams/ |
+[**teams_partial_update**](TeamsApi.md#teams_partial_update) | **PATCH** /teams/{id}/ |
+[**teams_read**](TeamsApi.md#teams_read) | **GET** /teams/{id}/ |
+[**teams_update**](TeamsApi.md#teams_update) | **PUT** /teams/{id}/ |
 
 
 # **teams_create**
@@ -47,7 +47,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TeamsApi(api_client)
-    data = autoppia_backend_client.Team() # Team | 
+    data = autoppia_backend_client.Team() # Team |
 
     try:
         api_response = api_instance.teams_create(data)
@@ -60,7 +60,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Team**](Team.md)|  | 
+ **data** | [**Team**](Team.md)|  |
 
 ### Return type
 
@@ -129,7 +129,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this team. | 
+ **id** | **int**| A unique integer value identifying this team. |
 
 ### Return type
 
@@ -186,7 +186,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TeamsApi(api_client)
-    
+
     try:
         api_response = api_instance.teams_list()
         pprint(api_response)
@@ -253,7 +253,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TeamsApi(api_client)
     id = 56 # int | A unique integer value identifying this team.
-data = autoppia_backend_client.Team() # Team | 
+data = autoppia_backend_client.Team() # Team |
 
     try:
         api_response = api_instance.teams_partial_update(id, data)
@@ -266,8 +266,8 @@ data = autoppia_backend_client.Team() # Team |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this team. | 
- **data** | [**Team**](Team.md)|  | 
+ **id** | **int**| A unique integer value identifying this team. |
+ **data** | [**Team**](Team.md)|  |
 
 ### Return type
 
@@ -337,7 +337,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this team. | 
+ **id** | **int**| A unique integer value identifying this team. |
 
 ### Return type
 
@@ -395,7 +395,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TeamsApi(api_client)
     id = 56 # int | A unique integer value identifying this team.
-data = autoppia_backend_client.Team() # Team | 
+data = autoppia_backend_client.Team() # Team |
 
     try:
         api_response = api_instance.teams_update(id, data)
@@ -408,8 +408,8 @@ data = autoppia_backend_client.Team() # Team |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this team. | 
- **data** | [**Team**](Team.md)|  | 
+ **id** | **int**| A unique integer value identifying this team. |
+ **data** | [**Team**](Team.md)|  |
 
 ### Return type
 
@@ -430,4 +430,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

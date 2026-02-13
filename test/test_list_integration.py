@@ -37,23 +37,23 @@ class TestListIntegration(unittest.TestCase):
         # model = autoppia_backend_client.models.list_integration.ListIntegration()  # noqa: E501
         if include_optional :
             return ListIntegration(
-                id = 56, 
-                name = '0', 
-                image_url = '0', 
-                category = 'social', 
+                id = 56,
+                name = '0',
+                image_url = '0',
+                category = 'social',
                 attributes = [
                     autoppia_backend_client.models.list_integration_attribute.ListIntegrationAttribute(
-                        id = 56, 
-                        integration = 56, 
-                        name = '0', 
-                        description = '0', 
-                        variable_type = 'string', 
-                        required = True, 
-                        is_credential = True, 
-                        credential_type = 'password', 
-                        credential_name = '0', 
-                        editable = True, 
-                        default_value = '0', 
+                        id = 56,
+                        integration = 56,
+                        name = '0',
+                        description = '0',
+                        variable_type = 'string',
+                        required = True,
+                        is_credential = True,
+                        credential_type = 'password',
+                        credential_name = '0',
+                        editable = True,
+                        default_value = '0',
                         is_document = True, )
                     ]
             )
@@ -64,17 +64,17 @@ class TestListIntegration(unittest.TestCase):
                 category = 'social',
                 attributes = [
                     autoppia_backend_client.models.list_integration_attribute.ListIntegrationAttribute(
-                        id = 56, 
-                        integration = 56, 
-                        name = '0', 
-                        description = '0', 
-                        variable_type = 'string', 
-                        required = True, 
-                        is_credential = True, 
-                        credential_type = 'password', 
-                        credential_name = '0', 
-                        editable = True, 
-                        default_value = '0', 
+                        id = 56,
+                        integration = 56,
+                        name = '0',
+                        description = '0',
+                        variable_type = 'string',
+                        required = True,
+                        is_credential = True,
+                        credential_type = 'password',
+                        credential_name = '0',
+                        editable = True,
+                        default_value = '0',
                         is_document = True, )
                     ],
         )

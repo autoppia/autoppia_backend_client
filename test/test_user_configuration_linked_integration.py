@@ -37,11 +37,11 @@ class TestUserConfigurationLinkedIntegration(unittest.TestCase):
         # model = autoppia_backend_client.models.user_configuration_linked_integration.UserConfigurationLinkedIntegration()  # noqa: E501
         if include_optional :
             return UserConfigurationLinkedIntegration(
-                id = 56, 
-                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                user_configuration = 56, 
-                toolkit_linked_integration = 56, 
+                id = 56,
+                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                user_configuration = 56,
+                toolkit_linked_integration = 56,
                 user_integration = 56
             )
         else :

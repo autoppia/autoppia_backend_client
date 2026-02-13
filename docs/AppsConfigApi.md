@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apps_config_apps_create**](AppsConfigApi.md#apps_config_apps_create) | **POST** /apps-config/apps/ | 
-[**apps_config_apps_delete**](AppsConfigApi.md#apps_config_apps_delete) | **DELETE** /apps-config/apps/{id}/ | 
-[**apps_config_apps_deploy_info_list**](AppsConfigApi.md#apps_config_apps_deploy_info_list) | **GET** /apps-config/apps/{id}/deploy-info/ | 
-[**apps_config_apps_deploy_list**](AppsConfigApi.md#apps_config_apps_deploy_list) | **GET** /apps-config/apps/{id}/deploy/ | 
-[**apps_config_apps_deploy_stop_list**](AppsConfigApi.md#apps_config_apps_deploy_stop_list) | **GET** /apps-config/apps/{id}/deploy-stop/ | 
-[**apps_config_apps_list**](AppsConfigApi.md#apps_config_apps_list) | **GET** /apps-config/apps/ | 
-[**apps_config_apps_partial_update**](AppsConfigApi.md#apps_config_apps_partial_update) | **PATCH** /apps-config/apps/{id}/ | 
-[**apps_config_apps_read**](AppsConfigApi.md#apps_config_apps_read) | **GET** /apps-config/apps/{id}/ | 
-[**apps_config_apps_update**](AppsConfigApi.md#apps_config_apps_update) | **PUT** /apps-config/apps/{id}/ | 
+[**apps_config_apps_create**](AppsConfigApi.md#apps_config_apps_create) | **POST** /apps-config/apps/ |
+[**apps_config_apps_delete**](AppsConfigApi.md#apps_config_apps_delete) | **DELETE** /apps-config/apps/{id}/ |
+[**apps_config_apps_deploy_info_list**](AppsConfigApi.md#apps_config_apps_deploy_info_list) | **GET** /apps-config/apps/{id}/deploy-info/ |
+[**apps_config_apps_deploy_list**](AppsConfigApi.md#apps_config_apps_deploy_list) | **GET** /apps-config/apps/{id}/deploy/ |
+[**apps_config_apps_deploy_stop_list**](AppsConfigApi.md#apps_config_apps_deploy_stop_list) | **GET** /apps-config/apps/{id}/deploy-stop/ |
+[**apps_config_apps_list**](AppsConfigApi.md#apps_config_apps_list) | **GET** /apps-config/apps/ |
+[**apps_config_apps_partial_update**](AppsConfigApi.md#apps_config_apps_partial_update) | **PATCH** /apps-config/apps/{id}/ |
+[**apps_config_apps_read**](AppsConfigApi.md#apps_config_apps_read) | **GET** /apps-config/apps/{id}/ |
+[**apps_config_apps_update**](AppsConfigApi.md#apps_config_apps_update) | **PUT** /apps-config/apps/{id}/ |
 
 
 # **apps_config_apps_create**
@@ -50,7 +50,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AppsConfigApi(api_client)
-    data = autoppia_backend_client.AppConfig() # AppConfig | 
+    data = autoppia_backend_client.AppConfig() # AppConfig |
 
     try:
         api_response = api_instance.apps_config_apps_create(data)
@@ -63,7 +63,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**AppConfig**](AppConfig.md)|  | 
+ **data** | [**AppConfig**](AppConfig.md)|  |
 
 ### Return type
 
@@ -132,7 +132,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this app config. | 
+ **id** | **int**| A unique integer value identifying this app config. |
 
 ### Return type
 
@@ -202,7 +202,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this app config. | 
+ **id** | **int**| A unique integer value identifying this app config. |
 
 ### Return type
 
@@ -272,7 +272,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this app config. | 
+ **id** | **int**| A unique integer value identifying this app config. |
 
 ### Return type
 
@@ -342,7 +342,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this app config. | 
+ **id** | **int**| A unique integer value identifying this app config. |
 
 ### Return type
 
@@ -399,7 +399,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AppsConfigApi(api_client)
-    
+
     try:
         api_response = api_instance.apps_config_apps_list()
         pprint(api_response)
@@ -466,7 +466,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AppsConfigApi(api_client)
     id = 56 # int | A unique integer value identifying this app config.
-data = autoppia_backend_client.AppConfig() # AppConfig | 
+data = autoppia_backend_client.AppConfig() # AppConfig |
 
     try:
         api_response = api_instance.apps_config_apps_partial_update(id, data)
@@ -479,8 +479,8 @@ data = autoppia_backend_client.AppConfig() # AppConfig |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this app config. | 
- **data** | [**AppConfig**](AppConfig.md)|  | 
+ **id** | **int**| A unique integer value identifying this app config. |
+ **data** | [**AppConfig**](AppConfig.md)|  |
 
 ### Return type
 
@@ -550,7 +550,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this app config. | 
+ **id** | **int**| A unique integer value identifying this app config. |
 
 ### Return type
 
@@ -608,7 +608,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.AppsConfigApi(api_client)
     id = 56 # int | A unique integer value identifying this app config.
-data = autoppia_backend_client.AppConfig() # AppConfig | 
+data = autoppia_backend_client.AppConfig() # AppConfig |
 
     try:
         api_response = api_instance.apps_config_apps_update(id, data)
@@ -621,8 +621,8 @@ data = autoppia_backend_client.AppConfig() # AppConfig |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this app config. | 
- **data** | [**AppConfig**](AppConfig.md)|  | 
+ **id** | **int**| A unique integer value identifying this app config. |
+ **data** | [**AppConfig**](AppConfig.md)|  |
 
 ### Return type
 
@@ -643,4 +643,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

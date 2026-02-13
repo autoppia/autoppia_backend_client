@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**api_keys_create**](ApiKeysApi.md#api_keys_create) | **POST** /api-keys/ | 
-[**api_keys_delete**](ApiKeysApi.md#api_keys_delete) | **DELETE** /api-keys/{id}/ | 
-[**api_keys_list**](ApiKeysApi.md#api_keys_list) | **GET** /api-keys/ | 
-[**api_keys_partial_update**](ApiKeysApi.md#api_keys_partial_update) | **PATCH** /api-keys/{id}/ | 
-[**api_keys_read**](ApiKeysApi.md#api_keys_read) | **GET** /api-keys/{id}/ | 
-[**api_keys_update**](ApiKeysApi.md#api_keys_update) | **PUT** /api-keys/{id}/ | 
-[**api_keys_verify_create**](ApiKeysApi.md#api_keys_verify_create) | **POST** /api-keys/verify | 
+[**api_keys_create**](ApiKeysApi.md#api_keys_create) | **POST** /api-keys/ |
+[**api_keys_delete**](ApiKeysApi.md#api_keys_delete) | **DELETE** /api-keys/{id}/ |
+[**api_keys_list**](ApiKeysApi.md#api_keys_list) | **GET** /api-keys/ |
+[**api_keys_partial_update**](ApiKeysApi.md#api_keys_partial_update) | **PATCH** /api-keys/{id}/ |
+[**api_keys_read**](ApiKeysApi.md#api_keys_read) | **GET** /api-keys/{id}/ |
+[**api_keys_update**](ApiKeysApi.md#api_keys_update) | **PUT** /api-keys/{id}/ |
+[**api_keys_verify_create**](ApiKeysApi.md#api_keys_verify_create) | **POST** /api-keys/verify |
 
 
 # **api_keys_create**
@@ -48,7 +48,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ApiKeysApi(api_client)
-    data = autoppia_backend_client.ApiKey() # ApiKey | 
+    data = autoppia_backend_client.ApiKey() # ApiKey |
 
     try:
         api_response = api_instance.api_keys_create(data)
@@ -61,7 +61,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**ApiKey**](ApiKey.md)|  | 
+ **data** | [**ApiKey**](ApiKey.md)|  |
 
 ### Return type
 
@@ -130,7 +130,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this api key. | 
+ **id** | **int**| A unique integer value identifying this api key. |
 
 ### Return type
 
@@ -187,7 +187,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ApiKeysApi(api_client)
-    
+
     try:
         api_response = api_instance.api_keys_list()
         pprint(api_response)
@@ -254,7 +254,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ApiKeysApi(api_client)
     id = 56 # int | A unique integer value identifying this api key.
-data = autoppia_backend_client.ApiKey() # ApiKey | 
+data = autoppia_backend_client.ApiKey() # ApiKey |
 
     try:
         api_response = api_instance.api_keys_partial_update(id, data)
@@ -267,8 +267,8 @@ data = autoppia_backend_client.ApiKey() # ApiKey |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this api key. | 
- **data** | [**ApiKey**](ApiKey.md)|  | 
+ **id** | **int**| A unique integer value identifying this api key. |
+ **data** | [**ApiKey**](ApiKey.md)|  |
 
 ### Return type
 
@@ -338,7 +338,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this api key. | 
+ **id** | **int**| A unique integer value identifying this api key. |
 
 ### Return type
 
@@ -396,7 +396,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ApiKeysApi(api_client)
     id = 56 # int | A unique integer value identifying this api key.
-data = autoppia_backend_client.ApiKey() # ApiKey | 
+data = autoppia_backend_client.ApiKey() # ApiKey |
 
     try:
         api_response = api_instance.api_keys_update(id, data)
@@ -409,8 +409,8 @@ data = autoppia_backend_client.ApiKey() # ApiKey |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this api key. | 
- **data** | [**ApiKey**](ApiKey.md)|  | 
+ **id** | **int**| A unique integer value identifying this api key. |
+ **data** | [**ApiKey**](ApiKey.md)|  |
 
 ### Return type
 
@@ -467,7 +467,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ApiKeysApi(api_client)
-    
+
     try:
         api_instance.api_keys_verify_create()
     except ApiException as e:
@@ -496,4 +496,3 @@ void (empty response body)
 **201** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

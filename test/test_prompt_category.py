@@ -37,7 +37,7 @@ class TestPromptCategory(unittest.TestCase):
         # model = autoppia_backend_client.models.prompt_category.PromptCategory()  # noqa: E501
         if include_optional :
             return PromptCategory(
-                id = 56, 
+                id = 56,
                 name = '0'
             )
         else :

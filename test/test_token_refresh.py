@@ -37,7 +37,7 @@ class TestTokenRefresh(unittest.TestCase):
         # model = autoppia_backend_client.models.token_refresh.TokenRefresh()  # noqa: E501
         if include_optional :
             return TokenRefresh(
-                refresh = '0', 
+                refresh = '0',
                 access = '0'
             )
         else :

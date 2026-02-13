@@ -4,30 +4,30 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**finance_deployment_actions_create**](FinanceApi.md#finance_deployment_actions_create) | **POST** /finance/deployment-actions/ | 
-[**finance_deployment_actions_delete**](FinanceApi.md#finance_deployment_actions_delete) | **DELETE** /finance/deployment-actions/{id}/ | 
-[**finance_deployment_actions_list**](FinanceApi.md#finance_deployment_actions_list) | **GET** /finance/deployment-actions/ | 
-[**finance_deployment_actions_partial_update**](FinanceApi.md#finance_deployment_actions_partial_update) | **PATCH** /finance/deployment-actions/{id}/ | 
-[**finance_deployment_actions_read**](FinanceApi.md#finance_deployment_actions_read) | **GET** /finance/deployment-actions/{id}/ | 
-[**finance_deployment_actions_update**](FinanceApi.md#finance_deployment_actions_update) | **PUT** /finance/deployment-actions/{id}/ | 
-[**finance_llm_calls_create**](FinanceApi.md#finance_llm_calls_create) | **POST** /finance/llm-calls/ | 
-[**finance_llm_calls_delete**](FinanceApi.md#finance_llm_calls_delete) | **DELETE** /finance/llm-calls/{id}/ | 
-[**finance_llm_calls_list**](FinanceApi.md#finance_llm_calls_list) | **GET** /finance/llm-calls/ | 
-[**finance_llm_calls_partial_update**](FinanceApi.md#finance_llm_calls_partial_update) | **PATCH** /finance/llm-calls/{id}/ | 
-[**finance_llm_calls_read**](FinanceApi.md#finance_llm_calls_read) | **GET** /finance/llm-calls/{id}/ | 
-[**finance_llm_calls_update**](FinanceApi.md#finance_llm_calls_update) | **PUT** /finance/llm-calls/{id}/ | 
-[**finance_plan_create**](FinanceApi.md#finance_plan_create) | **POST** /finance/plan/ | 
-[**finance_plan_delete**](FinanceApi.md#finance_plan_delete) | **DELETE** /finance/plan/{id}/ | 
-[**finance_plan_list**](FinanceApi.md#finance_plan_list) | **GET** /finance/plan/ | 
-[**finance_plan_partial_update**](FinanceApi.md#finance_plan_partial_update) | **PATCH** /finance/plan/{id}/ | 
-[**finance_plan_read**](FinanceApi.md#finance_plan_read) | **GET** /finance/plan/{id}/ | 
-[**finance_plan_update**](FinanceApi.md#finance_plan_update) | **PUT** /finance/plan/{id}/ | 
-[**finance_user_plan_create**](FinanceApi.md#finance_user_plan_create) | **POST** /finance/user-plan/ | 
-[**finance_user_plan_delete**](FinanceApi.md#finance_user_plan_delete) | **DELETE** /finance/user-plan/{id}/ | 
-[**finance_user_plan_list**](FinanceApi.md#finance_user_plan_list) | **GET** /finance/user-plan/ | 
-[**finance_user_plan_partial_update**](FinanceApi.md#finance_user_plan_partial_update) | **PATCH** /finance/user-plan/{id}/ | 
-[**finance_user_plan_read**](FinanceApi.md#finance_user_plan_read) | **GET** /finance/user-plan/{id}/ | 
-[**finance_user_plan_update**](FinanceApi.md#finance_user_plan_update) | **PUT** /finance/user-plan/{id}/ | 
+[**finance_deployment_actions_create**](FinanceApi.md#finance_deployment_actions_create) | **POST** /finance/deployment-actions/ |
+[**finance_deployment_actions_delete**](FinanceApi.md#finance_deployment_actions_delete) | **DELETE** /finance/deployment-actions/{id}/ |
+[**finance_deployment_actions_list**](FinanceApi.md#finance_deployment_actions_list) | **GET** /finance/deployment-actions/ |
+[**finance_deployment_actions_partial_update**](FinanceApi.md#finance_deployment_actions_partial_update) | **PATCH** /finance/deployment-actions/{id}/ |
+[**finance_deployment_actions_read**](FinanceApi.md#finance_deployment_actions_read) | **GET** /finance/deployment-actions/{id}/ |
+[**finance_deployment_actions_update**](FinanceApi.md#finance_deployment_actions_update) | **PUT** /finance/deployment-actions/{id}/ |
+[**finance_llm_calls_create**](FinanceApi.md#finance_llm_calls_create) | **POST** /finance/llm-calls/ |
+[**finance_llm_calls_delete**](FinanceApi.md#finance_llm_calls_delete) | **DELETE** /finance/llm-calls/{id}/ |
+[**finance_llm_calls_list**](FinanceApi.md#finance_llm_calls_list) | **GET** /finance/llm-calls/ |
+[**finance_llm_calls_partial_update**](FinanceApi.md#finance_llm_calls_partial_update) | **PATCH** /finance/llm-calls/{id}/ |
+[**finance_llm_calls_read**](FinanceApi.md#finance_llm_calls_read) | **GET** /finance/llm-calls/{id}/ |
+[**finance_llm_calls_update**](FinanceApi.md#finance_llm_calls_update) | **PUT** /finance/llm-calls/{id}/ |
+[**finance_plan_create**](FinanceApi.md#finance_plan_create) | **POST** /finance/plan/ |
+[**finance_plan_delete**](FinanceApi.md#finance_plan_delete) | **DELETE** /finance/plan/{id}/ |
+[**finance_plan_list**](FinanceApi.md#finance_plan_list) | **GET** /finance/plan/ |
+[**finance_plan_partial_update**](FinanceApi.md#finance_plan_partial_update) | **PATCH** /finance/plan/{id}/ |
+[**finance_plan_read**](FinanceApi.md#finance_plan_read) | **GET** /finance/plan/{id}/ |
+[**finance_plan_update**](FinanceApi.md#finance_plan_update) | **PUT** /finance/plan/{id}/ |
+[**finance_user_plan_create**](FinanceApi.md#finance_user_plan_create) | **POST** /finance/user-plan/ |
+[**finance_user_plan_delete**](FinanceApi.md#finance_user_plan_delete) | **DELETE** /finance/user-plan/{id}/ |
+[**finance_user_plan_list**](FinanceApi.md#finance_user_plan_list) | **GET** /finance/user-plan/ |
+[**finance_user_plan_partial_update**](FinanceApi.md#finance_user_plan_partial_update) | **PATCH** /finance/user-plan/{id}/ |
+[**finance_user_plan_read**](FinanceApi.md#finance_user_plan_read) | **GET** /finance/user-plan/{id}/ |
+[**finance_user_plan_update**](FinanceApi.md#finance_user_plan_update) | **PUT** /finance/user-plan/{id}/ |
 
 
 # **finance_deployment_actions_create**
@@ -65,7 +65,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    data = autoppia_backend_client.DeploymentAction() # DeploymentAction | 
+    data = autoppia_backend_client.DeploymentAction() # DeploymentAction |
 
     try:
         api_response = api_instance.finance_deployment_actions_create(data)
@@ -78,7 +78,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**DeploymentAction**](DeploymentAction.md)|  | 
+ **data** | [**DeploymentAction**](DeploymentAction.md)|  |
 
 ### Return type
 
@@ -147,7 +147,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this deployment action. | 
+ **id** | **int**| A unique integer value identifying this deployment action. |
 
 ### Return type
 
@@ -204,7 +204,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    
+
     try:
         api_response = api_instance.finance_deployment_actions_list()
         pprint(api_response)
@@ -271,7 +271,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this deployment action.
-data = autoppia_backend_client.DeploymentAction() # DeploymentAction | 
+data = autoppia_backend_client.DeploymentAction() # DeploymentAction |
 
     try:
         api_response = api_instance.finance_deployment_actions_partial_update(id, data)
@@ -284,8 +284,8 @@ data = autoppia_backend_client.DeploymentAction() # DeploymentAction |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this deployment action. | 
- **data** | [**DeploymentAction**](DeploymentAction.md)|  | 
+ **id** | **int**| A unique integer value identifying this deployment action. |
+ **data** | [**DeploymentAction**](DeploymentAction.md)|  |
 
 ### Return type
 
@@ -355,7 +355,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this deployment action. | 
+ **id** | **int**| A unique integer value identifying this deployment action. |
 
 ### Return type
 
@@ -413,7 +413,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this deployment action.
-data = autoppia_backend_client.DeploymentAction() # DeploymentAction | 
+data = autoppia_backend_client.DeploymentAction() # DeploymentAction |
 
     try:
         api_response = api_instance.finance_deployment_actions_update(id, data)
@@ -426,8 +426,8 @@ data = autoppia_backend_client.DeploymentAction() # DeploymentAction |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this deployment action. | 
- **data** | [**DeploymentAction**](DeploymentAction.md)|  | 
+ **id** | **int**| A unique integer value identifying this deployment action. |
+ **data** | [**DeploymentAction**](DeploymentAction.md)|  |
 
 ### Return type
 
@@ -484,7 +484,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    data = autoppia_backend_client.LLMCall() # LLMCall | 
+    data = autoppia_backend_client.LLMCall() # LLMCall |
 
     try:
         api_response = api_instance.finance_llm_calls_create(data)
@@ -497,7 +497,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**LLMCall**](LLMCall.md)|  | 
+ **data** | [**LLMCall**](LLMCall.md)|  |
 
 ### Return type
 
@@ -566,7 +566,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm call. | 
+ **id** | **int**| A unique integer value identifying this llm call. |
 
 ### Return type
 
@@ -623,7 +623,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    
+
     try:
         api_response = api_instance.finance_llm_calls_list()
         pprint(api_response)
@@ -690,7 +690,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this llm call.
-data = autoppia_backend_client.LLMCall() # LLMCall | 
+data = autoppia_backend_client.LLMCall() # LLMCall |
 
     try:
         api_response = api_instance.finance_llm_calls_partial_update(id, data)
@@ -703,8 +703,8 @@ data = autoppia_backend_client.LLMCall() # LLMCall |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm call. | 
- **data** | [**LLMCall**](LLMCall.md)|  | 
+ **id** | **int**| A unique integer value identifying this llm call. |
+ **data** | [**LLMCall**](LLMCall.md)|  |
 
 ### Return type
 
@@ -774,7 +774,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm call. | 
+ **id** | **int**| A unique integer value identifying this llm call. |
 
 ### Return type
 
@@ -832,7 +832,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this llm call.
-data = autoppia_backend_client.LLMCall() # LLMCall | 
+data = autoppia_backend_client.LLMCall() # LLMCall |
 
     try:
         api_response = api_instance.finance_llm_calls_update(id, data)
@@ -845,8 +845,8 @@ data = autoppia_backend_client.LLMCall() # LLMCall |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this llm call. | 
- **data** | [**LLMCall**](LLMCall.md)|  | 
+ **id** | **int**| A unique integer value identifying this llm call. |
+ **data** | [**LLMCall**](LLMCall.md)|  |
 
 ### Return type
 
@@ -903,7 +903,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    data = autoppia_backend_client.Plan() # Plan | 
+    data = autoppia_backend_client.Plan() # Plan |
 
     try:
         api_response = api_instance.finance_plan_create(data)
@@ -916,7 +916,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Plan**](Plan.md)|  | 
+ **data** | [**Plan**](Plan.md)|  |
 
 ### Return type
 
@@ -985,7 +985,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this plan. | 
+ **id** | **int**| A unique integer value identifying this plan. |
 
 ### Return type
 
@@ -1042,7 +1042,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    
+
     try:
         api_response = api_instance.finance_plan_list()
         pprint(api_response)
@@ -1109,7 +1109,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this plan.
-data = autoppia_backend_client.Plan() # Plan | 
+data = autoppia_backend_client.Plan() # Plan |
 
     try:
         api_response = api_instance.finance_plan_partial_update(id, data)
@@ -1122,8 +1122,8 @@ data = autoppia_backend_client.Plan() # Plan |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this plan. | 
- **data** | [**Plan**](Plan.md)|  | 
+ **id** | **int**| A unique integer value identifying this plan. |
+ **data** | [**Plan**](Plan.md)|  |
 
 ### Return type
 
@@ -1193,7 +1193,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this plan. | 
+ **id** | **int**| A unique integer value identifying this plan. |
 
 ### Return type
 
@@ -1251,7 +1251,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this plan.
-data = autoppia_backend_client.Plan() # Plan | 
+data = autoppia_backend_client.Plan() # Plan |
 
     try:
         api_response = api_instance.finance_plan_update(id, data)
@@ -1264,8 +1264,8 @@ data = autoppia_backend_client.Plan() # Plan |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this plan. | 
- **data** | [**Plan**](Plan.md)|  | 
+ **id** | **int**| A unique integer value identifying this plan. |
+ **data** | [**Plan**](Plan.md)|  |
 
 ### Return type
 
@@ -1322,7 +1322,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription | 
+    data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription |
 
     try:
         api_response = api_instance.finance_user_plan_create(data)
@@ -1335,7 +1335,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**UserPlanSubscription**](UserPlanSubscription.md)|  | 
+ **data** | [**UserPlanSubscription**](UserPlanSubscription.md)|  |
 
 ### Return type
 
@@ -1404,7 +1404,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user plan subscription. | 
+ **id** | **int**| A unique integer value identifying this user plan subscription. |
 
 ### Return type
 
@@ -1461,7 +1461,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
-    
+
     try:
         api_response = api_instance.finance_user_plan_list()
         pprint(api_response)
@@ -1528,7 +1528,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this user plan subscription.
-data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription | 
+data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription |
 
     try:
         api_response = api_instance.finance_user_plan_partial_update(id, data)
@@ -1541,8 +1541,8 @@ data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user plan subscription. | 
- **data** | [**UserPlanSubscription**](UserPlanSubscription.md)|  | 
+ **id** | **int**| A unique integer value identifying this user plan subscription. |
+ **data** | [**UserPlanSubscription**](UserPlanSubscription.md)|  |
 
 ### Return type
 
@@ -1612,7 +1612,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user plan subscription. | 
+ **id** | **int**| A unique integer value identifying this user plan subscription. |
 
 ### Return type
 
@@ -1670,7 +1670,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.FinanceApi(api_client)
     id = 56 # int | A unique integer value identifying this user plan subscription.
-data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription | 
+data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription |
 
     try:
         api_response = api_instance.finance_user_plan_update(id, data)
@@ -1683,8 +1683,8 @@ data = autoppia_backend_client.UserPlanSubscription() # UserPlanSubscription |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user plan subscription. | 
- **data** | [**UserPlanSubscription**](UserPlanSubscription.md)|  | 
+ **id** | **int**| A unique integer value identifying this user plan subscription. |
+ **data** | [**UserPlanSubscription**](UserPlanSubscription.md)|  |
 
 ### Return type
 
@@ -1705,4 +1705,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

@@ -37,8 +37,8 @@ class TestEmbeddingProvider(unittest.TestCase):
         # model = autoppia_backend_client.models.embedding_provider.EmbeddingProvider()  # noqa: E501
         if include_optional :
             return EmbeddingProvider(
-                id = 56, 
-                name = '0', 
+                id = 56,
+                name = '0',
                 description = '0'
             )
         else :

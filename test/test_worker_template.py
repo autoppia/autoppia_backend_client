@@ -37,33 +37,33 @@ class TestWorkerTemplate(unittest.TestCase):
         # model = autoppia_backend_client.models.worker_template.WorkerTemplate()  # noqa: E501
         if include_optional :
             return WorkerTemplate(
-                id = 56, 
-                developer = 56, 
-                title = '0', 
-                description = '0', 
-                uploaded_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                id = 56,
+                developer = 56,
+                title = '0',
+                description = '0',
+                uploaded_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 favorited_by = [
                     56
-                    ], 
-                favorited_by_profiles = '0', 
+                    ],
+                favorited_by_profiles = '0',
                 categories = [
                     56
-                    ], 
-                categories_name = '0', 
-                image = '0', 
-                docker_image = '0', 
-                deployed_count = 56, 
-                developers_profile = '0', 
-                price = '0', 
-                llm_provider = '0', 
-                llm = '0', 
-                integrations_categories = '0', 
-                vectorstore_provider = '0', 
-                agentic_framework = '0', 
-                gpu = True, 
-                gpu_type = '0', 
-                demo_video = '0', 
-                repo = '0', 
+                    ],
+                categories_name = '0',
+                image = '0',
+                docker_image = '0',
+                deployed_count = 56,
+                developers_profile = '0',
+                price = '0',
+                llm_provider = '0',
+                llm = '0',
+                integrations_categories = '0',
+                vectorstore_provider = '0',
+                agentic_framework = '0',
+                gpu = True,
+                gpu_type = '0',
+                demo_video = '0',
+                repo = '0',
                 config_yml = '0'
             )
         else :

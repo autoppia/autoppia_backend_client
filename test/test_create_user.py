@@ -37,12 +37,12 @@ class TestCreateUser(unittest.TestCase):
         # model = autoppia_backend_client.models.create_user.CreateUser()  # noqa: E501
         if include_optional :
             return CreateUser(
-                id = 56, 
-                first_name = 'a', 
-                last_name = 'a', 
-                email = '0', 
-                password = '0', 
-                company = '0', 
+                id = 56,
+                first_name = 'a',
+                last_name = 'a',
+                email = '0',
+                password = '0',
+                company = '0',
                 wallet_address = '0'
             )
         else :

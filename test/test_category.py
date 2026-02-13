@@ -37,7 +37,7 @@ class TestCategory(unittest.TestCase):
         # model = autoppia_backend_client.models.category.Category()  # noqa: E501
         if include_optional :
             return Category(
-                id = 56, 
+                id = 56,
                 category = 'web_search'
             )
         else :

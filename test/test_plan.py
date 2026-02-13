@@ -37,8 +37,8 @@ class TestPlan(unittest.TestCase):
         # model = autoppia_backend_client.models.plan.Plan()  # noqa: E501
         if include_optional :
             return Plan(
-                id = 56, 
-                name = '0', 
+                id = 56,
+                name = '0',
                 total_messages = 0
             )
         else :

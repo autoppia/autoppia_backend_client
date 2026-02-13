@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**payments_add_credit_create**](PaymentsApi.md#payments_add_credit_create) | **POST** /payments/add-credit/ | 
-[**payments_balance_create**](PaymentsApi.md#payments_balance_create) | **POST** /payments/balance/ | 
-[**payments_balance_reduce_create**](PaymentsApi.md#payments_balance_reduce_create) | **POST** /payments/balance/reduce | 
-[**payments_get_wallet_create**](PaymentsApi.md#payments_get_wallet_create) | **POST** /payments/get-wallet/ | 
-[**payments_save_transaction_create**](PaymentsApi.md#payments_save_transaction_create) | **POST** /payments/save-transaction/ | 
-[**payments_transaction_history_create**](PaymentsApi.md#payments_transaction_history_create) | **POST** /payments/transaction-history/ | 
-[**payments_verify_wallet_create**](PaymentsApi.md#payments_verify_wallet_create) | **POST** /payments/verify-wallet/ | 
+[**payments_add_credit_create**](PaymentsApi.md#payments_add_credit_create) | **POST** /payments/add-credit/ |
+[**payments_balance_create**](PaymentsApi.md#payments_balance_create) | **POST** /payments/balance/ |
+[**payments_balance_reduce_create**](PaymentsApi.md#payments_balance_reduce_create) | **POST** /payments/balance/reduce |
+[**payments_get_wallet_create**](PaymentsApi.md#payments_get_wallet_create) | **POST** /payments/get-wallet/ |
+[**payments_save_transaction_create**](PaymentsApi.md#payments_save_transaction_create) | **POST** /payments/save-transaction/ |
+[**payments_transaction_history_create**](PaymentsApi.md#payments_transaction_history_create) | **POST** /payments/transaction-history/ |
+[**payments_verify_wallet_create**](PaymentsApi.md#payments_verify_wallet_create) | **POST** /payments/verify-wallet/ |
 
 
 # **payments_add_credit_create**
@@ -50,7 +50,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.PaymentsApi(api_client)
-    
+
     try:
         api_instance.payments_add_credit_create()
     except ApiException as e:
@@ -115,7 +115,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.PaymentsApi(api_client)
-    
+
     try:
         api_instance.payments_balance_create()
     except ApiException as e:
@@ -180,7 +180,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.PaymentsApi(api_client)
-    
+
     try:
         api_instance.payments_balance_reduce_create()
     except ApiException as e:
@@ -245,7 +245,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.PaymentsApi(api_client)
-    
+
     try:
         api_instance.payments_get_wallet_create()
     except ApiException as e:
@@ -310,7 +310,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.PaymentsApi(api_client)
-    
+
     try:
         api_instance.payments_save_transaction_create()
     except ApiException as e:
@@ -377,7 +377,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.PaymentsApi(api_client)
-    
+
     try:
         api_instance.payments_transaction_history_create()
     except ApiException as e:
@@ -442,7 +442,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.PaymentsApi(api_client)
-    
+
     try:
         api_instance.payments_verify_wallet_create()
     except ApiException as e:
@@ -471,4 +471,3 @@ void (empty response body)
 **201** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

@@ -38,10 +38,10 @@ class TestUserToolkitInfo(unittest.TestCase):
         if include_optional :
             return UserToolkitInfo(
                 toolkit_obj = autoppia_backend_client.models.toolkit.Toolkit(
-                    id = 56, 
-                    name = '0', 
-                    description = '0', 
-                    image_url = '0', 
+                    id = 56,
+                    name = '0',
+                    description = '0',
+                    image_url = '0',
                     tools = [
                         56
                         ], )
@@ -49,10 +49,10 @@ class TestUserToolkitInfo(unittest.TestCase):
         else :
             return UserToolkitInfo(
                 toolkit_obj = autoppia_backend_client.models.toolkit.Toolkit(
-                    id = 56, 
-                    name = '0', 
-                    description = '0', 
-                    image_url = '0', 
+                    id = 56,
+                    name = '0',
+                    description = '0',
+                    image_url = '0',
                     tools = [
                         56
                         ], ),

@@ -37,10 +37,10 @@ class TestCredential(unittest.TestCase):
         # model = autoppia_backend_client.models.credential.Credential()  # noqa: E501
         if include_optional :
             return Credential(
-                id = 56, 
-                user = 56, 
-                type = 'password', 
-                name = '0', 
+                id = 56,
+                user = 56,
+                type = 'password',
+                name = '0',
                 credential = '0'
             )
         else :

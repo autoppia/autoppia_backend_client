@@ -37,7 +37,7 @@ class TestCategories(unittest.TestCase):
         # model = autoppia_backend_client.models.categories.Categories()  # noqa: E501
         if include_optional :
             return Categories(
-                id = 56, 
+                id = 56,
                 name = '0'
             )
         else :

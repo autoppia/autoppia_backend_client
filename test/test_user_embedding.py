@@ -37,22 +37,22 @@ class TestUserEmbedding(unittest.TestCase):
         # model = autoppia_backend_client.models.user_embedding.UserEmbedding()  # noqa: E501
         if include_optional :
             return UserEmbedding(
-                id = 56, 
+                id = 56,
                 embedding = autoppia_backend_client.models.embedding.Embedding(
-                    id = 56, 
+                    id = 56,
                     provider = autoppia_backend_client.models.embedding_provider.EmbeddingProvider(
-                        id = 56, 
-                        name = '0', 
-                        description = '0', ), 
-                    provider_id = 56, 
-                    name = '0', 
-                    url = '0', ), 
-                embedding_id = 56, 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                active = True, 
-                api_key = '0', 
-                user = 56, 
+                        id = 56,
+                        name = '0',
+                        description = '0', ),
+                    provider_id = 56,
+                    name = '0',
+                    url = '0', ),
+                embedding_id = 56,
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                active = True,
+                api_key = '0',
+                user = 56,
                 document = 56
             )
         else :

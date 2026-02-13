@@ -4,26 +4,26 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**templates_categories_list**](TemplatesApi.md#templates_categories_list) | **GET** /templates/categories/ | 
-[**templates_categories_read**](TemplatesApi.md#templates_categories_read) | **GET** /templates/categories/{id}/ | 
-[**templates_worker_templates_count**](TemplatesApi.md#templates_worker_templates_count) | **GET** /templates/worker-templates/count/ | 
-[**templates_worker_templates_create**](TemplatesApi.md#templates_worker_templates_create) | **POST** /templates/worker-templates/ | 
-[**templates_worker_templates_delete**](TemplatesApi.md#templates_worker_templates_delete) | **DELETE** /templates/worker-templates/{id}/ | 
-[**templates_worker_templates_deploy**](TemplatesApi.md#templates_worker_templates_deploy) | **POST** /templates/worker-templates/{id}/deploy/ | 
-[**templates_worker_templates_favorite**](TemplatesApi.md#templates_worker_templates_favorite) | **POST** /templates/worker-templates/{id}/favorite/ | 
-[**templates_worker_templates_favorites**](TemplatesApi.md#templates_worker_templates_favorites) | **GET** /templates/worker-templates/favorites/ | 
-[**templates_worker_templates_filtered_templates**](TemplatesApi.md#templates_worker_templates_filtered_templates) | **GET** /templates/worker-templates/filteredTemplates/ | 
-[**templates_worker_templates_generate_ecr_credentials**](TemplatesApi.md#templates_worker_templates_generate_ecr_credentials) | **POST** /templates/worker-templates/generate_ecr_credentials/ | 
-[**templates_worker_templates_generate_upload_urls**](TemplatesApi.md#templates_worker_templates_generate_upload_urls) | **POST** /templates/worker-templates/generate_upload_urls/ | 
-[**templates_worker_templates_get_deployed_count**](TemplatesApi.md#templates_worker_templates_get_deployed_count) | **GET** /templates/worker-templates/getDeployedCount/ | 
-[**templates_worker_templates_list**](TemplatesApi.md#templates_worker_templates_list) | **GET** /templates/worker-templates/ | 
-[**templates_worker_templates_my_favorits_count**](TemplatesApi.md#templates_worker_templates_my_favorits_count) | **GET** /templates/worker-templates/myFavoritsCount/ | 
-[**templates_worker_templates_partial_update**](TemplatesApi.md#templates_worker_templates_partial_update) | **PATCH** /templates/worker-templates/{id}/ | 
-[**templates_worker_templates_read**](TemplatesApi.md#templates_worker_templates_read) | **GET** /templates/worker-templates/{id}/ | 
-[**templates_worker_templates_test_s3_connection**](TemplatesApi.md#templates_worker_templates_test_s3_connection) | **GET** /templates/worker-templates/test_s3_connection/ | 
-[**templates_worker_templates_unfavorite**](TemplatesApi.md#templates_worker_templates_unfavorite) | **DELETE** /templates/worker-templates/{id}/unfavorite/ | 
-[**templates_worker_templates_update**](TemplatesApi.md#templates_worker_templates_update) | **PUT** /templates/worker-templates/{id}/ | 
-[**templates_worker_templates_upload_file**](TemplatesApi.md#templates_worker_templates_upload_file) | **POST** /templates/worker-templates/upload_file/ | 
+[**templates_categories_list**](TemplatesApi.md#templates_categories_list) | **GET** /templates/categories/ |
+[**templates_categories_read**](TemplatesApi.md#templates_categories_read) | **GET** /templates/categories/{id}/ |
+[**templates_worker_templates_count**](TemplatesApi.md#templates_worker_templates_count) | **GET** /templates/worker-templates/count/ |
+[**templates_worker_templates_create**](TemplatesApi.md#templates_worker_templates_create) | **POST** /templates/worker-templates/ |
+[**templates_worker_templates_delete**](TemplatesApi.md#templates_worker_templates_delete) | **DELETE** /templates/worker-templates/{id}/ |
+[**templates_worker_templates_deploy**](TemplatesApi.md#templates_worker_templates_deploy) | **POST** /templates/worker-templates/{id}/deploy/ |
+[**templates_worker_templates_favorite**](TemplatesApi.md#templates_worker_templates_favorite) | **POST** /templates/worker-templates/{id}/favorite/ |
+[**templates_worker_templates_favorites**](TemplatesApi.md#templates_worker_templates_favorites) | **GET** /templates/worker-templates/favorites/ |
+[**templates_worker_templates_filtered_templates**](TemplatesApi.md#templates_worker_templates_filtered_templates) | **GET** /templates/worker-templates/filteredTemplates/ |
+[**templates_worker_templates_generate_ecr_credentials**](TemplatesApi.md#templates_worker_templates_generate_ecr_credentials) | **POST** /templates/worker-templates/generate_ecr_credentials/ |
+[**templates_worker_templates_generate_upload_urls**](TemplatesApi.md#templates_worker_templates_generate_upload_urls) | **POST** /templates/worker-templates/generate_upload_urls/ |
+[**templates_worker_templates_get_deployed_count**](TemplatesApi.md#templates_worker_templates_get_deployed_count) | **GET** /templates/worker-templates/getDeployedCount/ |
+[**templates_worker_templates_list**](TemplatesApi.md#templates_worker_templates_list) | **GET** /templates/worker-templates/ |
+[**templates_worker_templates_my_favorits_count**](TemplatesApi.md#templates_worker_templates_my_favorits_count) | **GET** /templates/worker-templates/myFavoritsCount/ |
+[**templates_worker_templates_partial_update**](TemplatesApi.md#templates_worker_templates_partial_update) | **PATCH** /templates/worker-templates/{id}/ |
+[**templates_worker_templates_read**](TemplatesApi.md#templates_worker_templates_read) | **GET** /templates/worker-templates/{id}/ |
+[**templates_worker_templates_test_s3_connection**](TemplatesApi.md#templates_worker_templates_test_s3_connection) | **GET** /templates/worker-templates/test_s3_connection/ |
+[**templates_worker_templates_unfavorite**](TemplatesApi.md#templates_worker_templates_unfavorite) | **DELETE** /templates/worker-templates/{id}/unfavorite/ |
+[**templates_worker_templates_update**](TemplatesApi.md#templates_worker_templates_update) | **PUT** /templates/worker-templates/{id}/ |
+[**templates_worker_templates_upload_file**](TemplatesApi.md#templates_worker_templates_upload_file) | **POST** /templates/worker-templates/upload_file/ |
 
 
 # **templates_categories_list**
@@ -61,7 +61,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_categories_list()
         pprint(api_response)
@@ -140,7 +140,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this categories. | 
+ **id** | **int**| A unique integer value identifying this categories. |
 
 ### Return type
 
@@ -197,7 +197,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_worker_templates_count()
         pprint(api_response)
@@ -263,7 +263,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_create(data)
@@ -276,7 +276,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -345,7 +345,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker template. | 
+ **id** | **int**| A unique integer value identifying this worker template. |
 
 ### Return type
 
@@ -403,7 +403,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
     id = 56 # int | A unique integer value identifying this worker template.
-data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_deploy(id, data)
@@ -416,8 +416,8 @@ data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker template. | 
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker template. |
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -475,7 +475,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
     id = 56 # int | A unique integer value identifying this worker template.
-data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_favorite(id, data)
@@ -488,8 +488,8 @@ data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker template. | 
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker template. |
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -546,7 +546,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_worker_templates_favorites()
         pprint(api_response)
@@ -612,7 +612,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_worker_templates_filtered_templates()
         pprint(api_response)
@@ -680,7 +680,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_generate_ecr_credentials(data)
@@ -693,7 +693,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -752,7 +752,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_generate_upload_urls(data)
@@ -765,7 +765,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -822,7 +822,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_worker_templates_get_deployed_count()
         pprint(api_response)
@@ -888,7 +888,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_worker_templates_list()
         pprint(api_response)
@@ -954,7 +954,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_worker_templates_my_favorits_count()
         pprint(api_response)
@@ -1021,7 +1021,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
     id = 56 # int | A unique integer value identifying this worker template.
-data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_partial_update(id, data)
@@ -1034,8 +1034,8 @@ data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker template. | 
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker template. |
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -1105,7 +1105,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker template. | 
+ **id** | **int**| A unique integer value identifying this worker template. |
 
 ### Return type
 
@@ -1164,7 +1164,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    
+
     try:
         api_response = api_instance.templates_worker_templates_test_s3_connection()
         pprint(api_response)
@@ -1242,7 +1242,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker template. | 
+ **id** | **int**| A unique integer value identifying this worker template. |
 
 ### Return type
 
@@ -1300,7 +1300,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
     id = 56 # int | A unique integer value identifying this worker template.
-data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_update(id, data)
@@ -1313,8 +1313,8 @@ data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker template. | 
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker template. |
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -1373,7 +1373,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.TemplatesApi(api_client)
-    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate | 
+    data = autoppia_backend_client.WorkerTemplate() # WorkerTemplate |
 
     try:
         api_response = api_instance.templates_worker_templates_upload_file(data)
@@ -1386,7 +1386,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**WorkerTemplate**](WorkerTemplate.md)|  | 
+ **data** | [**WorkerTemplate**](WorkerTemplate.md)|  |
 
 ### Return type
 
@@ -1407,4 +1407,3 @@ Name | Type | Description  | Notes
 **201** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

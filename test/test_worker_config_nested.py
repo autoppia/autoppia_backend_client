@@ -37,7 +37,7 @@ class TestWorkerConfigNested(unittest.TestCase):
         # model = autoppia_backend_client.models.worker_config_nested.WorkerConfigNested()  # noqa: E501
         if include_optional :
             return WorkerConfigNested(
-                id = 56, 
+                id = 56,
                 name = '0'
             )
         else :

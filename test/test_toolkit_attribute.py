@@ -37,11 +37,11 @@ class TestToolkitAttribute(unittest.TestCase):
         # model = autoppia_backend_client.models.toolkit_attribute.ToolkitAttribute()  # noqa: E501
         if include_optional :
             return ToolkitAttribute(
-                id = 56, 
-                name = '0', 
-                description = '0', 
-                variable_type = 'string', 
-                required = True, 
+                id = 56,
+                name = '0',
+                description = '0',
+                variable_type = 'string',
+                required = True,
                 toolkit = 56
             )
         else :

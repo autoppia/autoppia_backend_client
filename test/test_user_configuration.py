@@ -37,34 +37,34 @@ class TestUserConfiguration(unittest.TestCase):
         # model = autoppia_backend_client.models.user_configuration.UserConfiguration()  # noqa: E501
         if include_optional :
             return UserConfiguration(
-                id = 56, 
-                name = '0', 
-                instruction = '0', 
-                user_toolkit = 56, 
+                id = 56,
+                name = '0',
+                instruction = '0',
+                user_toolkit = 56,
                 user_configuration_attributes = [
                     autoppia_backend_client.models.user_configuration_attribute.UserConfigurationAttribute(
-                        id = 56, 
-                        value = '0', 
-                        created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        user_configuration = 56, 
+                        id = 56,
+                        value = '0',
+                        created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        user_configuration = 56,
                         toolkit_attribute = 56, )
-                    ], 
+                    ],
                 user_configuration_linked_integrations = [
                     autoppia_backend_client.models.user_configuration_linked_integration.UserConfigurationLinkedIntegration(
-                        id = 56, 
-                        created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        user_configuration = 56, 
-                        toolkit_linked_integration = 56, 
+                        id = 56,
+                        created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        user_configuration = 56,
+                        toolkit_linked_integration = 56,
                         user_integration = 56, )
-                    ], 
+                    ],
                 user_configuration_extra_files = [
                     autoppia_backend_client.models.user_configuration_extra_files.UserConfigurationExtraFiles(
-                        id = 56, 
-                        created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        user_configuration = 56, 
+                        id = 56,
+                        created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        user_configuration = 56,
                         document = 56, )
                     ]
             )

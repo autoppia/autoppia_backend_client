@@ -37,8 +37,8 @@ class TestMCPHeader(unittest.TestCase):
         # model = autoppia_backend_client.models.mcp_header.MCPHeader()  # noqa: E501
         if include_optional :
             return MCPHeader(
-                id = 56, 
-                key = '0', 
+                id = 56,
+                key = '0',
                 value = '0'
             )
         else :

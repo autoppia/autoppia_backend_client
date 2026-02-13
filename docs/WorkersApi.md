@@ -4,48 +4,48 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**workers_configuration_category_create**](WorkersApi.md#workers_configuration_category_create) | **POST** /workers/configuration/category/ | 
-[**workers_configuration_category_delete**](WorkersApi.md#workers_configuration_category_delete) | **DELETE** /workers/configuration/category/{id}/ | 
-[**workers_configuration_category_list**](WorkersApi.md#workers_configuration_category_list) | **GET** /workers/configuration/category/ | 
-[**workers_configuration_category_partial_update**](WorkersApi.md#workers_configuration_category_partial_update) | **PATCH** /workers/configuration/category/{id}/ | 
-[**workers_configuration_category_read**](WorkersApi.md#workers_configuration_category_read) | **GET** /workers/configuration/category/{id}/ | 
-[**workers_configuration_category_update**](WorkersApi.md#workers_configuration_category_update) | **PUT** /workers/configuration/category/{id}/ | 
-[**workers_configuration_prompt_category_create**](WorkersApi.md#workers_configuration_prompt_category_create) | **POST** /workers/configuration/prompt-category/ | 
-[**workers_configuration_prompt_category_delete**](WorkersApi.md#workers_configuration_prompt_category_delete) | **DELETE** /workers/configuration/prompt-category/{id}/ | 
-[**workers_configuration_prompt_category_list**](WorkersApi.md#workers_configuration_prompt_category_list) | **GET** /workers/configuration/prompt-category/ | 
-[**workers_configuration_prompt_category_partial_update**](WorkersApi.md#workers_configuration_prompt_category_partial_update) | **PATCH** /workers/configuration/prompt-category/{id}/ | 
-[**workers_configuration_prompt_category_read**](WorkersApi.md#workers_configuration_prompt_category_read) | **GET** /workers/configuration/prompt-category/{id}/ | 
-[**workers_configuration_prompt_category_update**](WorkersApi.md#workers_configuration_prompt_category_update) | **PUT** /workers/configuration/prompt-category/{id}/ | 
-[**workers_configuration_prompt_create**](WorkersApi.md#workers_configuration_prompt_create) | **POST** /workers/configuration/prompt/ | 
-[**workers_configuration_prompt_delete**](WorkersApi.md#workers_configuration_prompt_delete) | **DELETE** /workers/configuration/prompt/{id}/ | 
-[**workers_configuration_prompt_list**](WorkersApi.md#workers_configuration_prompt_list) | **GET** /workers/configuration/prompt/ | 
-[**workers_configuration_prompt_partial_update**](WorkersApi.md#workers_configuration_prompt_partial_update) | **PATCH** /workers/configuration/prompt/{id}/ | 
-[**workers_configuration_prompt_read**](WorkersApi.md#workers_configuration_prompt_read) | **GET** /workers/configuration/prompt/{id}/ | 
-[**workers_configuration_prompt_update**](WorkersApi.md#workers_configuration_prompt_update) | **PUT** /workers/configuration/prompt/{id}/ | 
-[**workers_configuration_result_create**](WorkersApi.md#workers_configuration_result_create) | **POST** /workers/configuration/result/ | 
-[**workers_configuration_result_delete**](WorkersApi.md#workers_configuration_result_delete) | **DELETE** /workers/configuration/result/{id}/ | 
-[**workers_configuration_result_list**](WorkersApi.md#workers_configuration_result_list) | **GET** /workers/configuration/result/ | 
-[**workers_configuration_result_partial_update**](WorkersApi.md#workers_configuration_result_partial_update) | **PATCH** /workers/configuration/result/{id}/ | 
-[**workers_configuration_result_read**](WorkersApi.md#workers_configuration_result_read) | **GET** /workers/configuration/result/{id}/ | 
-[**workers_configuration_result_update**](WorkersApi.md#workers_configuration_result_update) | **PUT** /workers/configuration/result/{id}/ | 
-[**workers_configuration_tasks_create**](WorkersApi.md#workers_configuration_tasks_create) | **POST** /workers/configuration/tasks/ | 
-[**workers_configuration_tasks_delete**](WorkersApi.md#workers_configuration_tasks_delete) | **DELETE** /workers/configuration/tasks/{id}/ | 
-[**workers_configuration_tasks_list**](WorkersApi.md#workers_configuration_tasks_list) | **GET** /workers/configuration/tasks/ | 
-[**workers_configuration_tasks_partial_update**](WorkersApi.md#workers_configuration_tasks_partial_update) | **PATCH** /workers/configuration/tasks/{id}/ | 
-[**workers_configuration_tasks_read**](WorkersApi.md#workers_configuration_tasks_read) | **GET** /workers/configuration/tasks/{id}/ | 
-[**workers_configuration_tasks_update**](WorkersApi.md#workers_configuration_tasks_update) | **PUT** /workers/configuration/tasks/{id}/ | 
-[**workers_configuration_tests_create**](WorkersApi.md#workers_configuration_tests_create) | **POST** /workers/configuration/tests/ | 
-[**workers_configuration_tests_delete**](WorkersApi.md#workers_configuration_tests_delete) | **DELETE** /workers/configuration/tests/{id}/ | 
-[**workers_configuration_tests_list**](WorkersApi.md#workers_configuration_tests_list) | **GET** /workers/configuration/tests/ | 
-[**workers_configuration_tests_partial_update**](WorkersApi.md#workers_configuration_tests_partial_update) | **PATCH** /workers/configuration/tests/{id}/ | 
-[**workers_configuration_tests_read**](WorkersApi.md#workers_configuration_tests_read) | **GET** /workers/configuration/tests/{id}/ | 
-[**workers_configuration_tests_update**](WorkersApi.md#workers_configuration_tests_update) | **PUT** /workers/configuration/tests/{id}/ | 
-[**workers_configuration_worker_create**](WorkersApi.md#workers_configuration_worker_create) | **POST** /workers/configuration/worker/ | 
-[**workers_configuration_worker_delete**](WorkersApi.md#workers_configuration_worker_delete) | **DELETE** /workers/configuration/worker/{id}/ | 
-[**workers_configuration_worker_list**](WorkersApi.md#workers_configuration_worker_list) | **GET** /workers/configuration/worker/ | 
-[**workers_configuration_worker_partial_update**](WorkersApi.md#workers_configuration_worker_partial_update) | **PATCH** /workers/configuration/worker/{id}/ | 
-[**workers_configuration_worker_read**](WorkersApi.md#workers_configuration_worker_read) | **GET** /workers/configuration/worker/{id}/ | 
-[**workers_configuration_worker_update**](WorkersApi.md#workers_configuration_worker_update) | **PUT** /workers/configuration/worker/{id}/ | 
+[**workers_configuration_category_create**](WorkersApi.md#workers_configuration_category_create) | **POST** /workers/configuration/category/ |
+[**workers_configuration_category_delete**](WorkersApi.md#workers_configuration_category_delete) | **DELETE** /workers/configuration/category/{id}/ |
+[**workers_configuration_category_list**](WorkersApi.md#workers_configuration_category_list) | **GET** /workers/configuration/category/ |
+[**workers_configuration_category_partial_update**](WorkersApi.md#workers_configuration_category_partial_update) | **PATCH** /workers/configuration/category/{id}/ |
+[**workers_configuration_category_read**](WorkersApi.md#workers_configuration_category_read) | **GET** /workers/configuration/category/{id}/ |
+[**workers_configuration_category_update**](WorkersApi.md#workers_configuration_category_update) | **PUT** /workers/configuration/category/{id}/ |
+[**workers_configuration_prompt_category_create**](WorkersApi.md#workers_configuration_prompt_category_create) | **POST** /workers/configuration/prompt-category/ |
+[**workers_configuration_prompt_category_delete**](WorkersApi.md#workers_configuration_prompt_category_delete) | **DELETE** /workers/configuration/prompt-category/{id}/ |
+[**workers_configuration_prompt_category_list**](WorkersApi.md#workers_configuration_prompt_category_list) | **GET** /workers/configuration/prompt-category/ |
+[**workers_configuration_prompt_category_partial_update**](WorkersApi.md#workers_configuration_prompt_category_partial_update) | **PATCH** /workers/configuration/prompt-category/{id}/ |
+[**workers_configuration_prompt_category_read**](WorkersApi.md#workers_configuration_prompt_category_read) | **GET** /workers/configuration/prompt-category/{id}/ |
+[**workers_configuration_prompt_category_update**](WorkersApi.md#workers_configuration_prompt_category_update) | **PUT** /workers/configuration/prompt-category/{id}/ |
+[**workers_configuration_prompt_create**](WorkersApi.md#workers_configuration_prompt_create) | **POST** /workers/configuration/prompt/ |
+[**workers_configuration_prompt_delete**](WorkersApi.md#workers_configuration_prompt_delete) | **DELETE** /workers/configuration/prompt/{id}/ |
+[**workers_configuration_prompt_list**](WorkersApi.md#workers_configuration_prompt_list) | **GET** /workers/configuration/prompt/ |
+[**workers_configuration_prompt_partial_update**](WorkersApi.md#workers_configuration_prompt_partial_update) | **PATCH** /workers/configuration/prompt/{id}/ |
+[**workers_configuration_prompt_read**](WorkersApi.md#workers_configuration_prompt_read) | **GET** /workers/configuration/prompt/{id}/ |
+[**workers_configuration_prompt_update**](WorkersApi.md#workers_configuration_prompt_update) | **PUT** /workers/configuration/prompt/{id}/ |
+[**workers_configuration_result_create**](WorkersApi.md#workers_configuration_result_create) | **POST** /workers/configuration/result/ |
+[**workers_configuration_result_delete**](WorkersApi.md#workers_configuration_result_delete) | **DELETE** /workers/configuration/result/{id}/ |
+[**workers_configuration_result_list**](WorkersApi.md#workers_configuration_result_list) | **GET** /workers/configuration/result/ |
+[**workers_configuration_result_partial_update**](WorkersApi.md#workers_configuration_result_partial_update) | **PATCH** /workers/configuration/result/{id}/ |
+[**workers_configuration_result_read**](WorkersApi.md#workers_configuration_result_read) | **GET** /workers/configuration/result/{id}/ |
+[**workers_configuration_result_update**](WorkersApi.md#workers_configuration_result_update) | **PUT** /workers/configuration/result/{id}/ |
+[**workers_configuration_tasks_create**](WorkersApi.md#workers_configuration_tasks_create) | **POST** /workers/configuration/tasks/ |
+[**workers_configuration_tasks_delete**](WorkersApi.md#workers_configuration_tasks_delete) | **DELETE** /workers/configuration/tasks/{id}/ |
+[**workers_configuration_tasks_list**](WorkersApi.md#workers_configuration_tasks_list) | **GET** /workers/configuration/tasks/ |
+[**workers_configuration_tasks_partial_update**](WorkersApi.md#workers_configuration_tasks_partial_update) | **PATCH** /workers/configuration/tasks/{id}/ |
+[**workers_configuration_tasks_read**](WorkersApi.md#workers_configuration_tasks_read) | **GET** /workers/configuration/tasks/{id}/ |
+[**workers_configuration_tasks_update**](WorkersApi.md#workers_configuration_tasks_update) | **PUT** /workers/configuration/tasks/{id}/ |
+[**workers_configuration_tests_create**](WorkersApi.md#workers_configuration_tests_create) | **POST** /workers/configuration/tests/ |
+[**workers_configuration_tests_delete**](WorkersApi.md#workers_configuration_tests_delete) | **DELETE** /workers/configuration/tests/{id}/ |
+[**workers_configuration_tests_list**](WorkersApi.md#workers_configuration_tests_list) | **GET** /workers/configuration/tests/ |
+[**workers_configuration_tests_partial_update**](WorkersApi.md#workers_configuration_tests_partial_update) | **PATCH** /workers/configuration/tests/{id}/ |
+[**workers_configuration_tests_read**](WorkersApi.md#workers_configuration_tests_read) | **GET** /workers/configuration/tests/{id}/ |
+[**workers_configuration_tests_update**](WorkersApi.md#workers_configuration_tests_update) | **PUT** /workers/configuration/tests/{id}/ |
+[**workers_configuration_worker_create**](WorkersApi.md#workers_configuration_worker_create) | **POST** /workers/configuration/worker/ |
+[**workers_configuration_worker_delete**](WorkersApi.md#workers_configuration_worker_delete) | **DELETE** /workers/configuration/worker/{id}/ |
+[**workers_configuration_worker_list**](WorkersApi.md#workers_configuration_worker_list) | **GET** /workers/configuration/worker/ |
+[**workers_configuration_worker_partial_update**](WorkersApi.md#workers_configuration_worker_partial_update) | **PATCH** /workers/configuration/worker/{id}/ |
+[**workers_configuration_worker_read**](WorkersApi.md#workers_configuration_worker_read) | **GET** /workers/configuration/worker/{id}/ |
+[**workers_configuration_worker_update**](WorkersApi.md#workers_configuration_worker_update) | **PUT** /workers/configuration/worker/{id}/ |
 
 
 # **workers_configuration_category_create**
@@ -83,7 +83,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    data = autoppia_backend_client.Category() # Category | 
+    data = autoppia_backend_client.Category() # Category |
 
     try:
         api_response = api_instance.workers_configuration_category_create(data)
@@ -96,7 +96,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Category**](Category.md)|  | 
+ **data** | [**Category**](Category.md)|  |
 
 ### Return type
 
@@ -165,7 +165,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this category. | 
+ **id** | **int**| A unique integer value identifying this category. |
 
 ### Return type
 
@@ -222,7 +222,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_configuration_category_list()
         pprint(api_response)
@@ -289,7 +289,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this category.
-data = autoppia_backend_client.Category() # Category | 
+data = autoppia_backend_client.Category() # Category |
 
     try:
         api_response = api_instance.workers_configuration_category_partial_update(id, data)
@@ -302,8 +302,8 @@ data = autoppia_backend_client.Category() # Category |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this category. | 
- **data** | [**Category**](Category.md)|  | 
+ **id** | **int**| A unique integer value identifying this category. |
+ **data** | [**Category**](Category.md)|  |
 
 ### Return type
 
@@ -373,7 +373,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this category. | 
+ **id** | **int**| A unique integer value identifying this category. |
 
 ### Return type
 
@@ -431,7 +431,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this category.
-data = autoppia_backend_client.Category() # Category | 
+data = autoppia_backend_client.Category() # Category |
 
     try:
         api_response = api_instance.workers_configuration_category_update(id, data)
@@ -444,8 +444,8 @@ data = autoppia_backend_client.Category() # Category |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this category. | 
- **data** | [**Category**](Category.md)|  | 
+ **id** | **int**| A unique integer value identifying this category. |
+ **data** | [**Category**](Category.md)|  |
 
 ### Return type
 
@@ -502,7 +502,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    data = autoppia_backend_client.PromptCategory() # PromptCategory | 
+    data = autoppia_backend_client.PromptCategory() # PromptCategory |
 
     try:
         api_response = api_instance.workers_configuration_prompt_category_create(data)
@@ -515,7 +515,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**PromptCategory**](PromptCategory.md)|  | 
+ **data** | [**PromptCategory**](PromptCategory.md)|  |
 
 ### Return type
 
@@ -584,7 +584,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt category. | 
+ **id** | **int**| A unique integer value identifying this prompt category. |
 
 ### Return type
 
@@ -641,7 +641,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_configuration_prompt_category_list()
         pprint(api_response)
@@ -708,7 +708,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this prompt category.
-data = autoppia_backend_client.PromptCategory() # PromptCategory | 
+data = autoppia_backend_client.PromptCategory() # PromptCategory |
 
     try:
         api_response = api_instance.workers_configuration_prompt_category_partial_update(id, data)
@@ -721,8 +721,8 @@ data = autoppia_backend_client.PromptCategory() # PromptCategory |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt category. | 
- **data** | [**PromptCategory**](PromptCategory.md)|  | 
+ **id** | **int**| A unique integer value identifying this prompt category. |
+ **data** | [**PromptCategory**](PromptCategory.md)|  |
 
 ### Return type
 
@@ -792,7 +792,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt category. | 
+ **id** | **int**| A unique integer value identifying this prompt category. |
 
 ### Return type
 
@@ -850,7 +850,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this prompt category.
-data = autoppia_backend_client.PromptCategory() # PromptCategory | 
+data = autoppia_backend_client.PromptCategory() # PromptCategory |
 
     try:
         api_response = api_instance.workers_configuration_prompt_category_update(id, data)
@@ -863,8 +863,8 @@ data = autoppia_backend_client.PromptCategory() # PromptCategory |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt category. | 
- **data** | [**PromptCategory**](PromptCategory.md)|  | 
+ **id** | **int**| A unique integer value identifying this prompt category. |
+ **data** | [**PromptCategory**](PromptCategory.md)|  |
 
 ### Return type
 
@@ -921,7 +921,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    data = autoppia_backend_client.Prompt() # Prompt | 
+    data = autoppia_backend_client.Prompt() # Prompt |
 
     try:
         api_response = api_instance.workers_configuration_prompt_create(data)
@@ -934,7 +934,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Prompt**](Prompt.md)|  | 
+ **data** | [**Prompt**](Prompt.md)|  |
 
 ### Return type
 
@@ -1003,7 +1003,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt. | 
+ **id** | **int**| A unique integer value identifying this prompt. |
 
 ### Return type
 
@@ -1060,7 +1060,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_configuration_prompt_list()
         pprint(api_response)
@@ -1127,7 +1127,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this prompt.
-data = autoppia_backend_client.Prompt() # Prompt | 
+data = autoppia_backend_client.Prompt() # Prompt |
 
     try:
         api_response = api_instance.workers_configuration_prompt_partial_update(id, data)
@@ -1140,8 +1140,8 @@ data = autoppia_backend_client.Prompt() # Prompt |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt. | 
- **data** | [**Prompt**](Prompt.md)|  | 
+ **id** | **int**| A unique integer value identifying this prompt. |
+ **data** | [**Prompt**](Prompt.md)|  |
 
 ### Return type
 
@@ -1211,7 +1211,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt. | 
+ **id** | **int**| A unique integer value identifying this prompt. |
 
 ### Return type
 
@@ -1269,7 +1269,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this prompt.
-data = autoppia_backend_client.Prompt() # Prompt | 
+data = autoppia_backend_client.Prompt() # Prompt |
 
     try:
         api_response = api_instance.workers_configuration_prompt_update(id, data)
@@ -1282,8 +1282,8 @@ data = autoppia_backend_client.Prompt() # Prompt |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this prompt. | 
- **data** | [**Prompt**](Prompt.md)|  | 
+ **id** | **int**| A unique integer value identifying this prompt. |
+ **data** | [**Prompt**](Prompt.md)|  |
 
 ### Return type
 
@@ -1340,7 +1340,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    data = autoppia_backend_client.Result() # Result | 
+    data = autoppia_backend_client.Result() # Result |
 
     try:
         api_response = api_instance.workers_configuration_result_create(data)
@@ -1353,7 +1353,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Result**](Result.md)|  | 
+ **data** | [**Result**](Result.md)|  |
 
 ### Return type
 
@@ -1422,7 +1422,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this result. | 
+ **id** | **int**| A unique integer value identifying this result. |
 
 ### Return type
 
@@ -1479,7 +1479,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_configuration_result_list()
         pprint(api_response)
@@ -1546,7 +1546,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this result.
-data = autoppia_backend_client.Result() # Result | 
+data = autoppia_backend_client.Result() # Result |
 
     try:
         api_response = api_instance.workers_configuration_result_partial_update(id, data)
@@ -1559,8 +1559,8 @@ data = autoppia_backend_client.Result() # Result |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this result. | 
- **data** | [**Result**](Result.md)|  | 
+ **id** | **int**| A unique integer value identifying this result. |
+ **data** | [**Result**](Result.md)|  |
 
 ### Return type
 
@@ -1630,7 +1630,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this result. | 
+ **id** | **int**| A unique integer value identifying this result. |
 
 ### Return type
 
@@ -1688,7 +1688,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this result.
-data = autoppia_backend_client.Result() # Result | 
+data = autoppia_backend_client.Result() # Result |
 
     try:
         api_response = api_instance.workers_configuration_result_update(id, data)
@@ -1701,8 +1701,8 @@ data = autoppia_backend_client.Result() # Result |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this result. | 
- **data** | [**Result**](Result.md)|  | 
+ **id** | **int**| A unique integer value identifying this result. |
+ **data** | [**Result**](Result.md)|  |
 
 ### Return type
 
@@ -1759,7 +1759,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    data = autoppia_backend_client.Task() # Task | 
+    data = autoppia_backend_client.Task() # Task |
 
     try:
         api_response = api_instance.workers_configuration_tasks_create(data)
@@ -1772,7 +1772,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Task**](Task.md)|  | 
+ **data** | [**Task**](Task.md)|  |
 
 ### Return type
 
@@ -1841,7 +1841,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this task. | 
+ **id** | **int**| A unique integer value identifying this task. |
 
 ### Return type
 
@@ -1898,7 +1898,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_configuration_tasks_list()
         pprint(api_response)
@@ -1965,7 +1965,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this task.
-data = autoppia_backend_client.Task() # Task | 
+data = autoppia_backend_client.Task() # Task |
 
     try:
         api_response = api_instance.workers_configuration_tasks_partial_update(id, data)
@@ -1978,8 +1978,8 @@ data = autoppia_backend_client.Task() # Task |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this task. | 
- **data** | [**Task**](Task.md)|  | 
+ **id** | **int**| A unique integer value identifying this task. |
+ **data** | [**Task**](Task.md)|  |
 
 ### Return type
 
@@ -2049,7 +2049,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this task. | 
+ **id** | **int**| A unique integer value identifying this task. |
 
 ### Return type
 
@@ -2107,7 +2107,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this task.
-data = autoppia_backend_client.Task() # Task | 
+data = autoppia_backend_client.Task() # Task |
 
     try:
         api_response = api_instance.workers_configuration_tasks_update(id, data)
@@ -2120,8 +2120,8 @@ data = autoppia_backend_client.Task() # Task |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this task. | 
- **data** | [**Task**](Task.md)|  | 
+ **id** | **int**| A unique integer value identifying this task. |
+ **data** | [**Task**](Task.md)|  |
 
 ### Return type
 
@@ -2178,7 +2178,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    data = autoppia_backend_client.Test() # Test | 
+    data = autoppia_backend_client.Test() # Test |
 
     try:
         api_response = api_instance.workers_configuration_tests_create(data)
@@ -2191,7 +2191,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Test**](Test.md)|  | 
+ **data** | [**Test**](Test.md)|  |
 
 ### Return type
 
@@ -2260,7 +2260,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this test. | 
+ **id** | **int**| A unique integer value identifying this test. |
 
 ### Return type
 
@@ -2317,7 +2317,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_configuration_tests_list()
         pprint(api_response)
@@ -2384,7 +2384,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this test.
-data = autoppia_backend_client.Test() # Test | 
+data = autoppia_backend_client.Test() # Test |
 
     try:
         api_response = api_instance.workers_configuration_tests_partial_update(id, data)
@@ -2397,8 +2397,8 @@ data = autoppia_backend_client.Test() # Test |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this test. | 
- **data** | [**Test**](Test.md)|  | 
+ **id** | **int**| A unique integer value identifying this test. |
+ **data** | [**Test**](Test.md)|  |
 
 ### Return type
 
@@ -2468,7 +2468,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this test. | 
+ **id** | **int**| A unique integer value identifying this test. |
 
 ### Return type
 
@@ -2526,7 +2526,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this test.
-data = autoppia_backend_client.Test() # Test | 
+data = autoppia_backend_client.Test() # Test |
 
     try:
         api_response = api_instance.workers_configuration_tests_update(id, data)
@@ -2539,8 +2539,8 @@ data = autoppia_backend_client.Test() # Test |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this test. | 
- **data** | [**Test**](Test.md)|  | 
+ **id** | **int**| A unique integer value identifying this test. |
+ **data** | [**Test**](Test.md)|  |
 
 ### Return type
 
@@ -2597,7 +2597,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    data = autoppia_backend_client.Worker() # Worker | 
+    data = autoppia_backend_client.Worker() # Worker |
 
     try:
         api_response = api_instance.workers_configuration_worker_create(data)
@@ -2610,7 +2610,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Worker**](Worker.md)|  | 
+ **data** | [**Worker**](Worker.md)|  |
 
 ### Return type
 
@@ -2679,7 +2679,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker. | 
+ **id** | **int**| A unique integer value identifying this worker. |
 
 ### Return type
 
@@ -2736,7 +2736,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_configuration_worker_list()
         pprint(api_response)
@@ -2803,7 +2803,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this worker.
-data = autoppia_backend_client.Worker() # Worker | 
+data = autoppia_backend_client.Worker() # Worker |
 
     try:
         api_response = api_instance.workers_configuration_worker_partial_update(id, data)
@@ -2816,8 +2816,8 @@ data = autoppia_backend_client.Worker() # Worker |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker. | 
- **data** | [**Worker**](Worker.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker. |
+ **data** | [**Worker**](Worker.md)|  |
 
 ### Return type
 
@@ -2887,7 +2887,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker. | 
+ **id** | **int**| A unique integer value identifying this worker. |
 
 ### Return type
 
@@ -2945,7 +2945,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersApi(api_client)
     id = 56 # int | A unique integer value identifying this worker.
-data = autoppia_backend_client.Worker() # Worker | 
+data = autoppia_backend_client.Worker() # Worker |
 
     try:
         api_response = api_instance.workers_configuration_worker_update(id, data)
@@ -2958,8 +2958,8 @@ data = autoppia_backend_client.Worker() # Worker |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker. | 
- **data** | [**Worker**](Worker.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker. |
+ **data** | [**Worker**](Worker.md)|  |
 
 ### Return type
 
@@ -2980,4 +2980,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

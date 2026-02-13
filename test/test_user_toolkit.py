@@ -37,37 +37,37 @@ class TestUserToolkit(unittest.TestCase):
         # model = autoppia_backend_client.models.user_toolkit.UserToolkit()  # noqa: E501
         if include_optional :
             return UserToolkit(
-                id = 56, 
+                id = 56,
                 toolkit = autoppia_backend_client.models.list_toolkit.ListToolkit(
-                    id = 56, 
-                    name = '0', 
-                    description = '0', 
-                    image_url = '0', 
+                    id = 56,
+                    name = '0',
+                    description = '0',
+                    image_url = '0',
                     attributes = [
                         autoppia_backend_client.models.list_toolkit_attribute.ListToolkitAttribute(
-                            id = 56, 
-                            toolkit = 56, 
-                            name = '0', 
-                            description = '0', 
-                            variable_type = 'string', 
+                            id = 56,
+                            toolkit = 56,
+                            name = '0',
+                            description = '0',
+                            variable_type = 'string',
                             required = True, )
-                        ], 
+                        ],
                     integrations = [
                         autoppia_backend_client.models.list_toolkit_linked_integration.ListToolkitLinkedIntegration(
-                            id = 56, 
-                            toolkit = 56, 
+                            id = 56,
+                            toolkit = 56,
                             category = '0', )
-                        ], 
+                        ],
                     tools = [
                         autoppia_backend_client.models.tool.Tool(
-                            id = 56, 
-                            name = '0', 
+                            id = 56,
+                            name = '0',
                             description = '0', )
-                        ], ), 
-                toolkit_id = 56, 
-                active = True, 
-                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                        ], ),
+                toolkit_id = 56,
+                active = True,
+                created_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 user = 56
             )
         else :

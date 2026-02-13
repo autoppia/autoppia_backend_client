@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**workers_config_workers_create**](WorkersConfigApi.md#workers_config_workers_create) | **POST** /workers-config/workers/ | 
-[**workers_config_workers_delete**](WorkersConfigApi.md#workers_config_workers_delete) | **DELETE** /workers-config/workers/{id}/ | 
-[**workers_config_workers_deploy_info_list**](WorkersConfigApi.md#workers_config_workers_deploy_info_list) | **GET** /workers-config/workers/{id}/deploy-info/ | 
-[**workers_config_workers_deploy_list**](WorkersConfigApi.md#workers_config_workers_deploy_list) | **GET** /workers-config/workers/{id}/deploy/ | 
-[**workers_config_workers_deploy_stop_list**](WorkersConfigApi.md#workers_config_workers_deploy_stop_list) | **GET** /workers-config/workers/{id}/deploy-stop/ | 
-[**workers_config_workers_list**](WorkersConfigApi.md#workers_config_workers_list) | **GET** /workers-config/workers/ | 
-[**workers_config_workers_partial_update**](WorkersConfigApi.md#workers_config_workers_partial_update) | **PATCH** /workers-config/workers/{id}/ | 
-[**workers_config_workers_read**](WorkersConfigApi.md#workers_config_workers_read) | **GET** /workers-config/workers/{id}/ | 
-[**workers_config_workers_update**](WorkersConfigApi.md#workers_config_workers_update) | **PUT** /workers-config/workers/{id}/ | 
+[**workers_config_workers_create**](WorkersConfigApi.md#workers_config_workers_create) | **POST** /workers-config/workers/ |
+[**workers_config_workers_delete**](WorkersConfigApi.md#workers_config_workers_delete) | **DELETE** /workers-config/workers/{id}/ |
+[**workers_config_workers_deploy_info_list**](WorkersConfigApi.md#workers_config_workers_deploy_info_list) | **GET** /workers-config/workers/{id}/deploy-info/ |
+[**workers_config_workers_deploy_list**](WorkersConfigApi.md#workers_config_workers_deploy_list) | **GET** /workers-config/workers/{id}/deploy/ |
+[**workers_config_workers_deploy_stop_list**](WorkersConfigApi.md#workers_config_workers_deploy_stop_list) | **GET** /workers-config/workers/{id}/deploy-stop/ |
+[**workers_config_workers_list**](WorkersConfigApi.md#workers_config_workers_list) | **GET** /workers-config/workers/ |
+[**workers_config_workers_partial_update**](WorkersConfigApi.md#workers_config_workers_partial_update) | **PATCH** /workers-config/workers/{id}/ |
+[**workers_config_workers_read**](WorkersConfigApi.md#workers_config_workers_read) | **GET** /workers-config/workers/{id}/ |
+[**workers_config_workers_update**](WorkersConfigApi.md#workers_config_workers_update) | **PUT** /workers-config/workers/{id}/ |
 
 
 # **workers_config_workers_create**
@@ -50,7 +50,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersConfigApi(api_client)
-    data = autoppia_backend_client.WorkerConfig() # WorkerConfig | 
+    data = autoppia_backend_client.WorkerConfig() # WorkerConfig |
 
     try:
         api_response = api_instance.workers_config_workers_create(data)
@@ -63,7 +63,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**WorkerConfig**](WorkerConfig.md)|  | 
+ **data** | [**WorkerConfig**](WorkerConfig.md)|  |
 
 ### Return type
 
@@ -132,7 +132,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker config. | 
+ **id** | **int**| A unique integer value identifying this worker config. |
 
 ### Return type
 
@@ -202,7 +202,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker config. | 
+ **id** | **int**| A unique integer value identifying this worker config. |
 
 ### Return type
 
@@ -272,7 +272,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker config. | 
+ **id** | **int**| A unique integer value identifying this worker config. |
 
 ### Return type
 
@@ -342,7 +342,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker config. | 
+ **id** | **int**| A unique integer value identifying this worker config. |
 
 ### Return type
 
@@ -399,7 +399,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersConfigApi(api_client)
-    
+
     try:
         api_response = api_instance.workers_config_workers_list()
         pprint(api_response)
@@ -466,7 +466,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersConfigApi(api_client)
     id = 56 # int | A unique integer value identifying this worker config.
-data = autoppia_backend_client.WorkerConfig() # WorkerConfig | 
+data = autoppia_backend_client.WorkerConfig() # WorkerConfig |
 
     try:
         api_response = api_instance.workers_config_workers_partial_update(id, data)
@@ -479,8 +479,8 @@ data = autoppia_backend_client.WorkerConfig() # WorkerConfig |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker config. | 
- **data** | [**WorkerConfig**](WorkerConfig.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker config. |
+ **data** | [**WorkerConfig**](WorkerConfig.md)|  |
 
 ### Return type
 
@@ -550,7 +550,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker config. | 
+ **id** | **int**| A unique integer value identifying this worker config. |
 
 ### Return type
 
@@ -608,7 +608,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.WorkersConfigApi(api_client)
     id = 56 # int | A unique integer value identifying this worker config.
-data = autoppia_backend_client.WorkerConfig() # WorkerConfig | 
+data = autoppia_backend_client.WorkerConfig() # WorkerConfig |
 
     try:
         api_response = api_instance.workers_config_workers_update(id, data)
@@ -621,8 +621,8 @@ data = autoppia_backend_client.WorkerConfig() # WorkerConfig |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this worker config. | 
- **data** | [**WorkerConfig**](WorkerConfig.md)|  | 
+ **id** | **int**| A unique integer value identifying this worker config. |
+ **data** | [**WorkerConfig**](WorkerConfig.md)|  |
 
 ### Return type
 
@@ -643,4 +643,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

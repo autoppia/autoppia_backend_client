@@ -111,4 +111,3 @@ from autoppia_backend_client.models.worker import Worker
 from autoppia_backend_client.models.worker_config import WorkerConfig
 from autoppia_backend_client.models.worker_config_nested import WorkerConfigNested
 from autoppia_backend_client.models.worker_template import WorkerTemplate
-

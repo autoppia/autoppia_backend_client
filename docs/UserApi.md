@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**user_partial_update**](UserApi.md#user_partial_update) | **PATCH** /user/{id}/ | 
-[**user_read**](UserApi.md#user_read) | **GET** /user/{id}/ | 
-[**user_update**](UserApi.md#user_update) | **PUT** /user/{id}/ | 
+[**user_partial_update**](UserApi.md#user_partial_update) | **PATCH** /user/{id}/ |
+[**user_read**](UserApi.md#user_read) | **GET** /user/{id}/ |
+[**user_update**](UserApi.md#user_update) | **PUT** /user/{id}/ |
 
 
 # **user_partial_update**
@@ -45,7 +45,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.UserApi(api_client)
     id = 56 # int | A unique integer value identifying this user.
-data = autoppia_backend_client.UpdateUser() # UpdateUser | 
+data = autoppia_backend_client.UpdateUser() # UpdateUser |
 
     try:
         api_response = api_instance.user_partial_update(id, data)
@@ -58,8 +58,8 @@ data = autoppia_backend_client.UpdateUser() # UpdateUser |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user. | 
- **data** | [**UpdateUser**](UpdateUser.md)|  | 
+ **id** | **int**| A unique integer value identifying this user. |
+ **data** | [**UpdateUser**](UpdateUser.md)|  |
 
 ### Return type
 
@@ -131,7 +131,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user. | 
+ **id** | **int**| A unique integer value identifying this user. |
 
 ### Return type
 
@@ -191,7 +191,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.UserApi(api_client)
     id = 56 # int | A unique integer value identifying this user.
-data = autoppia_backend_client.UpdateUser() # UpdateUser | 
+data = autoppia_backend_client.UpdateUser() # UpdateUser |
 
     try:
         api_response = api_instance.user_update(id, data)
@@ -204,8 +204,8 @@ data = autoppia_backend_client.UpdateUser() # UpdateUser |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user. | 
- **data** | [**UpdateUser**](UpdateUser.md)|  | 
+ **id** | **int**| A unique integer value identifying this user. |
+ **data** | [**UpdateUser**](UpdateUser.md)|  |
 
 ### Return type
 
@@ -226,4 +226,3 @@ Name | Type | Description  | Notes
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

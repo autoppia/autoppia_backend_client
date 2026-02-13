@@ -37,22 +37,22 @@ class TestFolder(unittest.TestCase):
         # model = autoppia_backend_client.models.folder.Folder()  # noqa: E501
         if include_optional :
             return Folder(
-                id = 56, 
+                id = 56,
                 documents = [
                     autoppia_backend_client.models.document.Document(
-                        id = 56, 
-                        user = 56, 
-                        name = '0', 
-                        file = '0', 
-                        created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        embedded = True, 
+                        id = 56,
+                        user = 56,
+                        name = '0',
+                        file = '0',
+                        created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        embedded = True,
                         tags = [
                             56
-                            ], 
+                            ],
                         s3_object_key = '0', )
-                    ], 
-                name = '0', 
+                    ],
+                name = '0',
                 parent = 56
             )
         else :

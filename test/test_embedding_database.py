@@ -37,39 +37,39 @@ class TestEmbeddingDatabase(unittest.TestCase):
         # model = autoppia_backend_client.models.embedding_database.EmbeddingDatabase()  # noqa: E501
         if include_optional :
             return EmbeddingDatabase(
-                id = 56, 
+                id = 56,
                 documents = [
                     autoppia_backend_client.models.document.Document(
-                        id = 56, 
-                        user = 56, 
-                        name = '0', 
-                        file = '0', 
-                        created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                        updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                        id = 56,
+                        user = 56,
+                        name = '0',
+                        file = '0',
+                        created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                        updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                         tags = [
                             56
-                            ], 
-                        s3_object_key = '0', 
+                            ],
+                        s3_object_key = '0',
                         open_ai_id = '0', )
-                    ], 
+                    ],
                 api_key = autoppia_backend_client.models.credential.Credential(
-                    id = 56, 
-                    user = 56, 
-                    type = 'password', 
-                    name = '0', 
-                    credential = '0', ), 
-                api_key_id = 56, 
+                    id = 56,
+                    user = 56,
+                    type = 'password',
+                    name = '0',
+                    credential = '0', ),
+                api_key_id = 56,
                 embedding_api_key = autoppia_backend_client.models.credential.Credential(
-                    id = 56, 
-                    user = 56, 
-                    type = 'password', 
-                    name = '0', 
-                    credential = '0', ), 
-                embedding_api_key_id = 56, 
-                name = '0', 
-                provider = 'INTERNAL', 
-                index_name = '0', 
-                openai_vector_store_id = '0', 
+                    id = 56,
+                    user = 56,
+                    type = 'password',
+                    name = '0',
+                    credential = '0', ),
+                embedding_api_key_id = 56,
+                name = '0',
+                provider = 'INTERNAL',
+                index_name = '0',
+                openai_vector_store_id = '0',
                 user = 56
             )
         else :

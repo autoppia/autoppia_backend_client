@@ -37,8 +37,8 @@ class TestTool(unittest.TestCase):
         # model = autoppia_backend_client.models.tool.Tool()  # noqa: E501
         if include_optional :
             return Tool(
-                id = 56, 
-                name = '0', 
+                id = 56,
+                name = '0',
                 description = '0'
             )
         else :

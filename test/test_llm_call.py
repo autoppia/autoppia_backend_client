@@ -37,13 +37,13 @@ class TestLLMCall(unittest.TestCase):
         # model = autoppia_backend_client.models.llm_call.LLMCall()  # noqa: E501
         if include_optional :
             return LLMCall(
-                id = 56, 
-                input_tokens = 0, 
-                output_tokens = 0, 
-                input_token_price = '0', 
-                output_token_price = '0', 
-                llm = '0', 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                id = 56,
+                input_tokens = 0,
+                output_tokens = 0,
+                input_token_price = '0',
+                output_token_price = '0',
+                llm = '0',
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 user = 56
             )
         else :

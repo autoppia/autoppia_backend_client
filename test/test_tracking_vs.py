@@ -37,21 +37,21 @@ class TestTrackingVS(unittest.TestCase):
         # model = autoppia_backend_client.models.tracking_vs.TrackingVS()  # noqa: E501
         if include_optional :
             return TrackingVS(
-                id = 56, 
+                id = 56,
                 document = autoppia_backend_client.models.document.Document(
-                    id = 56, 
-                    user = 56, 
-                    name = '0', 
-                    file = '0', 
-                    created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                    updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                    id = 56,
+                    user = 56,
+                    name = '0',
+                    file = '0',
+                    created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                    updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                     tags = [
                         56
-                        ], 
-                    s3_object_key = '0', 
-                    open_ai_id = '0', ), 
-                action = 'created', 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                        ],
+                    s3_object_key = '0',
+                    open_ai_id = '0', ),
+                action = 'created',
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 embedding_database = 56
             )
         else :

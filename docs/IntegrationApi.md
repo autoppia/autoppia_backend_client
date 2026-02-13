@@ -4,28 +4,28 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**integration_admin_integration_attribute_create**](IntegrationApi.md#integration_admin_integration_attribute_create) | **POST** /integration/admin/integration_attribute/ | 
-[**integration_admin_integration_attribute_delete**](IntegrationApi.md#integration_admin_integration_attribute_delete) | **DELETE** /integration/admin/integration_attribute/{id}/ | 
-[**integration_admin_integration_attribute_list**](IntegrationApi.md#integration_admin_integration_attribute_list) | **GET** /integration/admin/integration_attribute/ | 
-[**integration_admin_integration_attribute_partial_update**](IntegrationApi.md#integration_admin_integration_attribute_partial_update) | **PATCH** /integration/admin/integration_attribute/{id}/ | 
-[**integration_admin_integration_attribute_read**](IntegrationApi.md#integration_admin_integration_attribute_read) | **GET** /integration/admin/integration_attribute/{id}/ | 
-[**integration_admin_integration_attribute_update**](IntegrationApi.md#integration_admin_integration_attribute_update) | **PUT** /integration/admin/integration_attribute/{id}/ | 
-[**integration_admin_integration_create**](IntegrationApi.md#integration_admin_integration_create) | **POST** /integration/admin/integration/ | 
-[**integration_admin_integration_delete**](IntegrationApi.md#integration_admin_integration_delete) | **DELETE** /integration/admin/integration/{id}/ | 
-[**integration_admin_integration_list**](IntegrationApi.md#integration_admin_integration_list) | **GET** /integration/admin/integration/ | 
-[**integration_admin_integration_partial_update**](IntegrationApi.md#integration_admin_integration_partial_update) | **PATCH** /integration/admin/integration/{id}/ | 
-[**integration_admin_integration_read**](IntegrationApi.md#integration_admin_integration_read) | **GET** /integration/admin/integration/{id}/ | 
-[**integration_admin_integration_update**](IntegrationApi.md#integration_admin_integration_update) | **PUT** /integration/admin/integration/{id}/ | 
-[**integration_api_categories_list**](IntegrationApi.md#integration_api_categories_list) | **GET** /integration/api/categories/ | 
-[**integration_integration_list**](IntegrationApi.md#integration_integration_list) | **GET** /integration/integration/ | 
-[**integration_integration_read**](IntegrationApi.md#integration_integration_read) | **GET** /integration/integration/{id}/ | 
-[**integration_user_integration_create**](IntegrationApi.md#integration_user_integration_create) | **POST** /integration/user_integration/ | 
-[**integration_user_integration_delete**](IntegrationApi.md#integration_user_integration_delete) | **DELETE** /integration/user_integration/{id}/ | 
-[**integration_user_integration_list**](IntegrationApi.md#integration_user_integration_list) | **GET** /integration/user_integration/ | 
-[**integration_user_integration_partial_update**](IntegrationApi.md#integration_user_integration_partial_update) | **PATCH** /integration/user_integration/{id}/ | 
-[**integration_user_integration_read**](IntegrationApi.md#integration_user_integration_read) | **GET** /integration/user_integration/{id}/ | 
-[**integration_user_integration_update**](IntegrationApi.md#integration_user_integration_update) | **PUT** /integration/user_integration/{id}/ | 
-[**integration_webappintegration_list**](IntegrationApi.md#integration_webappintegration_list) | **GET** /integration/webappintegration/ | 
+[**integration_admin_integration_attribute_create**](IntegrationApi.md#integration_admin_integration_attribute_create) | **POST** /integration/admin/integration_attribute/ |
+[**integration_admin_integration_attribute_delete**](IntegrationApi.md#integration_admin_integration_attribute_delete) | **DELETE** /integration/admin/integration_attribute/{id}/ |
+[**integration_admin_integration_attribute_list**](IntegrationApi.md#integration_admin_integration_attribute_list) | **GET** /integration/admin/integration_attribute/ |
+[**integration_admin_integration_attribute_partial_update**](IntegrationApi.md#integration_admin_integration_attribute_partial_update) | **PATCH** /integration/admin/integration_attribute/{id}/ |
+[**integration_admin_integration_attribute_read**](IntegrationApi.md#integration_admin_integration_attribute_read) | **GET** /integration/admin/integration_attribute/{id}/ |
+[**integration_admin_integration_attribute_update**](IntegrationApi.md#integration_admin_integration_attribute_update) | **PUT** /integration/admin/integration_attribute/{id}/ |
+[**integration_admin_integration_create**](IntegrationApi.md#integration_admin_integration_create) | **POST** /integration/admin/integration/ |
+[**integration_admin_integration_delete**](IntegrationApi.md#integration_admin_integration_delete) | **DELETE** /integration/admin/integration/{id}/ |
+[**integration_admin_integration_list**](IntegrationApi.md#integration_admin_integration_list) | **GET** /integration/admin/integration/ |
+[**integration_admin_integration_partial_update**](IntegrationApi.md#integration_admin_integration_partial_update) | **PATCH** /integration/admin/integration/{id}/ |
+[**integration_admin_integration_read**](IntegrationApi.md#integration_admin_integration_read) | **GET** /integration/admin/integration/{id}/ |
+[**integration_admin_integration_update**](IntegrationApi.md#integration_admin_integration_update) | **PUT** /integration/admin/integration/{id}/ |
+[**integration_api_categories_list**](IntegrationApi.md#integration_api_categories_list) | **GET** /integration/api/categories/ |
+[**integration_integration_list**](IntegrationApi.md#integration_integration_list) | **GET** /integration/integration/ |
+[**integration_integration_read**](IntegrationApi.md#integration_integration_read) | **GET** /integration/integration/{id}/ |
+[**integration_user_integration_create**](IntegrationApi.md#integration_user_integration_create) | **POST** /integration/user_integration/ |
+[**integration_user_integration_delete**](IntegrationApi.md#integration_user_integration_delete) | **DELETE** /integration/user_integration/{id}/ |
+[**integration_user_integration_list**](IntegrationApi.md#integration_user_integration_list) | **GET** /integration/user_integration/ |
+[**integration_user_integration_partial_update**](IntegrationApi.md#integration_user_integration_partial_update) | **PATCH** /integration/user_integration/{id}/ |
+[**integration_user_integration_read**](IntegrationApi.md#integration_user_integration_read) | **GET** /integration/user_integration/{id}/ |
+[**integration_user_integration_update**](IntegrationApi.md#integration_user_integration_update) | **PUT** /integration/user_integration/{id}/ |
+[**integration_webappintegration_list**](IntegrationApi.md#integration_webappintegration_list) | **GET** /integration/webappintegration/ |
 
 
 # **integration_admin_integration_attribute_create**
@@ -63,7 +63,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute | 
+    data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute |
 
     try:
         api_response = api_instance.integration_admin_integration_attribute_create(data)
@@ -76,7 +76,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**IntegrationAttribute**](IntegrationAttribute.md)|  | 
+ **data** | [**IntegrationAttribute**](IntegrationAttribute.md)|  |
 
 ### Return type
 
@@ -145,7 +145,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration attribute. | 
+ **id** | **int**| A unique integer value identifying this integration attribute. |
 
 ### Return type
 
@@ -202,7 +202,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    
+
     try:
         api_response = api_instance.integration_admin_integration_attribute_list()
         pprint(api_response)
@@ -269,7 +269,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
     id = 56 # int | A unique integer value identifying this integration attribute.
-data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute | 
+data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute |
 
     try:
         api_response = api_instance.integration_admin_integration_attribute_partial_update(id, data)
@@ -282,8 +282,8 @@ data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration attribute. | 
- **data** | [**IntegrationAttribute**](IntegrationAttribute.md)|  | 
+ **id** | **int**| A unique integer value identifying this integration attribute. |
+ **data** | [**IntegrationAttribute**](IntegrationAttribute.md)|  |
 
 ### Return type
 
@@ -353,7 +353,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration attribute. | 
+ **id** | **int**| A unique integer value identifying this integration attribute. |
 
 ### Return type
 
@@ -411,7 +411,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
     id = 56 # int | A unique integer value identifying this integration attribute.
-data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute | 
+data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute |
 
     try:
         api_response = api_instance.integration_admin_integration_attribute_update(id, data)
@@ -424,8 +424,8 @@ data = autoppia_backend_client.IntegrationAttribute() # IntegrationAttribute |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration attribute. | 
- **data** | [**IntegrationAttribute**](IntegrationAttribute.md)|  | 
+ **id** | **int**| A unique integer value identifying this integration attribute. |
+ **data** | [**IntegrationAttribute**](IntegrationAttribute.md)|  |
 
 ### Return type
 
@@ -482,7 +482,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    data = autoppia_backend_client.Integration() # Integration | 
+    data = autoppia_backend_client.Integration() # Integration |
 
     try:
         api_response = api_instance.integration_admin_integration_create(data)
@@ -495,7 +495,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**Integration**](Integration.md)|  | 
+ **data** | [**Integration**](Integration.md)|  |
 
 ### Return type
 
@@ -564,7 +564,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration. | 
+ **id** | **int**| A unique integer value identifying this integration. |
 
 ### Return type
 
@@ -621,7 +621,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    
+
     try:
         api_response = api_instance.integration_admin_integration_list()
         pprint(api_response)
@@ -688,7 +688,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
     id = 56 # int | A unique integer value identifying this integration.
-data = autoppia_backend_client.Integration() # Integration | 
+data = autoppia_backend_client.Integration() # Integration |
 
     try:
         api_response = api_instance.integration_admin_integration_partial_update(id, data)
@@ -701,8 +701,8 @@ data = autoppia_backend_client.Integration() # Integration |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration. | 
- **data** | [**Integration**](Integration.md)|  | 
+ **id** | **int**| A unique integer value identifying this integration. |
+ **data** | [**Integration**](Integration.md)|  |
 
 ### Return type
 
@@ -772,7 +772,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration. | 
+ **id** | **int**| A unique integer value identifying this integration. |
 
 ### Return type
 
@@ -830,7 +830,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
     id = 56 # int | A unique integer value identifying this integration.
-data = autoppia_backend_client.Integration() # Integration | 
+data = autoppia_backend_client.Integration() # Integration |
 
     try:
         api_response = api_instance.integration_admin_integration_update(id, data)
@@ -843,8 +843,8 @@ data = autoppia_backend_client.Integration() # Integration |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration. | 
- **data** | [**Integration**](Integration.md)|  | 
+ **id** | **int**| A unique integer value identifying this integration. |
+ **data** | [**Integration**](Integration.md)|  |
 
 ### Return type
 
@@ -901,7 +901,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    
+
     try:
         api_instance.integration_api_categories_list()
     except ApiException as e:
@@ -968,7 +968,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    
+
     try:
         api_response = api_instance.integration_integration_list()
         pprint(api_response)
@@ -1049,7 +1049,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this integration. | 
+ **id** | **int**| A unique integer value identifying this integration. |
 
 ### Return type
 
@@ -1108,7 +1108,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    data = autoppia_backend_client.UserIntegration() # UserIntegration | 
+    data = autoppia_backend_client.UserIntegration() # UserIntegration |
 
     try:
         api_response = api_instance.integration_user_integration_create(data)
@@ -1121,7 +1121,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **data** | [**UserIntegration**](UserIntegration.md)|  | 
+ **data** | [**UserIntegration**](UserIntegration.md)|  |
 
 ### Return type
 
@@ -1192,7 +1192,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user integration. | 
+ **id** | **int**| A unique integer value identifying this user integration. |
 
 ### Return type
 
@@ -1251,7 +1251,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    
+
     try:
         api_response = api_instance.integration_user_integration_list()
         pprint(api_response)
@@ -1320,7 +1320,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
     id = 56 # int | A unique integer value identifying this user integration.
-data = autoppia_backend_client.UserIntegration() # UserIntegration | 
+data = autoppia_backend_client.UserIntegration() # UserIntegration |
 
     try:
         api_response = api_instance.integration_user_integration_partial_update(id, data)
@@ -1333,8 +1333,8 @@ data = autoppia_backend_client.UserIntegration() # UserIntegration |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user integration. | 
- **data** | [**UserIntegration**](UserIntegration.md)|  | 
+ **id** | **int**| A unique integer value identifying this user integration. |
+ **data** | [**UserIntegration**](UserIntegration.md)|  |
 
 ### Return type
 
@@ -1406,7 +1406,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user integration. | 
+ **id** | **int**| A unique integer value identifying this user integration. |
 
 ### Return type
 
@@ -1466,7 +1466,7 @@ with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
     id = 56 # int | A unique integer value identifying this user integration.
-data = autoppia_backend_client.UserIntegration() # UserIntegration | 
+data = autoppia_backend_client.UserIntegration() # UserIntegration |
 
     try:
         api_response = api_instance.integration_user_integration_update(id, data)
@@ -1479,8 +1479,8 @@ data = autoppia_backend_client.UserIntegration() # UserIntegration |
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**| A unique integer value identifying this user integration. | 
- **data** | [**UserIntegration**](UserIntegration.md)|  | 
+ **id** | **int**| A unique integer value identifying this user integration. |
+ **data** | [**UserIntegration**](UserIntegration.md)|  |
 
 ### Return type
 
@@ -1537,7 +1537,7 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.IntegrationApi(api_client)
-    
+
     try:
         api_response = api_instance.integration_webappintegration_list()
         pprint(api_response)
@@ -1567,4 +1567,3 @@ This endpoint does not need any parameter.
 **200** |  |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

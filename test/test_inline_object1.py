@@ -37,7 +37,7 @@ class TestInlineObject1(unittest.TestCase):
         # model = autoppia_backend_client.models.inline_object1.InlineObject1()  # noqa: E501
         if include_optional :
             return InlineObject1(
-                email = '0', 
+                email = '0',
                 password = '0'
             )
         else :

@@ -37,19 +37,19 @@ class TestMCP(unittest.TestCase):
         # model = autoppia_backend_client.models.mcp.MCP()  # noqa: E501
         if include_optional :
             return MCP(
-                id = 56, 
+                id = 56,
                 headers = [
                     autoppia_backend_client.models.mcp_header.MCPHeader(
-                        id = 56, 
-                        key = '0', 
+                        id = 56,
+                        key = '0',
                         value = '0', )
-                    ], 
-                name = '0', 
-                description = '0', 
-                transport = 'SSE', 
-                url = '0', 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                    ],
+                name = '0',
+                description = '0',
+                transport = 'SSE',
+                url = '0',
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 user = 56
             )
         else :

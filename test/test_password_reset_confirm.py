@@ -37,7 +37,7 @@ class TestPasswordResetConfirm(unittest.TestCase):
         # model = autoppia_backend_client.models.password_reset_confirm.PasswordResetConfirm()  # noqa: E501
         if include_optional :
             return PasswordResetConfirm(
-                token = '0', 
+                token = '0',
                 password = '0'
             )
         else :

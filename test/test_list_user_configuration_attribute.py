@@ -37,16 +37,16 @@ class TestListUserConfigurationAttribute(unittest.TestCase):
         # model = autoppia_backend_client.models.list_user_configuration_attribute.ListUserConfigurationAttribute()  # noqa: E501
         if include_optional :
             return ListUserConfigurationAttribute(
-                id = 56, 
-                user_configuration = 56, 
-                toolkit_attribute = 56, 
+                id = 56,
+                user_configuration = 56,
+                toolkit_attribute = 56,
                 toolkit_attribute_obj = autoppia_backend_client.models.list_toolkit_attribute.ListToolkitAttribute(
-                    id = 56, 
-                    toolkit = 56, 
-                    name = '0', 
-                    description = '0', 
-                    variable_type = 'string', 
-                    required = True, ), 
+                    id = 56,
+                    toolkit = 56,
+                    name = '0',
+                    description = '0',
+                    variable_type = 'string',
+                    required = True, ),
                 value = '0'
             )
         else :
@@ -55,11 +55,11 @@ class TestListUserConfigurationAttribute(unittest.TestCase):
                 user_configuration = 56,
                 toolkit_attribute = 56,
                 toolkit_attribute_obj = autoppia_backend_client.models.list_toolkit_attribute.ListToolkitAttribute(
-                    id = 56, 
-                    toolkit = 56, 
-                    name = '0', 
-                    description = '0', 
-                    variable_type = 'string', 
+                    id = 56,
+                    toolkit = 56,
+                    name = '0',
+                    description = '0',
+                    variable_type = 'string',
                     required = True, ),
                 value = '0',
         )
