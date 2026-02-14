@@ -38,6 +38,8 @@ class Credential(object):
         'user': 'int',
         'type': 'str',
         'name': 'str',
+        'credential_masked': 'str',
+        'credential_value': 'str',
         'credential': 'str'
     }
 
@@ -46,10 +48,12 @@ class Credential(object):
         'user': 'user',
         'type': 'type',
         'name': 'name',
+        'credential_masked': 'credential_masked',
+        'credential_value': 'credential_value',
         'credential': 'credential'
     }
 
-    def __init__(self, id=None, user=None, type=None, name=None, credential=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, user=None, type=None, name=None, credential_masked=None, credential_value=None, credential=None, local_vars_configuration=None):  # noqa: E501
         """Credential - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -59,14 +63,21 @@ class Credential(object):
         self._user = None
         self._type = None
         self._name = None
+        self._credential_masked = None
+        self._credential_value = None
         self._credential = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        self.user = user
+        if user is not None:
+            self.user = user
         self.type = type
         self.name = name
+        if credential_masked is not None:
+            self.credential_masked = credential_masked
+        if credential_value is not None:
+            self.credential_value = credential_value
         self.credential = credential
 
     @property
@@ -108,8 +119,6 @@ class Credential(object):
         :param user: The user of this Credential.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
 
         self._user = user
 
@@ -170,6 +179,48 @@ class Credential(object):
             raise ValueError("Invalid value for `name`, length must be greater than or equal to `1`")  # noqa: E501
 
         self._name = name
+
+    @property
+    def credential_masked(self):
+        """Gets the credential_masked of this Credential.  # noqa: E501
+
+
+        :return: The credential_masked of this Credential.  # noqa: E501
+        :rtype: str
+        """
+        return self._credential_masked
+
+    @credential_masked.setter
+    def credential_masked(self, credential_masked):
+        """Sets the credential_masked of this Credential.
+
+
+        :param credential_masked: The credential_masked of this Credential.  # noqa: E501
+        :type: str
+        """
+
+        self._credential_masked = credential_masked
+
+    @property
+    def credential_value(self):
+        """Gets the credential_value of this Credential.  # noqa: E501
+
+
+        :return: The credential_value of this Credential.  # noqa: E501
+        :rtype: str
+        """
+        return self._credential_value
+
+    @credential_value.setter
+    def credential_value(self, credential_value):
+        """Sets the credential_value of this Credential.
+
+
+        :param credential_value: The credential_value of this Credential.  # noqa: E501
+        :type: str
+        """
+
+        self._credential_value = credential_value
 
     @property
     def credential(self):

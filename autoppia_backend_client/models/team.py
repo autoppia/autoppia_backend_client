@@ -37,6 +37,8 @@ class Team(object):
         'id': 'int',
         'name': 'str',
         'details': 'str',
+        'manager_worker': 'WorkerConfig',
+        'manager_worker_id': 'int',
         'workers': 'list[WorkerConfig]',
         'workers_ids': 'list[int]',
         'created_by': 'User',
@@ -48,6 +50,8 @@ class Team(object):
         'id': 'id',
         'name': 'name',
         'details': 'details',
+        'manager_worker': 'manager_worker',
+        'manager_worker_id': 'manager_worker_id',
         'workers': 'workers',
         'workers_ids': 'workers_ids',
         'created_by': 'created_by',
@@ -55,7 +59,7 @@ class Team(object):
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, details=None, workers=None, workers_ids=None, created_by=None, created_at=None, updated_at=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, name=None, details=None, manager_worker=None, manager_worker_id=None, workers=None, workers_ids=None, created_by=None, created_at=None, updated_at=None, local_vars_configuration=None):  # noqa: E501
         """Team - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -64,6 +68,8 @@ class Team(object):
         self._id = None
         self._name = None
         self._details = None
+        self._manager_worker = None
+        self._manager_worker_id = None
         self._workers = None
         self._workers_ids = None
         self._created_by = None
@@ -75,6 +81,9 @@ class Team(object):
             self.id = id
         self.name = name
         self.details = details
+        if manager_worker is not None:
+            self.manager_worker = manager_worker
+        self.manager_worker_id = manager_worker_id
         if workers is not None:
             self.workers = workers
         if workers_ids is not None:
@@ -161,6 +170,48 @@ class Team(object):
             raise ValueError("Invalid value for `details`, length must be greater than or equal to `1`")  # noqa: E501
 
         self._details = details
+
+    @property
+    def manager_worker(self):
+        """Gets the manager_worker of this Team.  # noqa: E501
+
+
+        :return: The manager_worker of this Team.  # noqa: E501
+        :rtype: WorkerConfig
+        """
+        return self._manager_worker
+
+    @manager_worker.setter
+    def manager_worker(self, manager_worker):
+        """Sets the manager_worker of this Team.
+
+
+        :param manager_worker: The manager_worker of this Team.  # noqa: E501
+        :type: WorkerConfig
+        """
+
+        self._manager_worker = manager_worker
+
+    @property
+    def manager_worker_id(self):
+        """Gets the manager_worker_id of this Team.  # noqa: E501
+
+
+        :return: The manager_worker_id of this Team.  # noqa: E501
+        :rtype: int
+        """
+        return self._manager_worker_id
+
+    @manager_worker_id.setter
+    def manager_worker_id(self, manager_worker_id):
+        """Sets the manager_worker_id of this Team.
+
+
+        :param manager_worker_id: The manager_worker_id of this Team.  # noqa: E501
+        :type: int
+        """
+
+        self._manager_worker_id = manager_worker_id
 
     @property
     def workers(self):

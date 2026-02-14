@@ -48,7 +48,18 @@ class User(object):
         'credits': 'float',
         'is_allowed_in_dashboard': 'bool',
         'is_superuser': 'bool',
-        'messages_left': 'int'
+        'is_verified': 'bool',
+        'messages_left': 'int',
+        'image': 'str',
+        'image_url': 'str',
+        'developer_title': 'str',
+        'bio': 'str',
+        'location': 'str',
+        'github': 'str',
+        'templates_created': 'int',
+        'total_deploys': 'int',
+        'developer_api_calls': 'int',
+        'favorites_count': 'int'
     }
 
     attribute_map = {
@@ -66,10 +77,21 @@ class User(object):
         'credits': 'credits',
         'is_allowed_in_dashboard': 'is_allowed_in_dashboard',
         'is_superuser': 'is_superuser',
-        'messages_left': 'messages_left'
+        'is_verified': 'is_verified',
+        'messages_left': 'messages_left',
+        'image': 'image',
+        'image_url': 'image_url',
+        'developer_title': 'developer_title',
+        'bio': 'bio',
+        'location': 'location',
+        'github': 'github',
+        'templates_created': 'templates_created',
+        'total_deploys': 'total_deploys',
+        'developer_api_calls': 'developer_api_calls',
+        'favorites_count': 'favorites_count'
     }
 
-    def __init__(self, id=None, first_name=None, last_name=None, email=None, username=None, title=None, company=None, about=None, phone_num=None, country=None, language=None, credits=None, is_allowed_in_dashboard=None, is_superuser=None, messages_left=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, first_name=None, last_name=None, email=None, username=None, title=None, company=None, about=None, phone_num=None, country=None, language=None, credits=None, is_allowed_in_dashboard=None, is_superuser=None, is_verified=None, messages_left=None, image=None, image_url=None, developer_title=None, bio=None, location=None, github=None, templates_created=None, total_deploys=None, developer_api_calls=None, favorites_count=None, local_vars_configuration=None):  # noqa: E501
         """User - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -89,7 +111,18 @@ class User(object):
         self._credits = None
         self._is_allowed_in_dashboard = None
         self._is_superuser = None
+        self._is_verified = None
         self._messages_left = None
+        self._image = None
+        self._image_url = None
+        self._developer_title = None
+        self._bio = None
+        self._location = None
+        self._github = None
+        self._templates_created = None
+        self._total_deploys = None
+        self._developer_api_calls = None
+        self._favorites_count = None
         self.discriminator = None
 
         self.id = id
@@ -113,7 +146,28 @@ class User(object):
         self.credits = credits
         self.is_allowed_in_dashboard = is_allowed_in_dashboard
         self.is_superuser = is_superuser
+        self.is_verified = is_verified
         self.messages_left = messages_left
+        if image is not None:
+            self.image = image
+        if image_url is not None:
+            self.image_url = image_url
+        if developer_title is not None:
+            self.developer_title = developer_title
+        if bio is not None:
+            self.bio = bio
+        if location is not None:
+            self.location = location
+        if github is not None:
+            self.github = github
+        if templates_created is not None:
+            self.templates_created = templates_created
+        if total_deploys is not None:
+            self.total_deploys = total_deploys
+        if developer_api_calls is not None:
+            self.developer_api_calls = developer_api_calls
+        if favorites_count is not None:
+            self.favorites_count = favorites_count
 
     @property
     def id(self):
@@ -454,6 +508,29 @@ class User(object):
         self._is_superuser = is_superuser
 
     @property
+    def is_verified(self):
+        """Gets the is_verified of this User.  # noqa: E501
+
+
+        :return: The is_verified of this User.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_verified
+
+    @is_verified.setter
+    def is_verified(self, is_verified):
+        """Sets the is_verified of this User.
+
+
+        :param is_verified: The is_verified of this User.  # noqa: E501
+        :type: bool
+        """
+        if self.local_vars_configuration.client_side_validation and is_verified is None:  # noqa: E501
+            raise ValueError("Invalid value for `is_verified`, must not be `None`")  # noqa: E501
+
+        self._is_verified = is_verified
+
+    @property
     def messages_left(self):
         """Gets the messages_left of this User.  # noqa: E501
 
@@ -475,6 +552,228 @@ class User(object):
             raise ValueError("Invalid value for `messages_left`, must not be `None`")  # noqa: E501
 
         self._messages_left = messages_left
+
+    @property
+    def image(self):
+        """Gets the image of this User.  # noqa: E501
+
+
+        :return: The image of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._image
+
+    @image.setter
+    def image(self, image):
+        """Sets the image of this User.
+
+
+        :param image: The image of this User.  # noqa: E501
+        :type: str
+        """
+
+        self._image = image
+
+    @property
+    def image_url(self):
+        """Gets the image_url of this User.  # noqa: E501
+
+
+        :return: The image_url of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._image_url
+
+    @image_url.setter
+    def image_url(self, image_url):
+        """Sets the image_url of this User.
+
+
+        :param image_url: The image_url of this User.  # noqa: E501
+        :type: str
+        """
+
+        self._image_url = image_url
+
+    @property
+    def developer_title(self):
+        """Gets the developer_title of this User.  # noqa: E501
+
+
+        :return: The developer_title of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._developer_title
+
+    @developer_title.setter
+    def developer_title(self, developer_title):
+        """Sets the developer_title of this User.
+
+
+        :param developer_title: The developer_title of this User.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                developer_title is not None and len(developer_title) < 1):
+            raise ValueError("Invalid value for `developer_title`, length must be greater than or equal to `1`")  # noqa: E501
+
+        self._developer_title = developer_title
+
+    @property
+    def bio(self):
+        """Gets the bio of this User.  # noqa: E501
+
+
+        :return: The bio of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._bio
+
+    @bio.setter
+    def bio(self, bio):
+        """Sets the bio of this User.
+
+
+        :param bio: The bio of this User.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                bio is not None and len(bio) < 1):
+            raise ValueError("Invalid value for `bio`, length must be greater than or equal to `1`")  # noqa: E501
+
+        self._bio = bio
+
+    @property
+    def location(self):
+        """Gets the location of this User.  # noqa: E501
+
+
+        :return: The location of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._location
+
+    @location.setter
+    def location(self, location):
+        """Sets the location of this User.
+
+
+        :param location: The location of this User.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                location is not None and len(location) < 1):
+            raise ValueError("Invalid value for `location`, length must be greater than or equal to `1`")  # noqa: E501
+
+        self._location = location
+
+    @property
+    def github(self):
+        """Gets the github of this User.  # noqa: E501
+
+
+        :return: The github of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._github
+
+    @github.setter
+    def github(self, github):
+        """Sets the github of this User.
+
+
+        :param github: The github of this User.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                github is not None and len(github) < 1):
+            raise ValueError("Invalid value for `github`, length must be greater than or equal to `1`")  # noqa: E501
+
+        self._github = github
+
+    @property
+    def templates_created(self):
+        """Gets the templates_created of this User.  # noqa: E501
+
+
+        :return: The templates_created of this User.  # noqa: E501
+        :rtype: int
+        """
+        return self._templates_created
+
+    @templates_created.setter
+    def templates_created(self, templates_created):
+        """Sets the templates_created of this User.
+
+
+        :param templates_created: The templates_created of this User.  # noqa: E501
+        :type: int
+        """
+
+        self._templates_created = templates_created
+
+    @property
+    def total_deploys(self):
+        """Gets the total_deploys of this User.  # noqa: E501
+
+
+        :return: The total_deploys of this User.  # noqa: E501
+        :rtype: int
+        """
+        return self._total_deploys
+
+    @total_deploys.setter
+    def total_deploys(self, total_deploys):
+        """Sets the total_deploys of this User.
+
+
+        :param total_deploys: The total_deploys of this User.  # noqa: E501
+        :type: int
+        """
+
+        self._total_deploys = total_deploys
+
+    @property
+    def developer_api_calls(self):
+        """Gets the developer_api_calls of this User.  # noqa: E501
+
+
+        :return: The developer_api_calls of this User.  # noqa: E501
+        :rtype: int
+        """
+        return self._developer_api_calls
+
+    @developer_api_calls.setter
+    def developer_api_calls(self, developer_api_calls):
+        """Sets the developer_api_calls of this User.
+
+
+        :param developer_api_calls: The developer_api_calls of this User.  # noqa: E501
+        :type: int
+        """
+
+        self._developer_api_calls = developer_api_calls
+
+    @property
+    def favorites_count(self):
+        """Gets the favorites_count of this User.  # noqa: E501
+
+
+        :return: The favorites_count of this User.  # noqa: E501
+        :rtype: int
+        """
+        return self._favorites_count
+
+    @favorites_count.setter
+    def favorites_count(self, favorites_count):
+        """Sets the favorites_count of this User.
+
+
+        :param favorites_count: The favorites_count of this User.  # noqa: E501
+        :type: int
+        """
+
+        self._favorites_count = favorites_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

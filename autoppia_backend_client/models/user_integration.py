@@ -67,7 +67,8 @@ class UserIntegration(object):
 
         if id is not None:
             self.id = id
-        self.user = user
+        if user is not None:
+            self.user = user
         self.name = name
         self.integration = integration
         if active is not None:
@@ -113,8 +114,6 @@ class UserIntegration(object):
         :param user: The user of this UserIntegration.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
 
         self._user = user
 

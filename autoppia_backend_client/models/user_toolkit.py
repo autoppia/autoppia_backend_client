@@ -79,7 +79,8 @@ class UserToolkit(object):
             self.created_date = created_date
         if updated_date is not None:
             self.updated_date = updated_date
-        self.user = user
+        if user is not None:
+            self.user = user
 
     @property
     def id(self):
@@ -227,8 +228,6 @@ class UserToolkit(object):
         :param user: The user of this UserToolkit.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
 
         self._user = user
 

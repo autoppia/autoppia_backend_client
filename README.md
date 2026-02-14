@@ -74,14 +74,14 @@ configuration = autoppia_backend_client.Configuration(
 with autoppia_backend_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = autoppia_backend_client.ApiKeysApi(api_client)
-    data = autoppia_backend_client.ApiKey() # ApiKey |
+    data = autoppia_backend_client.ApiKey() # ApiKey | 
 
     try:
         api_response = api_instance.api_keys_create(data)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ApiKeysApi->api_keys_create: %s\n" % e)
-
+    
 ```
 
 ## Documentation for API Endpoints
@@ -90,284 +90,313 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ApiKeysApi* | [**api_keys_create**](docs/ApiKeysApi.md#api_keys_create) | **POST** /api-keys/ |
-*ApiKeysApi* | [**api_keys_delete**](docs/ApiKeysApi.md#api_keys_delete) | **DELETE** /api-keys/{id}/ |
-*ApiKeysApi* | [**api_keys_list**](docs/ApiKeysApi.md#api_keys_list) | **GET** /api-keys/ |
-*ApiKeysApi* | [**api_keys_partial_update**](docs/ApiKeysApi.md#api_keys_partial_update) | **PATCH** /api-keys/{id}/ |
-*ApiKeysApi* | [**api_keys_read**](docs/ApiKeysApi.md#api_keys_read) | **GET** /api-keys/{id}/ |
-*ApiKeysApi* | [**api_keys_update**](docs/ApiKeysApi.md#api_keys_update) | **PUT** /api-keys/{id}/ |
-*ApiKeysApi* | [**api_keys_verify_create**](docs/ApiKeysApi.md#api_keys_verify_create) | **POST** /api-keys/verify |
-*AppsConfigApi* | [**apps_config_apps_create**](docs/AppsConfigApi.md#apps_config_apps_create) | **POST** /apps-config/apps/ |
-*AppsConfigApi* | [**apps_config_apps_delete**](docs/AppsConfigApi.md#apps_config_apps_delete) | **DELETE** /apps-config/apps/{id}/ |
-*AppsConfigApi* | [**apps_config_apps_deploy_info_list**](docs/AppsConfigApi.md#apps_config_apps_deploy_info_list) | **GET** /apps-config/apps/{id}/deploy-info/ |
-*AppsConfigApi* | [**apps_config_apps_deploy_list**](docs/AppsConfigApi.md#apps_config_apps_deploy_list) | **GET** /apps-config/apps/{id}/deploy/ |
-*AppsConfigApi* | [**apps_config_apps_deploy_stop_list**](docs/AppsConfigApi.md#apps_config_apps_deploy_stop_list) | **GET** /apps-config/apps/{id}/deploy-stop/ |
-*AppsConfigApi* | [**apps_config_apps_list**](docs/AppsConfigApi.md#apps_config_apps_list) | **GET** /apps-config/apps/ |
-*AppsConfigApi* | [**apps_config_apps_partial_update**](docs/AppsConfigApi.md#apps_config_apps_partial_update) | **PATCH** /apps-config/apps/{id}/ |
-*AppsConfigApi* | [**apps_config_apps_read**](docs/AppsConfigApi.md#apps_config_apps_read) | **GET** /apps-config/apps/{id}/ |
-*AppsConfigApi* | [**apps_config_apps_update**](docs/AppsConfigApi.md#apps_config_apps_update) | **PUT** /apps-config/apps/{id}/ |
-*AuthApi* | [**auth_get_credits_create**](docs/AuthApi.md#auth_get_credits_create) | **POST** /auth/get-credits |
-*AuthApi* | [**auth_get_wallet_create**](docs/AuthApi.md#auth_get_wallet_create) | **POST** /auth/get-wallet |
-*AuthApi* | [**auth_getnonce_list**](docs/AuthApi.md#auth_getnonce_list) | **GET** /auth/getnonce |
-*AuthApi* | [**auth_google_create**](docs/AuthApi.md#auth_google_create) | **POST** /auth/google |
-*AuthApi* | [**auth_login_create**](docs/AuthApi.md#auth_login_create) | **POST** /auth/login |
-*AuthApi* | [**auth_login_jwt_create**](docs/AuthApi.md#auth_login_jwt_create) | **POST** /auth/login/jwt |
-*AuthApi* | [**auth_login_jwt_refresh_create**](docs/AuthApi.md#auth_login_jwt_refresh_create) | **POST** /auth/login/jwt/refresh |
-*AuthApi* | [**auth_login_jwt_verify_create**](docs/AuthApi.md#auth_login_jwt_verify_create) | **POST** /auth/login/jwt/verify |
-*AuthApi* | [**auth_login_wallet_create**](docs/AuthApi.md#auth_login_wallet_create) | **POST** /auth/login/wallet |
-*AuthApi* | [**auth_password_reset_confirm_create**](docs/AuthApi.md#auth_password_reset_confirm_create) | **POST** /auth/password_reset_confirm |
-*AuthApi* | [**auth_password_reset_create**](docs/AuthApi.md#auth_password_reset_create) | **POST** /auth/password_reset |
-*AuthApi* | [**auth_register_create**](docs/AuthApi.md#auth_register_create) | **POST** /auth/register |
-*AuthApi* | [**auth_resend_verification_email_create**](docs/AuthApi.md#auth_resend_verification_email_create) | **POST** /auth/resend-verification-email |
-*AuthApi* | [**auth_verify_create**](docs/AuthApi.md#auth_verify_create) | **POST** /auth/verify |
-*AuthApi* | [**auth_verify_wallet_create**](docs/AuthApi.md#auth_verify_wallet_create) | **POST** /auth/verify-wallet |
-*CredentialsApi* | [**credentials_create**](docs/CredentialsApi.md#credentials_create) | **POST** /credentials/ |
-*CredentialsApi* | [**credentials_delete**](docs/CredentialsApi.md#credentials_delete) | **DELETE** /credentials/{id}/ |
-*CredentialsApi* | [**credentials_list**](docs/CredentialsApi.md#credentials_list) | **GET** /credentials/ |
-*CredentialsApi* | [**credentials_partial_update**](docs/CredentialsApi.md#credentials_partial_update) | **PATCH** /credentials/{id}/ |
-*CredentialsApi* | [**credentials_read**](docs/CredentialsApi.md#credentials_read) | **GET** /credentials/{id}/ |
-*CredentialsApi* | [**credentials_update**](docs/CredentialsApi.md#credentials_update) | **PUT** /credentials/{id}/ |
-*DocumentsApi* | [**documents_documents_create**](docs/DocumentsApi.md#documents_documents_create) | **POST** /documents/documents/ |
-*DocumentsApi* | [**documents_documents_delete**](docs/DocumentsApi.md#documents_documents_delete) | **DELETE** /documents/documents/{id}/ |
-*DocumentsApi* | [**documents_documents_list**](docs/DocumentsApi.md#documents_documents_list) | **GET** /documents/documents/ |
-*DocumentsApi* | [**documents_documents_partial_update**](docs/DocumentsApi.md#documents_documents_partial_update) | **PATCH** /documents/documents/{id}/ |
-*DocumentsApi* | [**documents_documents_read**](docs/DocumentsApi.md#documents_documents_read) | **GET** /documents/documents/{id}/ |
-*DocumentsApi* | [**documents_documents_update**](docs/DocumentsApi.md#documents_documents_update) | **PUT** /documents/documents/{id}/ |
-*DocumentsApi* | [**documents_download_read**](docs/DocumentsApi.md#documents_download_read) | **GET** /documents/download/{id}/ |
-*DocumentsApi* | [**documents_embedding_databases_create**](docs/DocumentsApi.md#documents_embedding_databases_create) | **POST** /documents/embedding-databases/ |
-*DocumentsApi* | [**documents_embedding_databases_delete**](docs/DocumentsApi.md#documents_embedding_databases_delete) | **DELETE** /documents/embedding-databases/{id}/ |
-*DocumentsApi* | [**documents_embedding_databases_list**](docs/DocumentsApi.md#documents_embedding_databases_list) | **GET** /documents/embedding-databases/ |
-*DocumentsApi* | [**documents_embedding_databases_partial_update**](docs/DocumentsApi.md#documents_embedding_databases_partial_update) | **PATCH** /documents/embedding-databases/{id}/ |
-*DocumentsApi* | [**documents_embedding_databases_read**](docs/DocumentsApi.md#documents_embedding_databases_read) | **GET** /documents/embedding-databases/{id}/ |
-*DocumentsApi* | [**documents_embedding_databases_update**](docs/DocumentsApi.md#documents_embedding_databases_update) | **PUT** /documents/embedding-databases/{id}/ |
-*DocumentsApi* | [**documents_embeddings_create**](docs/DocumentsApi.md#documents_embeddings_create) | **POST** /documents/embeddings/ |
-*DocumentsApi* | [**documents_embeddings_delete**](docs/DocumentsApi.md#documents_embeddings_delete) | **DELETE** /documents/embeddings/{id}/ |
-*DocumentsApi* | [**documents_embeddings_list**](docs/DocumentsApi.md#documents_embeddings_list) | **GET** /documents/embeddings/ |
-*DocumentsApi* | [**documents_embeddings_partial_update**](docs/DocumentsApi.md#documents_embeddings_partial_update) | **PATCH** /documents/embeddings/{id}/ |
-*DocumentsApi* | [**documents_embeddings_read**](docs/DocumentsApi.md#documents_embeddings_read) | **GET** /documents/embeddings/{id}/ |
-*DocumentsApi* | [**documents_embeddings_update**](docs/DocumentsApi.md#documents_embeddings_update) | **PUT** /documents/embeddings/{id}/ |
-*DocumentsApi* | [**documents_tags_create**](docs/DocumentsApi.md#documents_tags_create) | **POST** /documents/tags/ |
-*DocumentsApi* | [**documents_tags_delete**](docs/DocumentsApi.md#documents_tags_delete) | **DELETE** /documents/tags/{id}/ |
-*DocumentsApi* | [**documents_tags_list**](docs/DocumentsApi.md#documents_tags_list) | **GET** /documents/tags/ |
-*DocumentsApi* | [**documents_tags_partial_update**](docs/DocumentsApi.md#documents_tags_partial_update) | **PATCH** /documents/tags/{id}/ |
-*DocumentsApi* | [**documents_tags_read**](docs/DocumentsApi.md#documents_tags_read) | **GET** /documents/tags/{id}/ |
-*DocumentsApi* | [**documents_tags_update**](docs/DocumentsApi.md#documents_tags_update) | **PUT** /documents/tags/{id}/ |
-*DocumentsApi* | [**documents_tracking_vs_create**](docs/DocumentsApi.md#documents_tracking_vs_create) | **POST** /documents/tracking_vs/ |
-*DocumentsApi* | [**documents_tracking_vs_delete**](docs/DocumentsApi.md#documents_tracking_vs_delete) | **DELETE** /documents/tracking_vs/{id}/ |
-*DocumentsApi* | [**documents_tracking_vs_list**](docs/DocumentsApi.md#documents_tracking_vs_list) | **GET** /documents/tracking_vs/ |
-*DocumentsApi* | [**documents_tracking_vs_partial_update**](docs/DocumentsApi.md#documents_tracking_vs_partial_update) | **PATCH** /documents/tracking_vs/{id}/ |
-*DocumentsApi* | [**documents_tracking_vs_read**](docs/DocumentsApi.md#documents_tracking_vs_read) | **GET** /documents/tracking_vs/{id}/ |
-*DocumentsApi* | [**documents_tracking_vs_update**](docs/DocumentsApi.md#documents_tracking_vs_update) | **PUT** /documents/tracking_vs/{id}/ |
-*DocumentsApi* | [**documents_upload_create**](docs/DocumentsApi.md#documents_upload_create) | **POST** /documents/upload/ |
-*FinanceApi* | [**finance_deployment_actions_create**](docs/FinanceApi.md#finance_deployment_actions_create) | **POST** /finance/deployment-actions/ |
-*FinanceApi* | [**finance_deployment_actions_delete**](docs/FinanceApi.md#finance_deployment_actions_delete) | **DELETE** /finance/deployment-actions/{id}/ |
-*FinanceApi* | [**finance_deployment_actions_list**](docs/FinanceApi.md#finance_deployment_actions_list) | **GET** /finance/deployment-actions/ |
-*FinanceApi* | [**finance_deployment_actions_partial_update**](docs/FinanceApi.md#finance_deployment_actions_partial_update) | **PATCH** /finance/deployment-actions/{id}/ |
-*FinanceApi* | [**finance_deployment_actions_read**](docs/FinanceApi.md#finance_deployment_actions_read) | **GET** /finance/deployment-actions/{id}/ |
-*FinanceApi* | [**finance_deployment_actions_update**](docs/FinanceApi.md#finance_deployment_actions_update) | **PUT** /finance/deployment-actions/{id}/ |
-*FinanceApi* | [**finance_llm_calls_create**](docs/FinanceApi.md#finance_llm_calls_create) | **POST** /finance/llm-calls/ |
-*FinanceApi* | [**finance_llm_calls_delete**](docs/FinanceApi.md#finance_llm_calls_delete) | **DELETE** /finance/llm-calls/{id}/ |
-*FinanceApi* | [**finance_llm_calls_list**](docs/FinanceApi.md#finance_llm_calls_list) | **GET** /finance/llm-calls/ |
-*FinanceApi* | [**finance_llm_calls_partial_update**](docs/FinanceApi.md#finance_llm_calls_partial_update) | **PATCH** /finance/llm-calls/{id}/ |
-*FinanceApi* | [**finance_llm_calls_read**](docs/FinanceApi.md#finance_llm_calls_read) | **GET** /finance/llm-calls/{id}/ |
-*FinanceApi* | [**finance_llm_calls_update**](docs/FinanceApi.md#finance_llm_calls_update) | **PUT** /finance/llm-calls/{id}/ |
-*FinanceApi* | [**finance_plan_create**](docs/FinanceApi.md#finance_plan_create) | **POST** /finance/plan/ |
-*FinanceApi* | [**finance_plan_delete**](docs/FinanceApi.md#finance_plan_delete) | **DELETE** /finance/plan/{id}/ |
-*FinanceApi* | [**finance_plan_list**](docs/FinanceApi.md#finance_plan_list) | **GET** /finance/plan/ |
-*FinanceApi* | [**finance_plan_partial_update**](docs/FinanceApi.md#finance_plan_partial_update) | **PATCH** /finance/plan/{id}/ |
-*FinanceApi* | [**finance_plan_read**](docs/FinanceApi.md#finance_plan_read) | **GET** /finance/plan/{id}/ |
-*FinanceApi* | [**finance_plan_update**](docs/FinanceApi.md#finance_plan_update) | **PUT** /finance/plan/{id}/ |
-*FinanceApi* | [**finance_user_plan_create**](docs/FinanceApi.md#finance_user_plan_create) | **POST** /finance/user-plan/ |
-*FinanceApi* | [**finance_user_plan_delete**](docs/FinanceApi.md#finance_user_plan_delete) | **DELETE** /finance/user-plan/{id}/ |
-*FinanceApi* | [**finance_user_plan_list**](docs/FinanceApi.md#finance_user_plan_list) | **GET** /finance/user-plan/ |
-*FinanceApi* | [**finance_user_plan_partial_update**](docs/FinanceApi.md#finance_user_plan_partial_update) | **PATCH** /finance/user-plan/{id}/ |
-*FinanceApi* | [**finance_user_plan_read**](docs/FinanceApi.md#finance_user_plan_read) | **GET** /finance/user-plan/{id}/ |
-*FinanceApi* | [**finance_user_plan_update**](docs/FinanceApi.md#finance_user_plan_update) | **PUT** /finance/user-plan/{id}/ |
-*HealthCheckApi* | [**health_check_list**](docs/HealthCheckApi.md#health_check_list) | **GET** /health-check/ |
-*IntegrationApi* | [**integration_admin_integration_attribute_create**](docs/IntegrationApi.md#integration_admin_integration_attribute_create) | **POST** /integration/admin/integration_attribute/ |
-*IntegrationApi* | [**integration_admin_integration_attribute_delete**](docs/IntegrationApi.md#integration_admin_integration_attribute_delete) | **DELETE** /integration/admin/integration_attribute/{id}/ |
-*IntegrationApi* | [**integration_admin_integration_attribute_list**](docs/IntegrationApi.md#integration_admin_integration_attribute_list) | **GET** /integration/admin/integration_attribute/ |
-*IntegrationApi* | [**integration_admin_integration_attribute_partial_update**](docs/IntegrationApi.md#integration_admin_integration_attribute_partial_update) | **PATCH** /integration/admin/integration_attribute/{id}/ |
-*IntegrationApi* | [**integration_admin_integration_attribute_read**](docs/IntegrationApi.md#integration_admin_integration_attribute_read) | **GET** /integration/admin/integration_attribute/{id}/ |
-*IntegrationApi* | [**integration_admin_integration_attribute_update**](docs/IntegrationApi.md#integration_admin_integration_attribute_update) | **PUT** /integration/admin/integration_attribute/{id}/ |
-*IntegrationApi* | [**integration_admin_integration_create**](docs/IntegrationApi.md#integration_admin_integration_create) | **POST** /integration/admin/integration/ |
-*IntegrationApi* | [**integration_admin_integration_delete**](docs/IntegrationApi.md#integration_admin_integration_delete) | **DELETE** /integration/admin/integration/{id}/ |
-*IntegrationApi* | [**integration_admin_integration_list**](docs/IntegrationApi.md#integration_admin_integration_list) | **GET** /integration/admin/integration/ |
-*IntegrationApi* | [**integration_admin_integration_partial_update**](docs/IntegrationApi.md#integration_admin_integration_partial_update) | **PATCH** /integration/admin/integration/{id}/ |
-*IntegrationApi* | [**integration_admin_integration_read**](docs/IntegrationApi.md#integration_admin_integration_read) | **GET** /integration/admin/integration/{id}/ |
-*IntegrationApi* | [**integration_admin_integration_update**](docs/IntegrationApi.md#integration_admin_integration_update) | **PUT** /integration/admin/integration/{id}/ |
-*IntegrationApi* | [**integration_api_categories_list**](docs/IntegrationApi.md#integration_api_categories_list) | **GET** /integration/api/categories/ |
-*IntegrationApi* | [**integration_integration_list**](docs/IntegrationApi.md#integration_integration_list) | **GET** /integration/integration/ |
-*IntegrationApi* | [**integration_integration_read**](docs/IntegrationApi.md#integration_integration_read) | **GET** /integration/integration/{id}/ |
-*IntegrationApi* | [**integration_user_integration_create**](docs/IntegrationApi.md#integration_user_integration_create) | **POST** /integration/user_integration/ |
-*IntegrationApi* | [**integration_user_integration_delete**](docs/IntegrationApi.md#integration_user_integration_delete) | **DELETE** /integration/user_integration/{id}/ |
-*IntegrationApi* | [**integration_user_integration_list**](docs/IntegrationApi.md#integration_user_integration_list) | **GET** /integration/user_integration/ |
-*IntegrationApi* | [**integration_user_integration_partial_update**](docs/IntegrationApi.md#integration_user_integration_partial_update) | **PATCH** /integration/user_integration/{id}/ |
-*IntegrationApi* | [**integration_user_integration_read**](docs/IntegrationApi.md#integration_user_integration_read) | **GET** /integration/user_integration/{id}/ |
-*IntegrationApi* | [**integration_user_integration_update**](docs/IntegrationApi.md#integration_user_integration_update) | **PUT** /integration/user_integration/{id}/ |
-*IntegrationApi* | [**integration_webappintegration_list**](docs/IntegrationApi.md#integration_webappintegration_list) | **GET** /integration/webappintegration/ |
-*LlmsApi* | [**llms_llm_create**](docs/LlmsApi.md#llms_llm_create) | **POST** /llms/llm/ |
-*LlmsApi* | [**llms_llm_delete**](docs/LlmsApi.md#llms_llm_delete) | **DELETE** /llms/llm/{id}/ |
-*LlmsApi* | [**llms_llm_list**](docs/LlmsApi.md#llms_llm_list) | **GET** /llms/llm/ |
-*LlmsApi* | [**llms_llm_partial_update**](docs/LlmsApi.md#llms_llm_partial_update) | **PATCH** /llms/llm/{id}/ |
-*LlmsApi* | [**llms_llm_provider_create**](docs/LlmsApi.md#llms_llm_provider_create) | **POST** /llms/llm-provider/ |
-*LlmsApi* | [**llms_llm_provider_delete**](docs/LlmsApi.md#llms_llm_provider_delete) | **DELETE** /llms/llm-provider/{id}/ |
-*LlmsApi* | [**llms_llm_provider_list**](docs/LlmsApi.md#llms_llm_provider_list) | **GET** /llms/llm-provider/ |
-*LlmsApi* | [**llms_llm_provider_partial_update**](docs/LlmsApi.md#llms_llm_provider_partial_update) | **PATCH** /llms/llm-provider/{id}/ |
-*LlmsApi* | [**llms_llm_provider_read**](docs/LlmsApi.md#llms_llm_provider_read) | **GET** /llms/llm-provider/{id}/ |
-*LlmsApi* | [**llms_llm_provider_update**](docs/LlmsApi.md#llms_llm_provider_update) | **PUT** /llms/llm-provider/{id}/ |
-*LlmsApi* | [**llms_llm_read**](docs/LlmsApi.md#llms_llm_read) | **GET** /llms/llm/{id}/ |
-*LlmsApi* | [**llms_llm_update**](docs/LlmsApi.md#llms_llm_update) | **PUT** /llms/llm/{id}/ |
-*LlmsApi* | [**llms_user_llm_create**](docs/LlmsApi.md#llms_user_llm_create) | **POST** /llms/user-llm/ |
-*LlmsApi* | [**llms_user_llm_delete**](docs/LlmsApi.md#llms_user_llm_delete) | **DELETE** /llms/user-llm/{id}/ |
-*LlmsApi* | [**llms_user_llm_list**](docs/LlmsApi.md#llms_user_llm_list) | **GET** /llms/user-llm/ |
-*LlmsApi* | [**llms_user_llm_partial_update**](docs/LlmsApi.md#llms_user_llm_partial_update) | **PATCH** /llms/user-llm/{id}/ |
-*LlmsApi* | [**llms_user_llm_read**](docs/LlmsApi.md#llms_user_llm_read) | **GET** /llms/user-llm/{id}/ |
-*LlmsApi* | [**llms_user_llm_update**](docs/LlmsApi.md#llms_user_llm_update) | **PUT** /llms/user-llm/{id}/ |
-*MaintenanceApi* | [**maintenance_list**](docs/MaintenanceApi.md#maintenance_list) | **GET** /maintenance/ |
-*McpApi* | [**mcp_mcps_connect**](docs/McpApi.md#mcp_mcps_connect) | **POST** /mcp/mcps/{id}/connect/ |
-*McpApi* | [**mcp_mcps_create**](docs/McpApi.md#mcp_mcps_create) | **POST** /mcp/mcps/ |
-*McpApi* | [**mcp_mcps_delete**](docs/McpApi.md#mcp_mcps_delete) | **DELETE** /mcp/mcps/{id}/ |
-*McpApi* | [**mcp_mcps_list**](docs/McpApi.md#mcp_mcps_list) | **GET** /mcp/mcps/ |
-*McpApi* | [**mcp_mcps_partial_update**](docs/McpApi.md#mcp_mcps_partial_update) | **PATCH** /mcp/mcps/{id}/ |
-*McpApi* | [**mcp_mcps_read**](docs/McpApi.md#mcp_mcps_read) | **GET** /mcp/mcps/{id}/ |
-*McpApi* | [**mcp_mcps_update**](docs/McpApi.md#mcp_mcps_update) | **PUT** /mcp/mcps/{id}/ |
-*PaymentsApi* | [**payments_add_credit_create**](docs/PaymentsApi.md#payments_add_credit_create) | **POST** /payments/add-credit/ |
-*PaymentsApi* | [**payments_balance_create**](docs/PaymentsApi.md#payments_balance_create) | **POST** /payments/balance/ |
-*PaymentsApi* | [**payments_balance_reduce_create**](docs/PaymentsApi.md#payments_balance_reduce_create) | **POST** /payments/balance/reduce |
-*PaymentsApi* | [**payments_get_wallet_create**](docs/PaymentsApi.md#payments_get_wallet_create) | **POST** /payments/get-wallet/ |
-*PaymentsApi* | [**payments_save_transaction_create**](docs/PaymentsApi.md#payments_save_transaction_create) | **POST** /payments/save-transaction/ |
-*PaymentsApi* | [**payments_transaction_history_create**](docs/PaymentsApi.md#payments_transaction_history_create) | **POST** /payments/transaction-history/ |
-*PaymentsApi* | [**payments_verify_wallet_create**](docs/PaymentsApi.md#payments_verify_wallet_create) | **POST** /payments/verify-wallet/ |
-*TeamsApi* | [**teams_create**](docs/TeamsApi.md#teams_create) | **POST** /teams/ |
-*TeamsApi* | [**teams_delete**](docs/TeamsApi.md#teams_delete) | **DELETE** /teams/{id}/ |
-*TeamsApi* | [**teams_list**](docs/TeamsApi.md#teams_list) | **GET** /teams/ |
-*TeamsApi* | [**teams_partial_update**](docs/TeamsApi.md#teams_partial_update) | **PATCH** /teams/{id}/ |
-*TeamsApi* | [**teams_read**](docs/TeamsApi.md#teams_read) | **GET** /teams/{id}/ |
-*TeamsApi* | [**teams_update**](docs/TeamsApi.md#teams_update) | **PUT** /teams/{id}/ |
-*TemplatesApi* | [**templates_categories_list**](docs/TemplatesApi.md#templates_categories_list) | **GET** /templates/categories/ |
-*TemplatesApi* | [**templates_categories_read**](docs/TemplatesApi.md#templates_categories_read) | **GET** /templates/categories/{id}/ |
-*TemplatesApi* | [**templates_worker_templates_count**](docs/TemplatesApi.md#templates_worker_templates_count) | **GET** /templates/worker-templates/count/ |
-*TemplatesApi* | [**templates_worker_templates_create**](docs/TemplatesApi.md#templates_worker_templates_create) | **POST** /templates/worker-templates/ |
-*TemplatesApi* | [**templates_worker_templates_delete**](docs/TemplatesApi.md#templates_worker_templates_delete) | **DELETE** /templates/worker-templates/{id}/ |
-*TemplatesApi* | [**templates_worker_templates_deploy**](docs/TemplatesApi.md#templates_worker_templates_deploy) | **POST** /templates/worker-templates/{id}/deploy/ |
-*TemplatesApi* | [**templates_worker_templates_favorite**](docs/TemplatesApi.md#templates_worker_templates_favorite) | **POST** /templates/worker-templates/{id}/favorite/ |
-*TemplatesApi* | [**templates_worker_templates_favorites**](docs/TemplatesApi.md#templates_worker_templates_favorites) | **GET** /templates/worker-templates/favorites/ |
-*TemplatesApi* | [**templates_worker_templates_filtered_templates**](docs/TemplatesApi.md#templates_worker_templates_filtered_templates) | **GET** /templates/worker-templates/filteredTemplates/ |
-*TemplatesApi* | [**templates_worker_templates_generate_ecr_credentials**](docs/TemplatesApi.md#templates_worker_templates_generate_ecr_credentials) | **POST** /templates/worker-templates/generate_ecr_credentials/ |
-*TemplatesApi* | [**templates_worker_templates_generate_upload_urls**](docs/TemplatesApi.md#templates_worker_templates_generate_upload_urls) | **POST** /templates/worker-templates/generate_upload_urls/ |
-*TemplatesApi* | [**templates_worker_templates_get_deployed_count**](docs/TemplatesApi.md#templates_worker_templates_get_deployed_count) | **GET** /templates/worker-templates/getDeployedCount/ |
-*TemplatesApi* | [**templates_worker_templates_list**](docs/TemplatesApi.md#templates_worker_templates_list) | **GET** /templates/worker-templates/ |
-*TemplatesApi* | [**templates_worker_templates_my_favorits_count**](docs/TemplatesApi.md#templates_worker_templates_my_favorits_count) | **GET** /templates/worker-templates/myFavoritsCount/ |
-*TemplatesApi* | [**templates_worker_templates_partial_update**](docs/TemplatesApi.md#templates_worker_templates_partial_update) | **PATCH** /templates/worker-templates/{id}/ |
-*TemplatesApi* | [**templates_worker_templates_read**](docs/TemplatesApi.md#templates_worker_templates_read) | **GET** /templates/worker-templates/{id}/ |
-*TemplatesApi* | [**templates_worker_templates_test_s3_connection**](docs/TemplatesApi.md#templates_worker_templates_test_s3_connection) | **GET** /templates/worker-templates/test_s3_connection/ |
-*TemplatesApi* | [**templates_worker_templates_unfavorite**](docs/TemplatesApi.md#templates_worker_templates_unfavorite) | **DELETE** /templates/worker-templates/{id}/unfavorite/ |
-*TemplatesApi* | [**templates_worker_templates_update**](docs/TemplatesApi.md#templates_worker_templates_update) | **PUT** /templates/worker-templates/{id}/ |
-*TemplatesApi* | [**templates_worker_templates_upload_file**](docs/TemplatesApi.md#templates_worker_templates_upload_file) | **POST** /templates/worker-templates/upload_file/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_attribute_create**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_create) | **POST** /toolkit/admin/toolkit_attribute/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_attribute_delete**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_delete) | **DELETE** /toolkit/admin/toolkit_attribute/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_attribute_list**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_list) | **GET** /toolkit/admin/toolkit_attribute/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_attribute_partial_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_partial_update) | **PATCH** /toolkit/admin/toolkit_attribute/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_attribute_read**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_read) | **GET** /toolkit/admin/toolkit_attribute/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_attribute_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_update) | **PUT** /toolkit/admin/toolkit_attribute/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_create**](docs/ToolkitApi.md#toolkit_admin_toolkit_create) | **POST** /toolkit/admin/toolkit/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_delete**](docs/ToolkitApi.md#toolkit_admin_toolkit_delete) | **DELETE** /toolkit/admin/toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_create**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_create) | **POST** /toolkit/admin/toolkit_linked_integration/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_delete**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_delete) | **DELETE** /toolkit/admin/toolkit_linked_integration/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_list**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_list) | **GET** /toolkit/admin/toolkit_linked_integration/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_partial_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_partial_update) | **PATCH** /toolkit/admin/toolkit_linked_integration/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_read**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_read) | **GET** /toolkit/admin/toolkit_linked_integration/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_update) | **PUT** /toolkit/admin/toolkit_linked_integration/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_list**](docs/ToolkitApi.md#toolkit_admin_toolkit_list) | **GET** /toolkit/admin/toolkit/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_partial_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_partial_update) | **PATCH** /toolkit/admin/toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_read**](docs/ToolkitApi.md#toolkit_admin_toolkit_read) | **GET** /toolkit/admin/toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_admin_toolkit_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_update) | **PUT** /toolkit/admin/toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_tool_create**](docs/ToolkitApi.md#toolkit_tool_create) | **POST** /toolkit/tool/ |
-*ToolkitApi* | [**toolkit_tool_delete**](docs/ToolkitApi.md#toolkit_tool_delete) | **DELETE** /toolkit/tool/{id}/ |
-*ToolkitApi* | [**toolkit_tool_list**](docs/ToolkitApi.md#toolkit_tool_list) | **GET** /toolkit/tool/ |
-*ToolkitApi* | [**toolkit_tool_partial_update**](docs/ToolkitApi.md#toolkit_tool_partial_update) | **PATCH** /toolkit/tool/{id}/ |
-*ToolkitApi* | [**toolkit_tool_read**](docs/ToolkitApi.md#toolkit_tool_read) | **GET** /toolkit/tool/{id}/ |
-*ToolkitApi* | [**toolkit_tool_update**](docs/ToolkitApi.md#toolkit_tool_update) | **PUT** /toolkit/tool/{id}/ |
-*ToolkitApi* | [**toolkit_toolkit_list**](docs/ToolkitApi.md#toolkit_toolkit_list) | **GET** /toolkit/toolkit/ |
-*ToolkitApi* | [**toolkit_toolkit_read**](docs/ToolkitApi.md#toolkit_toolkit_read) | **GET** /toolkit/toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_user_configuration_create**](docs/ToolkitApi.md#toolkit_user_configuration_create) | **POST** /toolkit/user_configuration/ |
-*ToolkitApi* | [**toolkit_user_configuration_delete**](docs/ToolkitApi.md#toolkit_user_configuration_delete) | **DELETE** /toolkit/user_configuration/{id}/ |
-*ToolkitApi* | [**toolkit_user_configuration_list**](docs/ToolkitApi.md#toolkit_user_configuration_list) | **GET** /toolkit/user_configuration/ |
-*ToolkitApi* | [**toolkit_user_configuration_partial_update**](docs/ToolkitApi.md#toolkit_user_configuration_partial_update) | **PATCH** /toolkit/user_configuration/{id}/ |
-*ToolkitApi* | [**toolkit_user_configuration_read**](docs/ToolkitApi.md#toolkit_user_configuration_read) | **GET** /toolkit/user_configuration/{id}/ |
-*ToolkitApi* | [**toolkit_user_configuration_update**](docs/ToolkitApi.md#toolkit_user_configuration_update) | **PUT** /toolkit/user_configuration/{id}/ |
-*ToolkitApi* | [**toolkit_user_toolkit_create**](docs/ToolkitApi.md#toolkit_user_toolkit_create) | **POST** /toolkit/user_toolkit/ |
-*ToolkitApi* | [**toolkit_user_toolkit_delete**](docs/ToolkitApi.md#toolkit_user_toolkit_delete) | **DELETE** /toolkit/user_toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_user_toolkit_list**](docs/ToolkitApi.md#toolkit_user_toolkit_list) | **GET** /toolkit/user_toolkit/ |
-*ToolkitApi* | [**toolkit_user_toolkit_partial_update**](docs/ToolkitApi.md#toolkit_user_toolkit_partial_update) | **PATCH** /toolkit/user_toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_user_toolkit_read**](docs/ToolkitApi.md#toolkit_user_toolkit_read) | **GET** /toolkit/user_toolkit/{id}/ |
-*ToolkitApi* | [**toolkit_user_toolkit_update**](docs/ToolkitApi.md#toolkit_user_toolkit_update) | **PUT** /toolkit/user_toolkit/{id}/ |
-*UserApi* | [**user_partial_update**](docs/UserApi.md#user_partial_update) | **PATCH** /user/{id}/ |
-*UserApi* | [**user_read**](docs/UserApi.md#user_read) | **GET** /user/{id}/ |
-*UserApi* | [**user_update**](docs/UserApi.md#user_update) | **PUT** /user/{id}/ |
-*WorkersApi* | [**workers_configuration_category_create**](docs/WorkersApi.md#workers_configuration_category_create) | **POST** /workers/configuration/category/ |
-*WorkersApi* | [**workers_configuration_category_delete**](docs/WorkersApi.md#workers_configuration_category_delete) | **DELETE** /workers/configuration/category/{id}/ |
-*WorkersApi* | [**workers_configuration_category_list**](docs/WorkersApi.md#workers_configuration_category_list) | **GET** /workers/configuration/category/ |
-*WorkersApi* | [**workers_configuration_category_partial_update**](docs/WorkersApi.md#workers_configuration_category_partial_update) | **PATCH** /workers/configuration/category/{id}/ |
-*WorkersApi* | [**workers_configuration_category_read**](docs/WorkersApi.md#workers_configuration_category_read) | **GET** /workers/configuration/category/{id}/ |
-*WorkersApi* | [**workers_configuration_category_update**](docs/WorkersApi.md#workers_configuration_category_update) | **PUT** /workers/configuration/category/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_category_create**](docs/WorkersApi.md#workers_configuration_prompt_category_create) | **POST** /workers/configuration/prompt-category/ |
-*WorkersApi* | [**workers_configuration_prompt_category_delete**](docs/WorkersApi.md#workers_configuration_prompt_category_delete) | **DELETE** /workers/configuration/prompt-category/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_category_list**](docs/WorkersApi.md#workers_configuration_prompt_category_list) | **GET** /workers/configuration/prompt-category/ |
-*WorkersApi* | [**workers_configuration_prompt_category_partial_update**](docs/WorkersApi.md#workers_configuration_prompt_category_partial_update) | **PATCH** /workers/configuration/prompt-category/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_category_read**](docs/WorkersApi.md#workers_configuration_prompt_category_read) | **GET** /workers/configuration/prompt-category/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_category_update**](docs/WorkersApi.md#workers_configuration_prompt_category_update) | **PUT** /workers/configuration/prompt-category/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_create**](docs/WorkersApi.md#workers_configuration_prompt_create) | **POST** /workers/configuration/prompt/ |
-*WorkersApi* | [**workers_configuration_prompt_delete**](docs/WorkersApi.md#workers_configuration_prompt_delete) | **DELETE** /workers/configuration/prompt/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_list**](docs/WorkersApi.md#workers_configuration_prompt_list) | **GET** /workers/configuration/prompt/ |
-*WorkersApi* | [**workers_configuration_prompt_partial_update**](docs/WorkersApi.md#workers_configuration_prompt_partial_update) | **PATCH** /workers/configuration/prompt/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_read**](docs/WorkersApi.md#workers_configuration_prompt_read) | **GET** /workers/configuration/prompt/{id}/ |
-*WorkersApi* | [**workers_configuration_prompt_update**](docs/WorkersApi.md#workers_configuration_prompt_update) | **PUT** /workers/configuration/prompt/{id}/ |
-*WorkersApi* | [**workers_configuration_result_create**](docs/WorkersApi.md#workers_configuration_result_create) | **POST** /workers/configuration/result/ |
-*WorkersApi* | [**workers_configuration_result_delete**](docs/WorkersApi.md#workers_configuration_result_delete) | **DELETE** /workers/configuration/result/{id}/ |
-*WorkersApi* | [**workers_configuration_result_list**](docs/WorkersApi.md#workers_configuration_result_list) | **GET** /workers/configuration/result/ |
-*WorkersApi* | [**workers_configuration_result_partial_update**](docs/WorkersApi.md#workers_configuration_result_partial_update) | **PATCH** /workers/configuration/result/{id}/ |
-*WorkersApi* | [**workers_configuration_result_read**](docs/WorkersApi.md#workers_configuration_result_read) | **GET** /workers/configuration/result/{id}/ |
-*WorkersApi* | [**workers_configuration_result_update**](docs/WorkersApi.md#workers_configuration_result_update) | **PUT** /workers/configuration/result/{id}/ |
-*WorkersApi* | [**workers_configuration_tasks_create**](docs/WorkersApi.md#workers_configuration_tasks_create) | **POST** /workers/configuration/tasks/ |
-*WorkersApi* | [**workers_configuration_tasks_delete**](docs/WorkersApi.md#workers_configuration_tasks_delete) | **DELETE** /workers/configuration/tasks/{id}/ |
-*WorkersApi* | [**workers_configuration_tasks_list**](docs/WorkersApi.md#workers_configuration_tasks_list) | **GET** /workers/configuration/tasks/ |
-*WorkersApi* | [**workers_configuration_tasks_partial_update**](docs/WorkersApi.md#workers_configuration_tasks_partial_update) | **PATCH** /workers/configuration/tasks/{id}/ |
-*WorkersApi* | [**workers_configuration_tasks_read**](docs/WorkersApi.md#workers_configuration_tasks_read) | **GET** /workers/configuration/tasks/{id}/ |
-*WorkersApi* | [**workers_configuration_tasks_update**](docs/WorkersApi.md#workers_configuration_tasks_update) | **PUT** /workers/configuration/tasks/{id}/ |
-*WorkersApi* | [**workers_configuration_tests_create**](docs/WorkersApi.md#workers_configuration_tests_create) | **POST** /workers/configuration/tests/ |
-*WorkersApi* | [**workers_configuration_tests_delete**](docs/WorkersApi.md#workers_configuration_tests_delete) | **DELETE** /workers/configuration/tests/{id}/ |
-*WorkersApi* | [**workers_configuration_tests_list**](docs/WorkersApi.md#workers_configuration_tests_list) | **GET** /workers/configuration/tests/ |
-*WorkersApi* | [**workers_configuration_tests_partial_update**](docs/WorkersApi.md#workers_configuration_tests_partial_update) | **PATCH** /workers/configuration/tests/{id}/ |
-*WorkersApi* | [**workers_configuration_tests_read**](docs/WorkersApi.md#workers_configuration_tests_read) | **GET** /workers/configuration/tests/{id}/ |
-*WorkersApi* | [**workers_configuration_tests_update**](docs/WorkersApi.md#workers_configuration_tests_update) | **PUT** /workers/configuration/tests/{id}/ |
-*WorkersApi* | [**workers_configuration_worker_create**](docs/WorkersApi.md#workers_configuration_worker_create) | **POST** /workers/configuration/worker/ |
-*WorkersApi* | [**workers_configuration_worker_delete**](docs/WorkersApi.md#workers_configuration_worker_delete) | **DELETE** /workers/configuration/worker/{id}/ |
-*WorkersApi* | [**workers_configuration_worker_list**](docs/WorkersApi.md#workers_configuration_worker_list) | **GET** /workers/configuration/worker/ |
-*WorkersApi* | [**workers_configuration_worker_partial_update**](docs/WorkersApi.md#workers_configuration_worker_partial_update) | **PATCH** /workers/configuration/worker/{id}/ |
-*WorkersApi* | [**workers_configuration_worker_read**](docs/WorkersApi.md#workers_configuration_worker_read) | **GET** /workers/configuration/worker/{id}/ |
-*WorkersApi* | [**workers_configuration_worker_update**](docs/WorkersApi.md#workers_configuration_worker_update) | **PUT** /workers/configuration/worker/{id}/ |
-*WorkersConfigApi* | [**workers_config_workers_create**](docs/WorkersConfigApi.md#workers_config_workers_create) | **POST** /workers-config/workers/ |
-*WorkersConfigApi* | [**workers_config_workers_delete**](docs/WorkersConfigApi.md#workers_config_workers_delete) | **DELETE** /workers-config/workers/{id}/ |
-*WorkersConfigApi* | [**workers_config_workers_deploy_info_list**](docs/WorkersConfigApi.md#workers_config_workers_deploy_info_list) | **GET** /workers-config/workers/{id}/deploy-info/ |
-*WorkersConfigApi* | [**workers_config_workers_deploy_list**](docs/WorkersConfigApi.md#workers_config_workers_deploy_list) | **GET** /workers-config/workers/{id}/deploy/ |
-*WorkersConfigApi* | [**workers_config_workers_deploy_stop_list**](docs/WorkersConfigApi.md#workers_config_workers_deploy_stop_list) | **GET** /workers-config/workers/{id}/deploy-stop/ |
-*WorkersConfigApi* | [**workers_config_workers_list**](docs/WorkersConfigApi.md#workers_config_workers_list) | **GET** /workers-config/workers/ |
-*WorkersConfigApi* | [**workers_config_workers_partial_update**](docs/WorkersConfigApi.md#workers_config_workers_partial_update) | **PATCH** /workers-config/workers/{id}/ |
-*WorkersConfigApi* | [**workers_config_workers_read**](docs/WorkersConfigApi.md#workers_config_workers_read) | **GET** /workers-config/workers/{id}/ |
-*WorkersConfigApi* | [**workers_config_workers_update**](docs/WorkersConfigApi.md#workers_config_workers_update) | **PUT** /workers-config/workers/{id}/ |
+*ApiKeysApi* | [**api_keys_create**](docs/ApiKeysApi.md#api_keys_create) | **POST** /api-keys/ | 
+*ApiKeysApi* | [**api_keys_delete**](docs/ApiKeysApi.md#api_keys_delete) | **DELETE** /api-keys/{id}/ | 
+*ApiKeysApi* | [**api_keys_list**](docs/ApiKeysApi.md#api_keys_list) | **GET** /api-keys/ | 
+*ApiKeysApi* | [**api_keys_partial_update**](docs/ApiKeysApi.md#api_keys_partial_update) | **PATCH** /api-keys/{id}/ | 
+*ApiKeysApi* | [**api_keys_read**](docs/ApiKeysApi.md#api_keys_read) | **GET** /api-keys/{id}/ | 
+*ApiKeysApi* | [**api_keys_update**](docs/ApiKeysApi.md#api_keys_update) | **PUT** /api-keys/{id}/ | 
+*ApiKeysApi* | [**api_keys_verify_create**](docs/ApiKeysApi.md#api_keys_verify_create) | **POST** /api-keys/verify | 
+*AuthApi* | [**auth_get_credits_create**](docs/AuthApi.md#auth_get_credits_create) | **POST** /auth/get-credits | 
+*AuthApi* | [**auth_get_wallet_create**](docs/AuthApi.md#auth_get_wallet_create) | **POST** /auth/get-wallet | 
+*AuthApi* | [**auth_getnonce_list**](docs/AuthApi.md#auth_getnonce_list) | **GET** /auth/getnonce | 
+*AuthApi* | [**auth_google_create**](docs/AuthApi.md#auth_google_create) | **POST** /auth/google | 
+*AuthApi* | [**auth_login_create**](docs/AuthApi.md#auth_login_create) | **POST** /auth/login | 
+*AuthApi* | [**auth_login_jwt_create**](docs/AuthApi.md#auth_login_jwt_create) | **POST** /auth/login/jwt | 
+*AuthApi* | [**auth_login_jwt_refresh_create**](docs/AuthApi.md#auth_login_jwt_refresh_create) | **POST** /auth/login/jwt/refresh | 
+*AuthApi* | [**auth_login_jwt_verify_create**](docs/AuthApi.md#auth_login_jwt_verify_create) | **POST** /auth/login/jwt/verify | 
+*AuthApi* | [**auth_login_wallet_create**](docs/AuthApi.md#auth_login_wallet_create) | **POST** /auth/login/wallet | 
+*AuthApi* | [**auth_password_reset_confirm_create**](docs/AuthApi.md#auth_password_reset_confirm_create) | **POST** /auth/password_reset_confirm | 
+*AuthApi* | [**auth_password_reset_create**](docs/AuthApi.md#auth_password_reset_create) | **POST** /auth/password_reset | 
+*AuthApi* | [**auth_register_create**](docs/AuthApi.md#auth_register_create) | **POST** /auth/register | 
+*AuthApi* | [**auth_resend_verification_email_create**](docs/AuthApi.md#auth_resend_verification_email_create) | **POST** /auth/resend-verification-email | 
+*AuthApi* | [**auth_verify_create**](docs/AuthApi.md#auth_verify_create) | **POST** /auth/verify | 
+*AuthApi* | [**auth_verify_wallet_create**](docs/AuthApi.md#auth_verify_wallet_create) | **POST** /auth/verify-wallet | 
+*CredentialsApi* | [**credentials_create**](docs/CredentialsApi.md#credentials_create) | **POST** /credentials/ | 
+*CredentialsApi* | [**credentials_delete**](docs/CredentialsApi.md#credentials_delete) | **DELETE** /credentials/{id}/ | 
+*CredentialsApi* | [**credentials_list**](docs/CredentialsApi.md#credentials_list) | **GET** /credentials/ | 
+*CredentialsApi* | [**credentials_partial_update**](docs/CredentialsApi.md#credentials_partial_update) | **PATCH** /credentials/{id}/ | 
+*CredentialsApi* | [**credentials_read**](docs/CredentialsApi.md#credentials_read) | **GET** /credentials/{id}/ | 
+*CredentialsApi* | [**credentials_update**](docs/CredentialsApi.md#credentials_update) | **PUT** /credentials/{id}/ | 
+*DocumentsApi* | [**documents_documents_chunks**](docs/DocumentsApi.md#documents_documents_chunks) | **GET** /documents/documents/{id}/chunks/ | 
+*DocumentsApi* | [**documents_documents_create**](docs/DocumentsApi.md#documents_documents_create) | **POST** /documents/documents/ | 
+*DocumentsApi* | [**documents_documents_delete**](docs/DocumentsApi.md#documents_documents_delete) | **DELETE** /documents/documents/{id}/ | 
+*DocumentsApi* | [**documents_documents_embedding_create**](docs/DocumentsApi.md#documents_documents_embedding_create) | **POST** /documents/documents/{id}/embedding/ | 
+*DocumentsApi* | [**documents_documents_embedding_read**](docs/DocumentsApi.md#documents_documents_embedding_read) | **GET** /documents/documents/{id}/embedding/ | 
+*DocumentsApi* | [**documents_documents_list**](docs/DocumentsApi.md#documents_documents_list) | **GET** /documents/documents/ | 
+*DocumentsApi* | [**documents_documents_partial_update**](docs/DocumentsApi.md#documents_documents_partial_update) | **PATCH** /documents/documents/{id}/ | 
+*DocumentsApi* | [**documents_documents_read**](docs/DocumentsApi.md#documents_documents_read) | **GET** /documents/documents/{id}/ | 
+*DocumentsApi* | [**documents_documents_update**](docs/DocumentsApi.md#documents_documents_update) | **PUT** /documents/documents/{id}/ | 
+*DocumentsApi* | [**documents_download_read**](docs/DocumentsApi.md#documents_download_read) | **GET** /documents/download/{id}/ | 
+*DocumentsApi* | [**documents_embedding_databases_create**](docs/DocumentsApi.md#documents_embedding_databases_create) | **POST** /documents/embedding-databases/ | 
+*DocumentsApi* | [**documents_embedding_databases_delete**](docs/DocumentsApi.md#documents_embedding_databases_delete) | **DELETE** /documents/embedding-databases/{id}/ | 
+*DocumentsApi* | [**documents_embedding_databases_list**](docs/DocumentsApi.md#documents_embedding_databases_list) | **GET** /documents/embedding-databases/ | 
+*DocumentsApi* | [**documents_embedding_databases_partial_update**](docs/DocumentsApi.md#documents_embedding_databases_partial_update) | **PATCH** /documents/embedding-databases/{id}/ | 
+*DocumentsApi* | [**documents_embedding_databases_read**](docs/DocumentsApi.md#documents_embedding_databases_read) | **GET** /documents/embedding-databases/{id}/ | 
+*DocumentsApi* | [**documents_embedding_databases_update**](docs/DocumentsApi.md#documents_embedding_databases_update) | **PUT** /documents/embedding-databases/{id}/ | 
+*DocumentsApi* | [**documents_embeddings_create**](docs/DocumentsApi.md#documents_embeddings_create) | **POST** /documents/embeddings/ | 
+*DocumentsApi* | [**documents_embeddings_delete**](docs/DocumentsApi.md#documents_embeddings_delete) | **DELETE** /documents/embeddings/{id}/ | 
+*DocumentsApi* | [**documents_embeddings_list**](docs/DocumentsApi.md#documents_embeddings_list) | **GET** /documents/embeddings/ | 
+*DocumentsApi* | [**documents_embeddings_partial_update**](docs/DocumentsApi.md#documents_embeddings_partial_update) | **PATCH** /documents/embeddings/{id}/ | 
+*DocumentsApi* | [**documents_embeddings_read**](docs/DocumentsApi.md#documents_embeddings_read) | **GET** /documents/embeddings/{id}/ | 
+*DocumentsApi* | [**documents_embeddings_update**](docs/DocumentsApi.md#documents_embeddings_update) | **PUT** /documents/embeddings/{id}/ | 
+*DocumentsApi* | [**documents_tags_create**](docs/DocumentsApi.md#documents_tags_create) | **POST** /documents/tags/ | 
+*DocumentsApi* | [**documents_tags_delete**](docs/DocumentsApi.md#documents_tags_delete) | **DELETE** /documents/tags/{id}/ | 
+*DocumentsApi* | [**documents_tags_list**](docs/DocumentsApi.md#documents_tags_list) | **GET** /documents/tags/ | 
+*DocumentsApi* | [**documents_tags_partial_update**](docs/DocumentsApi.md#documents_tags_partial_update) | **PATCH** /documents/tags/{id}/ | 
+*DocumentsApi* | [**documents_tags_read**](docs/DocumentsApi.md#documents_tags_read) | **GET** /documents/tags/{id}/ | 
+*DocumentsApi* | [**documents_tags_update**](docs/DocumentsApi.md#documents_tags_update) | **PUT** /documents/tags/{id}/ | 
+*DocumentsApi* | [**documents_tracking_vs_create**](docs/DocumentsApi.md#documents_tracking_vs_create) | **POST** /documents/tracking_vs/ | 
+*DocumentsApi* | [**documents_tracking_vs_delete**](docs/DocumentsApi.md#documents_tracking_vs_delete) | **DELETE** /documents/tracking_vs/{id}/ | 
+*DocumentsApi* | [**documents_tracking_vs_list**](docs/DocumentsApi.md#documents_tracking_vs_list) | **GET** /documents/tracking_vs/ | 
+*DocumentsApi* | [**documents_tracking_vs_partial_update**](docs/DocumentsApi.md#documents_tracking_vs_partial_update) | **PATCH** /documents/tracking_vs/{id}/ | 
+*DocumentsApi* | [**documents_tracking_vs_read**](docs/DocumentsApi.md#documents_tracking_vs_read) | **GET** /documents/tracking_vs/{id}/ | 
+*DocumentsApi* | [**documents_tracking_vs_update**](docs/DocumentsApi.md#documents_tracking_vs_update) | **PUT** /documents/tracking_vs/{id}/ | 
+*DocumentsApi* | [**documents_upload_create**](docs/DocumentsApi.md#documents_upload_create) | **POST** /documents/upload/ | 
+*FinanceApi* | [**finance_deployment_actions_create**](docs/FinanceApi.md#finance_deployment_actions_create) | **POST** /finance/deployment-actions/ | 
+*FinanceApi* | [**finance_deployment_actions_delete**](docs/FinanceApi.md#finance_deployment_actions_delete) | **DELETE** /finance/deployment-actions/{id}/ | 
+*FinanceApi* | [**finance_deployment_actions_list**](docs/FinanceApi.md#finance_deployment_actions_list) | **GET** /finance/deployment-actions/ | 
+*FinanceApi* | [**finance_deployment_actions_partial_update**](docs/FinanceApi.md#finance_deployment_actions_partial_update) | **PATCH** /finance/deployment-actions/{id}/ | 
+*FinanceApi* | [**finance_deployment_actions_read**](docs/FinanceApi.md#finance_deployment_actions_read) | **GET** /finance/deployment-actions/{id}/ | 
+*FinanceApi* | [**finance_deployment_actions_update**](docs/FinanceApi.md#finance_deployment_actions_update) | **PUT** /finance/deployment-actions/{id}/ | 
+*FinanceApi* | [**finance_llm_calls_create**](docs/FinanceApi.md#finance_llm_calls_create) | **POST** /finance/llm-calls/ | 
+*FinanceApi* | [**finance_llm_calls_delete**](docs/FinanceApi.md#finance_llm_calls_delete) | **DELETE** /finance/llm-calls/{id}/ | 
+*FinanceApi* | [**finance_llm_calls_list**](docs/FinanceApi.md#finance_llm_calls_list) | **GET** /finance/llm-calls/ | 
+*FinanceApi* | [**finance_llm_calls_partial_update**](docs/FinanceApi.md#finance_llm_calls_partial_update) | **PATCH** /finance/llm-calls/{id}/ | 
+*FinanceApi* | [**finance_llm_calls_read**](docs/FinanceApi.md#finance_llm_calls_read) | **GET** /finance/llm-calls/{id}/ | 
+*FinanceApi* | [**finance_llm_calls_update**](docs/FinanceApi.md#finance_llm_calls_update) | **PUT** /finance/llm-calls/{id}/ | 
+*FinanceApi* | [**finance_plan_create**](docs/FinanceApi.md#finance_plan_create) | **POST** /finance/plan/ | 
+*FinanceApi* | [**finance_plan_delete**](docs/FinanceApi.md#finance_plan_delete) | **DELETE** /finance/plan/{id}/ | 
+*FinanceApi* | [**finance_plan_list**](docs/FinanceApi.md#finance_plan_list) | **GET** /finance/plan/ | 
+*FinanceApi* | [**finance_plan_partial_update**](docs/FinanceApi.md#finance_plan_partial_update) | **PATCH** /finance/plan/{id}/ | 
+*FinanceApi* | [**finance_plan_read**](docs/FinanceApi.md#finance_plan_read) | **GET** /finance/plan/{id}/ | 
+*FinanceApi* | [**finance_plan_update**](docs/FinanceApi.md#finance_plan_update) | **PUT** /finance/plan/{id}/ | 
+*FinanceApi* | [**finance_user_plan_create**](docs/FinanceApi.md#finance_user_plan_create) | **POST** /finance/user-plan/ | 
+*FinanceApi* | [**finance_user_plan_delete**](docs/FinanceApi.md#finance_user_plan_delete) | **DELETE** /finance/user-plan/{id}/ | 
+*FinanceApi* | [**finance_user_plan_list**](docs/FinanceApi.md#finance_user_plan_list) | **GET** /finance/user-plan/ | 
+*FinanceApi* | [**finance_user_plan_partial_update**](docs/FinanceApi.md#finance_user_plan_partial_update) | **PATCH** /finance/user-plan/{id}/ | 
+*FinanceApi* | [**finance_user_plan_read**](docs/FinanceApi.md#finance_user_plan_read) | **GET** /finance/user-plan/{id}/ | 
+*FinanceApi* | [**finance_user_plan_update**](docs/FinanceApi.md#finance_user_plan_update) | **PUT** /finance/user-plan/{id}/ | 
+*HealthCheckApi* | [**health_check_list**](docs/HealthCheckApi.md#health_check_list) | **GET** /health-check/ | 
+*IntegrationApi* | [**integration_admin_integration_attribute_create**](docs/IntegrationApi.md#integration_admin_integration_attribute_create) | **POST** /integration/admin/integration_attribute/ | 
+*IntegrationApi* | [**integration_admin_integration_attribute_delete**](docs/IntegrationApi.md#integration_admin_integration_attribute_delete) | **DELETE** /integration/admin/integration_attribute/{id}/ | 
+*IntegrationApi* | [**integration_admin_integration_attribute_list**](docs/IntegrationApi.md#integration_admin_integration_attribute_list) | **GET** /integration/admin/integration_attribute/ | 
+*IntegrationApi* | [**integration_admin_integration_attribute_partial_update**](docs/IntegrationApi.md#integration_admin_integration_attribute_partial_update) | **PATCH** /integration/admin/integration_attribute/{id}/ | 
+*IntegrationApi* | [**integration_admin_integration_attribute_read**](docs/IntegrationApi.md#integration_admin_integration_attribute_read) | **GET** /integration/admin/integration_attribute/{id}/ | 
+*IntegrationApi* | [**integration_admin_integration_attribute_update**](docs/IntegrationApi.md#integration_admin_integration_attribute_update) | **PUT** /integration/admin/integration_attribute/{id}/ | 
+*IntegrationApi* | [**integration_admin_integration_create**](docs/IntegrationApi.md#integration_admin_integration_create) | **POST** /integration/admin/integration/ | 
+*IntegrationApi* | [**integration_admin_integration_delete**](docs/IntegrationApi.md#integration_admin_integration_delete) | **DELETE** /integration/admin/integration/{id}/ | 
+*IntegrationApi* | [**integration_admin_integration_list**](docs/IntegrationApi.md#integration_admin_integration_list) | **GET** /integration/admin/integration/ | 
+*IntegrationApi* | [**integration_admin_integration_partial_update**](docs/IntegrationApi.md#integration_admin_integration_partial_update) | **PATCH** /integration/admin/integration/{id}/ | 
+*IntegrationApi* | [**integration_admin_integration_read**](docs/IntegrationApi.md#integration_admin_integration_read) | **GET** /integration/admin/integration/{id}/ | 
+*IntegrationApi* | [**integration_admin_integration_update**](docs/IntegrationApi.md#integration_admin_integration_update) | **PUT** /integration/admin/integration/{id}/ | 
+*IntegrationApi* | [**integration_api_categories_list**](docs/IntegrationApi.md#integration_api_categories_list) | **GET** /integration/api/categories/ | 
+*IntegrationApi* | [**integration_integration_list**](docs/IntegrationApi.md#integration_integration_list) | **GET** /integration/integration/ | 
+*IntegrationApi* | [**integration_integration_read**](docs/IntegrationApi.md#integration_integration_read) | **GET** /integration/integration/{id}/ | 
+*IntegrationApi* | [**integration_user_integration_create**](docs/IntegrationApi.md#integration_user_integration_create) | **POST** /integration/user_integration/ | 
+*IntegrationApi* | [**integration_user_integration_delete**](docs/IntegrationApi.md#integration_user_integration_delete) | **DELETE** /integration/user_integration/{id}/ | 
+*IntegrationApi* | [**integration_user_integration_list**](docs/IntegrationApi.md#integration_user_integration_list) | **GET** /integration/user_integration/ | 
+*IntegrationApi* | [**integration_user_integration_partial_update**](docs/IntegrationApi.md#integration_user_integration_partial_update) | **PATCH** /integration/user_integration/{id}/ | 
+*IntegrationApi* | [**integration_user_integration_read**](docs/IntegrationApi.md#integration_user_integration_read) | **GET** /integration/user_integration/{id}/ | 
+*IntegrationApi* | [**integration_user_integration_update**](docs/IntegrationApi.md#integration_user_integration_update) | **PUT** /integration/user_integration/{id}/ | 
+*IntegrationApi* | [**integration_webappintegration_list**](docs/IntegrationApi.md#integration_webappintegration_list) | **GET** /integration/webappintegration/ | 
+*LlmsApi* | [**llms_llm_create**](docs/LlmsApi.md#llms_llm_create) | **POST** /llms/llm/ | 
+*LlmsApi* | [**llms_llm_delete**](docs/LlmsApi.md#llms_llm_delete) | **DELETE** /llms/llm/{id}/ | 
+*LlmsApi* | [**llms_llm_list**](docs/LlmsApi.md#llms_llm_list) | **GET** /llms/llm/ | 
+*LlmsApi* | [**llms_llm_partial_update**](docs/LlmsApi.md#llms_llm_partial_update) | **PATCH** /llms/llm/{id}/ | 
+*LlmsApi* | [**llms_llm_provider_create**](docs/LlmsApi.md#llms_llm_provider_create) | **POST** /llms/llm-provider/ | 
+*LlmsApi* | [**llms_llm_provider_delete**](docs/LlmsApi.md#llms_llm_provider_delete) | **DELETE** /llms/llm-provider/{id}/ | 
+*LlmsApi* | [**llms_llm_provider_list**](docs/LlmsApi.md#llms_llm_provider_list) | **GET** /llms/llm-provider/ | 
+*LlmsApi* | [**llms_llm_provider_partial_update**](docs/LlmsApi.md#llms_llm_provider_partial_update) | **PATCH** /llms/llm-provider/{id}/ | 
+*LlmsApi* | [**llms_llm_provider_read**](docs/LlmsApi.md#llms_llm_provider_read) | **GET** /llms/llm-provider/{id}/ | 
+*LlmsApi* | [**llms_llm_provider_update**](docs/LlmsApi.md#llms_llm_provider_update) | **PUT** /llms/llm-provider/{id}/ | 
+*LlmsApi* | [**llms_llm_read**](docs/LlmsApi.md#llms_llm_read) | **GET** /llms/llm/{id}/ | 
+*LlmsApi* | [**llms_llm_update**](docs/LlmsApi.md#llms_llm_update) | **PUT** /llms/llm/{id}/ | 
+*LlmsApi* | [**llms_user_llm_create**](docs/LlmsApi.md#llms_user_llm_create) | **POST** /llms/user-llm/ | 
+*LlmsApi* | [**llms_user_llm_delete**](docs/LlmsApi.md#llms_user_llm_delete) | **DELETE** /llms/user-llm/{id}/ | 
+*LlmsApi* | [**llms_user_llm_list**](docs/LlmsApi.md#llms_user_llm_list) | **GET** /llms/user-llm/ | 
+*LlmsApi* | [**llms_user_llm_partial_update**](docs/LlmsApi.md#llms_user_llm_partial_update) | **PATCH** /llms/user-llm/{id}/ | 
+*LlmsApi* | [**llms_user_llm_read**](docs/LlmsApi.md#llms_user_llm_read) | **GET** /llms/user-llm/{id}/ | 
+*LlmsApi* | [**llms_user_llm_update**](docs/LlmsApi.md#llms_user_llm_update) | **PUT** /llms/user-llm/{id}/ | 
+*MaintenanceApi* | [**maintenance_list**](docs/MaintenanceApi.md#maintenance_list) | **GET** /maintenance/ | 
+*McpApi* | [**mcp_mcps_connect**](docs/McpApi.md#mcp_mcps_connect) | **POST** /mcp/mcps/{id}/connect/ | 
+*McpApi* | [**mcp_mcps_create**](docs/McpApi.md#mcp_mcps_create) | **POST** /mcp/mcps/ | 
+*McpApi* | [**mcp_mcps_delete**](docs/McpApi.md#mcp_mcps_delete) | **DELETE** /mcp/mcps/{id}/ | 
+*McpApi* | [**mcp_mcps_list**](docs/McpApi.md#mcp_mcps_list) | **GET** /mcp/mcps/ | 
+*McpApi* | [**mcp_mcps_partial_update**](docs/McpApi.md#mcp_mcps_partial_update) | **PATCH** /mcp/mcps/{id}/ | 
+*McpApi* | [**mcp_mcps_read**](docs/McpApi.md#mcp_mcps_read) | **GET** /mcp/mcps/{id}/ | 
+*McpApi* | [**mcp_mcps_update**](docs/McpApi.md#mcp_mcps_update) | **PUT** /mcp/mcps/{id}/ | 
+*ObservabilityApi* | [**observability_runs_create**](docs/ObservabilityApi.md#observability_runs_create) | **POST** /observability/runs/ | 
+*ObservabilityApi* | [**observability_runs_end_update**](docs/ObservabilityApi.md#observability_runs_end_update) | **PUT** /observability/runs/{run_id}/end/ | End a run.
+*ObservabilityApi* | [**observability_runs_list**](docs/ObservabilityApi.md#observability_runs_list) | **GET** /observability/runs/ | 
+*ObservabilityApi* | [**observability_runs_read**](docs/ObservabilityApi.md#observability_runs_read) | **GET** /observability/runs/{run_id}/ | 
+*ObservabilityApi* | [**observability_runs_spans_create**](docs/ObservabilityApi.md#observability_runs_spans_create) | **POST** /observability/runs/{run_id}/spans/ | Create a new span within a run.
+*ObservabilityApi* | [**observability_spans_end_update**](docs/ObservabilityApi.md#observability_spans_end_update) | **PUT** /observability/spans/{span_id}/end/ | End a span.
+*ObservabilityApi* | [**observability_spans_events_bulk_create**](docs/ObservabilityApi.md#observability_spans_events_bulk_create) | **POST** /observability/spans/{span_id}/events/bulk/ | Log multiple events at once.
+*ObservabilityApi* | [**observability_spans_events_create**](docs/ObservabilityApi.md#observability_spans_events_create) | **POST** /observability/spans/{span_id}/events/ | Log an event within a span.
+*ObservabilityApi* | [**observability_stats_list**](docs/ObservabilityApi.md#observability_stats_list) | **GET** /observability/stats/ | Get aggregated statistics for runs.
+*PaymentsApi* | [**payments_add_credit_create**](docs/PaymentsApi.md#payments_add_credit_create) | **POST** /payments/add-credit/ | 
+*PaymentsApi* | [**payments_balance_create**](docs/PaymentsApi.md#payments_balance_create) | **POST** /payments/balance/ | 
+*PaymentsApi* | [**payments_balance_reduce_create**](docs/PaymentsApi.md#payments_balance_reduce_create) | **POST** /payments/balance/reduce | 
+*PaymentsApi* | [**payments_get_wallet_create**](docs/PaymentsApi.md#payments_get_wallet_create) | **POST** /payments/get-wallet/ | 
+*PaymentsApi* | [**payments_save_transaction_create**](docs/PaymentsApi.md#payments_save_transaction_create) | **POST** /payments/save-transaction/ | 
+*PaymentsApi* | [**payments_transaction_history_create**](docs/PaymentsApi.md#payments_transaction_history_create) | **POST** /payments/transaction-history/ | 
+*PaymentsApi* | [**payments_verify_wallet_create**](docs/PaymentsApi.md#payments_verify_wallet_create) | **POST** /payments/verify-wallet/ | 
+*TasksApi* | [**tasks_list**](docs/TasksApi.md#tasks_list) | **GET** /tasks/ | 
+*TasksApi* | [**tasks_read**](docs/TasksApi.md#tasks_read) | **GET** /tasks/{id}/ | 
+*TeamsApi* | [**teams_create**](docs/TeamsApi.md#teams_create) | **POST** /teams/ | 
+*TeamsApi* | [**teams_delete**](docs/TeamsApi.md#teams_delete) | **DELETE** /teams/{id}/ | 
+*TeamsApi* | [**teams_list**](docs/TeamsApi.md#teams_list) | **GET** /teams/ | 
+*TeamsApi* | [**teams_partial_update**](docs/TeamsApi.md#teams_partial_update) | **PATCH** /teams/{id}/ | 
+*TeamsApi* | [**teams_read**](docs/TeamsApi.md#teams_read) | **GET** /teams/{id}/ | 
+*TeamsApi* | [**teams_teams_attach_worker**](docs/TeamsApi.md#teams_teams_attach_worker) | **POST** /teams/teams/{id}/attach_worker/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_create**](docs/TeamsApi.md#teams_teams_create) | **POST** /teams/teams/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_delete**](docs/TeamsApi.md#teams_teams_delete) | **DELETE** /teams/teams/{id}/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_detach_worker**](docs/TeamsApi.md#teams_teams_detach_worker) | **POST** /teams/teams/{id}/detach_worker/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_execute**](docs/TeamsApi.md#teams_teams_execute) | **POST** /teams/teams/{id}/execute/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_list**](docs/TeamsApi.md#teams_teams_list) | **GET** /teams/teams/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_partial_update**](docs/TeamsApi.md#teams_teams_partial_update) | **PATCH** /teams/teams/{id}/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_read**](docs/TeamsApi.md#teams_teams_read) | **GET** /teams/teams/{id}/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_sessions_create**](docs/TeamsApi.md#teams_teams_sessions_create) | **POST** /teams/teams/{id}/sessions/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_sessions_delete**](docs/TeamsApi.md#teams_teams_sessions_delete) | **DELETE** /teams/teams/{id}/sessions/{session_id}/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_sessions_partial_update**](docs/TeamsApi.md#teams_teams_sessions_partial_update) | **PATCH** /teams/teams/{id}/sessions/{session_id}/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_sessions_read**](docs/TeamsApi.md#teams_teams_sessions_read) | **GET** /teams/teams/{id}/sessions/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_sessions_session_messages**](docs/TeamsApi.md#teams_teams_sessions_session_messages) | **GET** /teams/teams/{id}/sessions/{session_id}/messages/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_update**](docs/TeamsApi.md#teams_teams_update) | **PUT** /teams/teams/{id}/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_teams_workers**](docs/TeamsApi.md#teams_teams_workers) | **GET** /teams/teams/{id}/workers/ | Team-first alias over the runtime workspace endpoints.
+*TeamsApi* | [**teams_update**](docs/TeamsApi.md#teams_update) | **PUT** /teams/{id}/ | 
+*TemplatesApi* | [**templates_categories_list**](docs/TemplatesApi.md#templates_categories_list) | **GET** /templates/categories/ | 
+*TemplatesApi* | [**templates_categories_read**](docs/TemplatesApi.md#templates_categories_read) | **GET** /templates/categories/{id}/ | 
+*TemplatesApi* | [**templates_public_marketplace_templates_list**](docs/TemplatesApi.md#templates_public_marketplace_templates_list) | **GET** /templates/public/marketplace/templates/ | 
+*TemplatesApi* | [**templates_public_marketplace_templates_read**](docs/TemplatesApi.md#templates_public_marketplace_templates_read) | **GET** /templates/public/marketplace/templates/{id}/ | 
+*TemplatesApi* | [**templates_worker_templates_count**](docs/TemplatesApi.md#templates_worker_templates_count) | **GET** /templates/worker-templates/count/ | 
+*TemplatesApi* | [**templates_worker_templates_create**](docs/TemplatesApi.md#templates_worker_templates_create) | **POST** /templates/worker-templates/ | 
+*TemplatesApi* | [**templates_worker_templates_delete**](docs/TemplatesApi.md#templates_worker_templates_delete) | **DELETE** /templates/worker-templates/{id}/ | 
+*TemplatesApi* | [**templates_worker_templates_deploy**](docs/TemplatesApi.md#templates_worker_templates_deploy) | **POST** /templates/worker-templates/{id}/deploy/ | 
+*TemplatesApi* | [**templates_worker_templates_favorite**](docs/TemplatesApi.md#templates_worker_templates_favorite) | **POST** /templates/worker-templates/{id}/favorite/ | 
+*TemplatesApi* | [**templates_worker_templates_favorites**](docs/TemplatesApi.md#templates_worker_templates_favorites) | **GET** /templates/worker-templates/favorites/ | 
+*TemplatesApi* | [**templates_worker_templates_filtered_templates**](docs/TemplatesApi.md#templates_worker_templates_filtered_templates) | **GET** /templates/worker-templates/filteredTemplates/ | 
+*TemplatesApi* | [**templates_worker_templates_generate_ecr_credentials**](docs/TemplatesApi.md#templates_worker_templates_generate_ecr_credentials) | **POST** /templates/worker-templates/generate_ecr_credentials/ | 
+*TemplatesApi* | [**templates_worker_templates_generate_upload_urls**](docs/TemplatesApi.md#templates_worker_templates_generate_upload_urls) | **POST** /templates/worker-templates/generate_upload_urls/ | 
+*TemplatesApi* | [**templates_worker_templates_get_deployed_count**](docs/TemplatesApi.md#templates_worker_templates_get_deployed_count) | **GET** /templates/worker-templates/getDeployedCount/ | 
+*TemplatesApi* | [**templates_worker_templates_list**](docs/TemplatesApi.md#templates_worker_templates_list) | **GET** /templates/worker-templates/ | 
+*TemplatesApi* | [**templates_worker_templates_my_favorits_count**](docs/TemplatesApi.md#templates_worker_templates_my_favorits_count) | **GET** /templates/worker-templates/myFavoritsCount/ | 
+*TemplatesApi* | [**templates_worker_templates_partial_update**](docs/TemplatesApi.md#templates_worker_templates_partial_update) | **PATCH** /templates/worker-templates/{id}/ | 
+*TemplatesApi* | [**templates_worker_templates_read**](docs/TemplatesApi.md#templates_worker_templates_read) | **GET** /templates/worker-templates/{id}/ | 
+*TemplatesApi* | [**templates_worker_templates_test_s3_connection**](docs/TemplatesApi.md#templates_worker_templates_test_s3_connection) | **GET** /templates/worker-templates/test_s3_connection/ | 
+*TemplatesApi* | [**templates_worker_templates_unfavorite**](docs/TemplatesApi.md#templates_worker_templates_unfavorite) | **DELETE** /templates/worker-templates/{id}/unfavorite/ | 
+*TemplatesApi* | [**templates_worker_templates_update**](docs/TemplatesApi.md#templates_worker_templates_update) | **PUT** /templates/worker-templates/{id}/ | 
+*TemplatesApi* | [**templates_worker_templates_upload_file**](docs/TemplatesApi.md#templates_worker_templates_upload_file) | **POST** /templates/worker-templates/upload_file/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_attribute_create**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_create) | **POST** /toolkit/admin/toolkit_attribute/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_attribute_delete**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_delete) | **DELETE** /toolkit/admin/toolkit_attribute/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_attribute_list**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_list) | **GET** /toolkit/admin/toolkit_attribute/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_attribute_partial_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_partial_update) | **PATCH** /toolkit/admin/toolkit_attribute/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_attribute_read**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_read) | **GET** /toolkit/admin/toolkit_attribute/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_attribute_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_attribute_update) | **PUT** /toolkit/admin/toolkit_attribute/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_create**](docs/ToolkitApi.md#toolkit_admin_toolkit_create) | **POST** /toolkit/admin/toolkit/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_delete**](docs/ToolkitApi.md#toolkit_admin_toolkit_delete) | **DELETE** /toolkit/admin/toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_create**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_create) | **POST** /toolkit/admin/toolkit_linked_integration/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_delete**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_delete) | **DELETE** /toolkit/admin/toolkit_linked_integration/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_list**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_list) | **GET** /toolkit/admin/toolkit_linked_integration/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_partial_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_partial_update) | **PATCH** /toolkit/admin/toolkit_linked_integration/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_read**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_read) | **GET** /toolkit/admin/toolkit_linked_integration/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_linked_integration_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_linked_integration_update) | **PUT** /toolkit/admin/toolkit_linked_integration/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_list**](docs/ToolkitApi.md#toolkit_admin_toolkit_list) | **GET** /toolkit/admin/toolkit/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_partial_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_partial_update) | **PATCH** /toolkit/admin/toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_read**](docs/ToolkitApi.md#toolkit_admin_toolkit_read) | **GET** /toolkit/admin/toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_admin_toolkit_update**](docs/ToolkitApi.md#toolkit_admin_toolkit_update) | **PUT** /toolkit/admin/toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_tool_create**](docs/ToolkitApi.md#toolkit_tool_create) | **POST** /toolkit/tool/ | 
+*ToolkitApi* | [**toolkit_tool_delete**](docs/ToolkitApi.md#toolkit_tool_delete) | **DELETE** /toolkit/tool/{id}/ | 
+*ToolkitApi* | [**toolkit_tool_list**](docs/ToolkitApi.md#toolkit_tool_list) | **GET** /toolkit/tool/ | 
+*ToolkitApi* | [**toolkit_tool_partial_update**](docs/ToolkitApi.md#toolkit_tool_partial_update) | **PATCH** /toolkit/tool/{id}/ | 
+*ToolkitApi* | [**toolkit_tool_read**](docs/ToolkitApi.md#toolkit_tool_read) | **GET** /toolkit/tool/{id}/ | 
+*ToolkitApi* | [**toolkit_tool_update**](docs/ToolkitApi.md#toolkit_tool_update) | **PUT** /toolkit/tool/{id}/ | 
+*ToolkitApi* | [**toolkit_toolkit_list**](docs/ToolkitApi.md#toolkit_toolkit_list) | **GET** /toolkit/toolkit/ | 
+*ToolkitApi* | [**toolkit_toolkit_read**](docs/ToolkitApi.md#toolkit_toolkit_read) | **GET** /toolkit/toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_user_configuration_create**](docs/ToolkitApi.md#toolkit_user_configuration_create) | **POST** /toolkit/user_configuration/ | 
+*ToolkitApi* | [**toolkit_user_configuration_delete**](docs/ToolkitApi.md#toolkit_user_configuration_delete) | **DELETE** /toolkit/user_configuration/{id}/ | 
+*ToolkitApi* | [**toolkit_user_configuration_list**](docs/ToolkitApi.md#toolkit_user_configuration_list) | **GET** /toolkit/user_configuration/ | 
+*ToolkitApi* | [**toolkit_user_configuration_partial_update**](docs/ToolkitApi.md#toolkit_user_configuration_partial_update) | **PATCH** /toolkit/user_configuration/{id}/ | 
+*ToolkitApi* | [**toolkit_user_configuration_read**](docs/ToolkitApi.md#toolkit_user_configuration_read) | **GET** /toolkit/user_configuration/{id}/ | 
+*ToolkitApi* | [**toolkit_user_configuration_update**](docs/ToolkitApi.md#toolkit_user_configuration_update) | **PUT** /toolkit/user_configuration/{id}/ | 
+*ToolkitApi* | [**toolkit_user_toolkit_create**](docs/ToolkitApi.md#toolkit_user_toolkit_create) | **POST** /toolkit/user_toolkit/ | 
+*ToolkitApi* | [**toolkit_user_toolkit_delete**](docs/ToolkitApi.md#toolkit_user_toolkit_delete) | **DELETE** /toolkit/user_toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_user_toolkit_list**](docs/ToolkitApi.md#toolkit_user_toolkit_list) | **GET** /toolkit/user_toolkit/ | 
+*ToolkitApi* | [**toolkit_user_toolkit_partial_update**](docs/ToolkitApi.md#toolkit_user_toolkit_partial_update) | **PATCH** /toolkit/user_toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_user_toolkit_read**](docs/ToolkitApi.md#toolkit_user_toolkit_read) | **GET** /toolkit/user_toolkit/{id}/ | 
+*ToolkitApi* | [**toolkit_user_toolkit_update**](docs/ToolkitApi.md#toolkit_user_toolkit_update) | **PUT** /toolkit/user_toolkit/{id}/ | 
+*UserApi* | [**user_partial_update**](docs/UserApi.md#user_partial_update) | **PATCH** /user/{id}/ | 
+*UserApi* | [**user_profile_by_user**](docs/UserApi.md#user_profile_by_user) | **GET** /user/profile/by-user/{user_id}/ | 
+*UserApi* | [**user_profile_list**](docs/UserApi.md#user_profile_list) | **GET** /user/profile/ | 
+*UserApi* | [**user_profile_me**](docs/UserApi.md#user_profile_me) | **GET** /user/profile/me/ | 
+*UserApi* | [**user_profile_partial_update**](docs/UserApi.md#user_profile_partial_update) | **PATCH** /user/profile/{id}/ | 
+*UserApi* | [**user_profile_read**](docs/UserApi.md#user_profile_read) | **GET** /user/profile/{id}/ | 
+*UserApi* | [**user_profile_refresh_statistics**](docs/UserApi.md#user_profile_refresh_statistics) | **POST** /user/profile/refresh_statistics/ | 
+*UserApi* | [**user_profile_update**](docs/UserApi.md#user_profile_update) | **PUT** /user/profile/{id}/ | 
+*UserApi* | [**user_profile_update_profile_partial_update**](docs/UserApi.md#user_profile_update_profile_partial_update) | **PATCH** /user/profile/update_profile/ | 
+*UserApi* | [**user_profile_update_profile_update**](docs/UserApi.md#user_profile_update_profile_update) | **PUT** /user/profile/update_profile/ | 
+*UserApi* | [**user_profile_upload_image**](docs/UserApi.md#user_profile_upload_image) | **POST** /user/profile/upload_image/ | 
+*UserApi* | [**user_public_marketplace_developers_by_user**](docs/UserApi.md#user_public_marketplace_developers_by_user) | **GET** /user/public/marketplace/developers/by-user/{user_id}/ | 
+*UserApi* | [**user_public_marketplace_developers_list**](docs/UserApi.md#user_public_marketplace_developers_list) | **GET** /user/public/marketplace/developers/ | 
+*UserApi* | [**user_public_marketplace_developers_read**](docs/UserApi.md#user_public_marketplace_developers_read) | **GET** /user/public/marketplace/developers/{id}/ | 
+*UserApi* | [**user_read**](docs/UserApi.md#user_read) | **GET** /user/{id}/ | 
+*UserApi* | [**user_update**](docs/UserApi.md#user_update) | **PUT** /user/{id}/ | 
+*WorkersConfigApi* | [**workers_config_deployed_list**](docs/WorkersConfigApi.md#workers_config_deployed_list) | **GET** /workers-config/deployed/ | List all currently deployed workers for the authenticated user.
+*WorkersConfigApi* | [**workers_config_prompt_category_create**](docs/WorkersConfigApi.md#workers_config_prompt_category_create) | **POST** /workers-config/prompt-category/ | 
+*WorkersConfigApi* | [**workers_config_prompt_category_delete**](docs/WorkersConfigApi.md#workers_config_prompt_category_delete) | **DELETE** /workers-config/prompt-category/{id}/ | 
+*WorkersConfigApi* | [**workers_config_prompt_category_list**](docs/WorkersConfigApi.md#workers_config_prompt_category_list) | **GET** /workers-config/prompt-category/ | 
+*WorkersConfigApi* | [**workers_config_prompt_category_partial_update**](docs/WorkersConfigApi.md#workers_config_prompt_category_partial_update) | **PATCH** /workers-config/prompt-category/{id}/ | 
+*WorkersConfigApi* | [**workers_config_prompt_category_read**](docs/WorkersConfigApi.md#workers_config_prompt_category_read) | **GET** /workers-config/prompt-category/{id}/ | 
+*WorkersConfigApi* | [**workers_config_prompt_category_update**](docs/WorkersConfigApi.md#workers_config_prompt_category_update) | **PUT** /workers-config/prompt-category/{id}/ | 
+*WorkersConfigApi* | [**workers_config_prompt_create**](docs/WorkersConfigApi.md#workers_config_prompt_create) | **POST** /workers-config/prompt/ | 
+*WorkersConfigApi* | [**workers_config_prompt_delete**](docs/WorkersConfigApi.md#workers_config_prompt_delete) | **DELETE** /workers-config/prompt/{id}/ | 
+*WorkersConfigApi* | [**workers_config_prompt_list**](docs/WorkersConfigApi.md#workers_config_prompt_list) | **GET** /workers-config/prompt/ | 
+*WorkersConfigApi* | [**workers_config_prompt_partial_update**](docs/WorkersConfigApi.md#workers_config_prompt_partial_update) | **PATCH** /workers-config/prompt/{id}/ | 
+*WorkersConfigApi* | [**workers_config_prompt_read**](docs/WorkersConfigApi.md#workers_config_prompt_read) | **GET** /workers-config/prompt/{id}/ | 
+*WorkersConfigApi* | [**workers_config_prompt_update**](docs/WorkersConfigApi.md#workers_config_prompt_update) | **PUT** /workers-config/prompt/{id}/ | 
+*WorkersConfigApi* | [**workers_config_workers_call_create**](docs/WorkersConfigApi.md#workers_config_workers_call_create) | **POST** /workers-config/workers/{worker_id}/call/ | Call a worker by ID and return its response.
+*WorkersConfigApi* | [**workers_config_workers_create**](docs/WorkersConfigApi.md#workers_config_workers_create) | **POST** /workers-config/workers/ | 
+*WorkersConfigApi* | [**workers_config_workers_delete**](docs/WorkersConfigApi.md#workers_config_workers_delete) | **DELETE** /workers-config/workers/{id}/ | 
+*WorkersConfigApi* | [**workers_config_workers_deploy_info_list**](docs/WorkersConfigApi.md#workers_config_workers_deploy_info_list) | **GET** /workers-config/workers/{id}/deploy-info/ | 
+*WorkersConfigApi* | [**workers_config_workers_deploy_list**](docs/WorkersConfigApi.md#workers_config_workers_deploy_list) | **GET** /workers-config/workers/{id}/deploy/ | 
+*WorkersConfigApi* | [**workers_config_workers_deploy_stop_list**](docs/WorkersConfigApi.md#workers_config_workers_deploy_stop_list) | **GET** /workers-config/workers/{id}/deploy-stop/ | 
+*WorkersConfigApi* | [**workers_config_workers_list**](docs/WorkersConfigApi.md#workers_config_workers_list) | **GET** /workers-config/workers/ | 
+*WorkersConfigApi* | [**workers_config_workers_logs_bulk_create**](docs/WorkersConfigApi.md#workers_config_workers_logs_bulk_create) | **POST** /workers-config/workers/{worker_id}/logs/bulk/ | Create multiple log entries for a worker in bulk.
+*WorkersConfigApi* | [**workers_config_workers_logs_create_create**](docs/WorkersConfigApi.md#workers_config_workers_logs_create_create) | **POST** /workers-config/workers/{worker_id}/logs/create/ | Create a new log entry for a worker.
+*WorkersConfigApi* | [**workers_config_workers_logs_list**](docs/WorkersConfigApi.md#workers_config_workers_logs_list) | **GET** /workers-config/workers/{worker_id}/logs/ | List logs for a specific worker.
+*WorkersConfigApi* | [**workers_config_workers_logs_stats_read**](docs/WorkersConfigApi.md#workers_config_workers_logs_stats_read) | **GET** /workers-config/workers/{worker_id}/logs/stats/ | Get aggregated stats for a worker&#39;s logs.
+*WorkersConfigApi* | [**workers_config_workers_partial_update**](docs/WorkersConfigApi.md#workers_config_workers_partial_update) | **PATCH** /workers-config/workers/{id}/ | 
+*WorkersConfigApi* | [**workers_config_workers_read**](docs/WorkersConfigApi.md#workers_config_workers_read) | **GET** /workers-config/workers/{id}/ | 
+*WorkersConfigApi* | [**workers_config_workers_stop_list**](docs/WorkersConfigApi.md#workers_config_workers_stop_list) | **GET** /workers-config/workers/{id}/stop/ | 
+*WorkersConfigApi* | [**workers_config_workers_tools_preview_list**](docs/WorkersConfigApi.md#workers_config_workers_tools_preview_list) | **GET** /workers-config/workers/{worker_id}/tools-preview/ | Preview tools for a worker based on attached connectors.
+*WorkersConfigApi* | [**workers_config_workers_update**](docs/WorkersConfigApi.md#workers_config_workers_update) | **PUT** /workers-config/workers/{id}/ | 
+*WorkspacesApi* | [**workspaces_workspaces_attach_worker**](docs/WorkspacesApi.md#workspaces_workspaces_attach_worker) | **POST** /workspaces/workspaces/{id}/attach_worker/ | 
+*WorkspacesApi* | [**workspaces_workspaces_create**](docs/WorkspacesApi.md#workspaces_workspaces_create) | **POST** /workspaces/workspaces/ | 
+*WorkspacesApi* | [**workspaces_workspaces_delete**](docs/WorkspacesApi.md#workspaces_workspaces_delete) | **DELETE** /workspaces/workspaces/{id}/ | 
+*WorkspacesApi* | [**workspaces_workspaces_detach_worker**](docs/WorkspacesApi.md#workspaces_workspaces_detach_worker) | **POST** /workspaces/workspaces/{id}/detach_worker/ | 
+*WorkspacesApi* | [**workspaces_workspaces_execute**](docs/WorkspacesApi.md#workspaces_workspaces_execute) | **POST** /workspaces/workspaces/{id}/execute/ | 
+*WorkspacesApi* | [**workspaces_workspaces_list**](docs/WorkspacesApi.md#workspaces_workspaces_list) | **GET** /workspaces/workspaces/ | 
+*WorkspacesApi* | [**workspaces_workspaces_partial_update**](docs/WorkspacesApi.md#workspaces_workspaces_partial_update) | **PATCH** /workspaces/workspaces/{id}/ | 
+*WorkspacesApi* | [**workspaces_workspaces_read**](docs/WorkspacesApi.md#workspaces_workspaces_read) | **GET** /workspaces/workspaces/{id}/ | 
+*WorkspacesApi* | [**workspaces_workspaces_sessions_create**](docs/WorkspacesApi.md#workspaces_workspaces_sessions_create) | **POST** /workspaces/workspaces/{id}/sessions/ | 
+*WorkspacesApi* | [**workspaces_workspaces_sessions_delete**](docs/WorkspacesApi.md#workspaces_workspaces_sessions_delete) | **DELETE** /workspaces/workspaces/{id}/sessions/{session_id}/ | 
+*WorkspacesApi* | [**workspaces_workspaces_sessions_partial_update**](docs/WorkspacesApi.md#workspaces_workspaces_sessions_partial_update) | **PATCH** /workspaces/workspaces/{id}/sessions/{session_id}/ | 
+*WorkspacesApi* | [**workspaces_workspaces_sessions_read**](docs/WorkspacesApi.md#workspaces_workspaces_sessions_read) | **GET** /workspaces/workspaces/{id}/sessions/ | 
+*WorkspacesApi* | [**workspaces_workspaces_sessions_session_messages**](docs/WorkspacesApi.md#workspaces_workspaces_sessions_session_messages) | **GET** /workspaces/workspaces/{id}/sessions/{session_id}/messages/ | 
+*WorkspacesApi* | [**workspaces_workspaces_update**](docs/WorkspacesApi.md#workspaces_workspaces_update) | **PUT** /workspaces/workspaces/{id}/ | 
+*WorkspacesApi* | [**workspaces_workspaces_workers**](docs/WorkspacesApi.md#workspaces_workspaces_workers) | **GET** /workspaces/workspaces/{id}/workers/ | 
 
 
 ## Documentation For Models
 
  - [ApiKey](docs/ApiKey.md)
- - [AppConfig](docs/AppConfig.md)
  - [Categories](docs/Categories.md)
- - [Category](docs/Category.md)
  - [CreateUser](docs/CreateUser.md)
  - [Credential](docs/Credential.md)
+ - [DeployedWorker](docs/DeployedWorker.md)
  - [DeploymentAction](docs/DeploymentAction.md)
+ - [DeveloperProfile](docs/DeveloperProfile.md)
+ - [DeveloperProfileUpdate](docs/DeveloperProfileUpdate.md)
  - [Document](docs/Document.md)
  - [EmbeddingDatabase](docs/EmbeddingDatabase.md)
  - [InlineObject](docs/InlineObject.md)
@@ -398,11 +427,12 @@ Class | Method | HTTP request | Description
  - [Plan](docs/Plan.md)
  - [Prompt](docs/Prompt.md)
  - [PromptCategory](docs/PromptCategory.md)
- - [Result](docs/Result.md)
+ - [Run](docs/Run.md)
+ - [Span](docs/Span.md)
+ - [SpanEvent](docs/SpanEvent.md)
  - [Tag](docs/Tag.md)
  - [Task](docs/Task.md)
  - [Team](docs/Team.md)
- - [Test](docs/Test.md)
  - [TokenRefresh](docs/TokenRefresh.md)
  - [TokenVerify](docs/TokenVerify.md)
  - [Tool](docs/Tool.md)
@@ -422,10 +452,12 @@ Class | Method | HTTP request | Description
  - [UserPlanSubscription](docs/UserPlanSubscription.md)
  - [UserToolkit](docs/UserToolkit.md)
  - [UserToolkitInfo](docs/UserToolkitInfo.md)
- - [Worker](docs/Worker.md)
  - [WorkerConfig](docs/WorkerConfig.md)
  - [WorkerConfigNested](docs/WorkerConfigNested.md)
+ - [WorkerLog](docs/WorkerLog.md)
+ - [WorkerLogCreate](docs/WorkerLogCreate.md)
  - [WorkerTemplate](docs/WorkerTemplate.md)
+ - [Workspace](docs/Workspace.md)
 
 
 ## Documentation For Authorization
@@ -439,3 +471,5 @@ Class | Method | HTTP request | Description
 ## Author
 
 support@autoppia.com
+
+

@@ -35,15 +35,19 @@ class WorkerConfigNested(object):
     """
     openapi_types = {
         'id': 'int',
-        'name': 'str'
+        'name': 'str',
+        'template_id': 'str',
+        'template_price': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'name': 'name'
+        'name': 'name',
+        'template_id': 'template_id',
+        'template_price': 'template_price'
     }
 
-    def __init__(self, id=None, name=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, name=None, template_id=None, template_price=None, local_vars_configuration=None):  # noqa: E501
         """WorkerConfigNested - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -51,11 +55,17 @@ class WorkerConfigNested(object):
 
         self._id = None
         self._name = None
+        self._template_id = None
+        self._template_price = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         self.name = name
+        if template_id is not None:
+            self.template_id = template_id
+        if template_price is not None:
+            self.template_price = template_price
 
     @property
     def id(self):
@@ -106,6 +116,48 @@ class WorkerConfigNested(object):
             raise ValueError("Invalid value for `name`, length must be greater than or equal to `1`")  # noqa: E501
 
         self._name = name
+
+    @property
+    def template_id(self):
+        """Gets the template_id of this WorkerConfigNested.  # noqa: E501
+
+
+        :return: The template_id of this WorkerConfigNested.  # noqa: E501
+        :rtype: str
+        """
+        return self._template_id
+
+    @template_id.setter
+    def template_id(self, template_id):
+        """Sets the template_id of this WorkerConfigNested.
+
+
+        :param template_id: The template_id of this WorkerConfigNested.  # noqa: E501
+        :type: str
+        """
+
+        self._template_id = template_id
+
+    @property
+    def template_price(self):
+        """Gets the template_price of this WorkerConfigNested.  # noqa: E501
+
+
+        :return: The template_price of this WorkerConfigNested.  # noqa: E501
+        :rtype: str
+        """
+        return self._template_price
+
+    @template_price.setter
+    def template_price(self, template_price):
+        """Sets the template_price of this WorkerConfigNested.
+
+
+        :param template_price: The template_price of this WorkerConfigNested.  # noqa: E501
+        :type: str
+        """
+
+        self._template_price = template_price
 
     def to_dict(self):
         """Returns the model properties as a dict"""

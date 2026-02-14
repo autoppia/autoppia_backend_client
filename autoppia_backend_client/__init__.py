@@ -19,7 +19,6 @@ __version__ = "1.0.0"
 
 # import apis into sdk package
 from autoppia_backend_client.api.api_keys_api import ApiKeysApi
-from autoppia_backend_client.api.apps_config_api import AppsConfigApi
 from autoppia_backend_client.api.auth_api import AuthApi
 from autoppia_backend_client.api.credentials_api import CredentialsApi
 from autoppia_backend_client.api.documents_api import DocumentsApi
@@ -29,13 +28,15 @@ from autoppia_backend_client.api.integration_api import IntegrationApi
 from autoppia_backend_client.api.llms_api import LlmsApi
 from autoppia_backend_client.api.maintenance_api import MaintenanceApi
 from autoppia_backend_client.api.mcp_api import McpApi
+from autoppia_backend_client.api.observability_api import ObservabilityApi
 from autoppia_backend_client.api.payments_api import PaymentsApi
+from autoppia_backend_client.api.tasks_api import TasksApi
 from autoppia_backend_client.api.teams_api import TeamsApi
 from autoppia_backend_client.api.templates_api import TemplatesApi
 from autoppia_backend_client.api.toolkit_api import ToolkitApi
 from autoppia_backend_client.api.user_api import UserApi
-from autoppia_backend_client.api.workers_api import WorkersApi
 from autoppia_backend_client.api.workers_config_api import WorkersConfigApi
+from autoppia_backend_client.api.workspaces_api import WorkspacesApi
 
 # import ApiClient
 from autoppia_backend_client.api_client import ApiClient
@@ -47,12 +48,13 @@ from autoppia_backend_client.exceptions import ApiKeyError
 from autoppia_backend_client.exceptions import ApiException
 # import models into sdk package
 from autoppia_backend_client.models.api_key import ApiKey
-from autoppia_backend_client.models.app_config import AppConfig
 from autoppia_backend_client.models.categories import Categories
-from autoppia_backend_client.models.category import Category
 from autoppia_backend_client.models.create_user import CreateUser
 from autoppia_backend_client.models.credential import Credential
+from autoppia_backend_client.models.deployed_worker import DeployedWorker
 from autoppia_backend_client.models.deployment_action import DeploymentAction
+from autoppia_backend_client.models.developer_profile import DeveloperProfile
+from autoppia_backend_client.models.developer_profile_update import DeveloperProfileUpdate
 from autoppia_backend_client.models.document import Document
 from autoppia_backend_client.models.embedding_database import EmbeddingDatabase
 from autoppia_backend_client.models.inline_object import InlineObject
@@ -83,11 +85,12 @@ from autoppia_backend_client.models.password_reset_confirm import PasswordResetC
 from autoppia_backend_client.models.plan import Plan
 from autoppia_backend_client.models.prompt import Prompt
 from autoppia_backend_client.models.prompt_category import PromptCategory
-from autoppia_backend_client.models.result import Result
+from autoppia_backend_client.models.run import Run
+from autoppia_backend_client.models.span import Span
+from autoppia_backend_client.models.span_event import SpanEvent
 from autoppia_backend_client.models.tag import Tag
 from autoppia_backend_client.models.task import Task
 from autoppia_backend_client.models.team import Team
-from autoppia_backend_client.models.test import Test
 from autoppia_backend_client.models.token_refresh import TokenRefresh
 from autoppia_backend_client.models.token_verify import TokenVerify
 from autoppia_backend_client.models.tool import Tool
@@ -107,7 +110,10 @@ from autoppia_backend_client.models.user_llm_model import UserLLMModel
 from autoppia_backend_client.models.user_plan_subscription import UserPlanSubscription
 from autoppia_backend_client.models.user_toolkit import UserToolkit
 from autoppia_backend_client.models.user_toolkit_info import UserToolkitInfo
-from autoppia_backend_client.models.worker import Worker
 from autoppia_backend_client.models.worker_config import WorkerConfig
 from autoppia_backend_client.models.worker_config_nested import WorkerConfigNested
+from autoppia_backend_client.models.worker_log import WorkerLog
+from autoppia_backend_client.models.worker_log_create import WorkerLogCreate
 from autoppia_backend_client.models.worker_template import WorkerTemplate
+from autoppia_backend_client.models.workspace import Workspace
+

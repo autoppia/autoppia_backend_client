@@ -76,7 +76,8 @@ class Document(object):
 
         if id is not None:
             self.id = id
-        self.user = user
+        if user is not None:
+            self.user = user
         self.name = name
         if file is not None:
             self.file = file
@@ -84,7 +85,8 @@ class Document(object):
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
-        self.tags = tags
+        if tags is not None:
+            self.tags = tags
         self.s3_object_key = s3_object_key
         self.open_ai_id = open_ai_id
 
@@ -127,8 +129,6 @@ class Document(object):
         :param user: The user of this Document.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
 
         self._user = user
 
@@ -242,8 +242,6 @@ class Document(object):
         :param tags: The tags of this Document.  # noqa: E501
         :type: list[int]
         """
-        if self.local_vars_configuration.client_side_validation and tags is None:  # noqa: E501
-            raise ValueError("Invalid value for `tags`, must not be `None`")  # noqa: E501
 
         self._tags = tags
 

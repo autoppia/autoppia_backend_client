@@ -77,8 +77,7 @@ class CreateUser(object):
         self.email = email
         self.password = password
         self.company = company
-        if wallet_address is not None:
-            self.wallet_address = wallet_address
+        self.wallet_address = wallet_address
 
     @property
     def id(self):
@@ -236,6 +235,7 @@ class CreateUser(object):
     def wallet_address(self):
         """Gets the wallet_address of this CreateUser.  # noqa: E501
 
+        Ethereum wallet address, if applicable.  # noqa: E501
 
         :return: The wallet_address of this CreateUser.  # noqa: E501
         :rtype: str
@@ -246,6 +246,7 @@ class CreateUser(object):
     def wallet_address(self, wallet_address):
         """Sets the wallet_address of this CreateUser.
 
+        Ethereum wallet address, if applicable.  # noqa: E501
 
         :param wallet_address: The wallet_address of this CreateUser.  # noqa: E501
         :type: str

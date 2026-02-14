@@ -41,6 +41,8 @@ class WorkerTemplate(object):
         'uploaded_at': 'datetime',
         'favorited_by': 'list[int]',
         'favorited_by_profiles': 'str',
+        'deployed_by': 'list[int]',
+        'deployed_by_profiles': 'str',
         'categories': 'list[int]',
         'categories_name': 'str',
         'image': 'str',
@@ -53,11 +55,19 @@ class WorkerTemplate(object):
         'integrations_categories': 'str',
         'vectorstore_provider': 'str',
         'agentic_framework': 'str',
+        'worker_type': 'str',
+        'capabilities': 'object',
         'gpu': 'bool',
         'gpu_type': 'str',
         'demo_video': 'str',
         'repo': 'str',
-        'config_yml': 'str'
+        'config_yml': 'str',
+        'published': 'bool',
+        'allow_sub_worker_payments': 'bool',
+        'max_budget_sub_worker_payments': 'str',
+        'api_calls_count': 'int',
+        'license': 'str',
+        'version': 'str'
     }
 
     attribute_map = {
@@ -68,6 +78,8 @@ class WorkerTemplate(object):
         'uploaded_at': 'uploadedAt',
         'favorited_by': 'favorited_by',
         'favorited_by_profiles': 'favorited_by_profiles',
+        'deployed_by': 'deployed_by',
+        'deployed_by_profiles': 'deployed_by_profiles',
         'categories': 'categories',
         'categories_name': 'categories_name',
         'image': 'image',
@@ -80,14 +92,22 @@ class WorkerTemplate(object):
         'integrations_categories': 'integrations_categories',
         'vectorstore_provider': 'vectorstore_provider',
         'agentic_framework': 'agentic_framework',
+        'worker_type': 'worker_type',
+        'capabilities': 'capabilities',
         'gpu': 'gpu',
         'gpu_type': 'gpu_type',
         'demo_video': 'demo_video',
         'repo': 'repo',
-        'config_yml': 'config_yml'
+        'config_yml': 'config_yml',
+        'published': 'published',
+        'allow_sub_worker_payments': 'allow_sub_worker_payments',
+        'max_budget_sub_worker_payments': 'max_budget_sub_worker_payments',
+        'api_calls_count': 'api_calls_count',
+        'license': 'license',
+        'version': 'version'
     }
 
-    def __init__(self, id=None, developer=None, title=None, description=None, uploaded_at=None, favorited_by=None, favorited_by_profiles=None, categories=None, categories_name=None, image=None, docker_image=None, deployed_count=None, developers_profile=None, price=None, llm_provider=None, llm=None, integrations_categories=None, vectorstore_provider=None, agentic_framework=None, gpu=None, gpu_type=None, demo_video=None, repo=None, config_yml=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, developer=None, title=None, description=None, uploaded_at=None, favorited_by=None, favorited_by_profiles=None, deployed_by=None, deployed_by_profiles=None, categories=None, categories_name=None, image=None, docker_image=None, deployed_count=None, developers_profile=None, price=None, llm_provider=None, llm=None, integrations_categories=None, vectorstore_provider=None, agentic_framework=None, worker_type=None, capabilities=None, gpu=None, gpu_type=None, demo_video=None, repo=None, config_yml=None, published=None, allow_sub_worker_payments=None, max_budget_sub_worker_payments=None, api_calls_count=None, license=None, version=None, local_vars_configuration=None):  # noqa: E501
         """WorkerTemplate - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -100,6 +120,8 @@ class WorkerTemplate(object):
         self._uploaded_at = None
         self._favorited_by = None
         self._favorited_by_profiles = None
+        self._deployed_by = None
+        self._deployed_by_profiles = None
         self._categories = None
         self._categories_name = None
         self._image = None
@@ -112,11 +134,19 @@ class WorkerTemplate(object):
         self._integrations_categories = None
         self._vectorstore_provider = None
         self._agentic_framework = None
+        self._worker_type = None
+        self._capabilities = None
         self._gpu = None
         self._gpu_type = None
         self._demo_video = None
         self._repo = None
         self._config_yml = None
+        self._published = None
+        self._allow_sub_worker_payments = None
+        self._max_budget_sub_worker_payments = None
+        self._api_calls_count = None
+        self._license = None
+        self._version = None
         self.discriminator = None
 
         if id is not None:
@@ -131,6 +161,10 @@ class WorkerTemplate(object):
             self.favorited_by = favorited_by
         if favorited_by_profiles is not None:
             self.favorited_by_profiles = favorited_by_profiles
+        if deployed_by is not None:
+            self.deployed_by = deployed_by
+        if deployed_by_profiles is not None:
+            self.deployed_by_profiles = deployed_by_profiles
         if categories is not None:
             self.categories = categories
         if categories_name is not None:
@@ -149,6 +183,10 @@ class WorkerTemplate(object):
         self.integrations_categories = integrations_categories
         self.vectorstore_provider = vectorstore_provider
         self.agentic_framework = agentic_framework
+        if worker_type is not None:
+            self.worker_type = worker_type
+        if capabilities is not None:
+            self.capabilities = capabilities
         if gpu is not None:
             self.gpu = gpu
         self.gpu_type = gpu_type
@@ -156,6 +194,15 @@ class WorkerTemplate(object):
         self.repo = repo
         if config_yml is not None:
             self.config_yml = config_yml
+        if published is not None:
+            self.published = published
+        if allow_sub_worker_payments is not None:
+            self.allow_sub_worker_payments = allow_sub_worker_payments
+        self.max_budget_sub_worker_payments = max_budget_sub_worker_payments
+        if api_calls_count is not None:
+            self.api_calls_count = api_calls_count
+        self.license = license
+        self.version = version
 
     @property
     def id(self):
@@ -318,6 +365,48 @@ class WorkerTemplate(object):
         self._favorited_by_profiles = favorited_by_profiles
 
     @property
+    def deployed_by(self):
+        """Gets the deployed_by of this WorkerTemplate.  # noqa: E501
+
+
+        :return: The deployed_by of this WorkerTemplate.  # noqa: E501
+        :rtype: list[int]
+        """
+        return self._deployed_by
+
+    @deployed_by.setter
+    def deployed_by(self, deployed_by):
+        """Sets the deployed_by of this WorkerTemplate.
+
+
+        :param deployed_by: The deployed_by of this WorkerTemplate.  # noqa: E501
+        :type: list[int]
+        """
+
+        self._deployed_by = deployed_by
+
+    @property
+    def deployed_by_profiles(self):
+        """Gets the deployed_by_profiles of this WorkerTemplate.  # noqa: E501
+
+
+        :return: The deployed_by_profiles of this WorkerTemplate.  # noqa: E501
+        :rtype: str
+        """
+        return self._deployed_by_profiles
+
+    @deployed_by_profiles.setter
+    def deployed_by_profiles(self, deployed_by_profiles):
+        """Sets the deployed_by_profiles of this WorkerTemplate.
+
+
+        :param deployed_by_profiles: The deployed_by_profiles of this WorkerTemplate.  # noqa: E501
+        :type: str
+        """
+
+        self._deployed_by_profiles = deployed_by_profiles
+
+    @property
     def categories(self):
         """Gets the categories of this WorkerTemplate.  # noqa: E501
 
@@ -450,6 +539,7 @@ class WorkerTemplate(object):
     def price(self):
         """Gets the price of this WorkerTemplate.  # noqa: E501
 
+        Price per call (supports up to 8 decimal places for micro-transactions)  # noqa: E501
 
         :return: The price of this WorkerTemplate.  # noqa: E501
         :rtype: str
@@ -460,6 +550,7 @@ class WorkerTemplate(object):
     def price(self, price):
         """Sets the price of this WorkerTemplate.
 
+        Price per call (supports up to 8 decimal places for micro-transactions)  # noqa: E501
 
         :param price: The price of this WorkerTemplate.  # noqa: E501
         :type: str
@@ -585,6 +676,54 @@ class WorkerTemplate(object):
         self._agentic_framework = agentic_framework
 
     @property
+    def worker_type(self):
+        """Gets the worker_type of this WorkerTemplate.  # noqa: E501
+
+
+        :return: The worker_type of this WorkerTemplate.  # noqa: E501
+        :rtype: str
+        """
+        return self._worker_type
+
+    @worker_type.setter
+    def worker_type(self, worker_type):
+        """Sets the worker_type of this WorkerTemplate.
+
+
+        :param worker_type: The worker_type of this WorkerTemplate.  # noqa: E501
+        :type: str
+        """
+        allowed_values = ["agent", "manager"]  # noqa: E501
+        if self.local_vars_configuration.client_side_validation and worker_type not in allowed_values:  # noqa: E501
+            raise ValueError(
+                "Invalid value for `worker_type` ({0}), must be one of {1}"  # noqa: E501
+                .format(worker_type, allowed_values)
+            )
+
+        self._worker_type = worker_type
+
+    @property
+    def capabilities(self):
+        """Gets the capabilities of this WorkerTemplate.  # noqa: E501
+
+
+        :return: The capabilities of this WorkerTemplate.  # noqa: E501
+        :rtype: object
+        """
+        return self._capabilities
+
+    @capabilities.setter
+    def capabilities(self, capabilities):
+        """Sets the capabilities of this WorkerTemplate.
+
+
+        :param capabilities: The capabilities of this WorkerTemplate.  # noqa: E501
+        :type: object
+        """
+
+        self._capabilities = capabilities
+
+    @property
     def gpu(self):
         """Gets the gpu of this WorkerTemplate.  # noqa: E501
 
@@ -699,6 +838,152 @@ class WorkerTemplate(object):
         """
 
         self._config_yml = config_yml
+
+    @property
+    def published(self):
+        """Gets the published of this WorkerTemplate.  # noqa: E501
+
+
+        :return: The published of this WorkerTemplate.  # noqa: E501
+        :rtype: bool
+        """
+        return self._published
+
+    @published.setter
+    def published(self, published):
+        """Sets the published of this WorkerTemplate.
+
+
+        :param published: The published of this WorkerTemplate.  # noqa: E501
+        :type: bool
+        """
+
+        self._published = published
+
+    @property
+    def allow_sub_worker_payments(self):
+        """Gets the allow_sub_worker_payments of this WorkerTemplate.  # noqa: E501
+
+
+        :return: The allow_sub_worker_payments of this WorkerTemplate.  # noqa: E501
+        :rtype: bool
+        """
+        return self._allow_sub_worker_payments
+
+    @allow_sub_worker_payments.setter
+    def allow_sub_worker_payments(self, allow_sub_worker_payments):
+        """Sets the allow_sub_worker_payments of this WorkerTemplate.
+
+
+        :param allow_sub_worker_payments: The allow_sub_worker_payments of this WorkerTemplate.  # noqa: E501
+        :type: bool
+        """
+
+        self._allow_sub_worker_payments = allow_sub_worker_payments
+
+    @property
+    def max_budget_sub_worker_payments(self):
+        """Gets the max_budget_sub_worker_payments of this WorkerTemplate.  # noqa: E501
+
+        Maximum budget for sub-worker payments (supports up to 8 decimal places for micro-transactions)  # noqa: E501
+
+        :return: The max_budget_sub_worker_payments of this WorkerTemplate.  # noqa: E501
+        :rtype: str
+        """
+        return self._max_budget_sub_worker_payments
+
+    @max_budget_sub_worker_payments.setter
+    def max_budget_sub_worker_payments(self, max_budget_sub_worker_payments):
+        """Sets the max_budget_sub_worker_payments of this WorkerTemplate.
+
+        Maximum budget for sub-worker payments (supports up to 8 decimal places for micro-transactions)  # noqa: E501
+
+        :param max_budget_sub_worker_payments: The max_budget_sub_worker_payments of this WorkerTemplate.  # noqa: E501
+        :type: str
+        """
+
+        self._max_budget_sub_worker_payments = max_budget_sub_worker_payments
+
+    @property
+    def api_calls_count(self):
+        """Gets the api_calls_count of this WorkerTemplate.  # noqa: E501
+
+        Total number of API calls made  # noqa: E501
+
+        :return: The api_calls_count of this WorkerTemplate.  # noqa: E501
+        :rtype: int
+        """
+        return self._api_calls_count
+
+    @api_calls_count.setter
+    def api_calls_count(self, api_calls_count):
+        """Sets the api_calls_count of this WorkerTemplate.
+
+        Total number of API calls made  # noqa: E501
+
+        :param api_calls_count: The api_calls_count of this WorkerTemplate.  # noqa: E501
+        :type: int
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                api_calls_count is not None and api_calls_count > 9223372036854775807):  # noqa: E501
+            raise ValueError("Invalid value for `api_calls_count`, must be a value less than or equal to `9223372036854775807`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                api_calls_count is not None and api_calls_count < -9223372036854775808):  # noqa: E501
+            raise ValueError("Invalid value for `api_calls_count`, must be a value greater than or equal to `-9223372036854775808`")  # noqa: E501
+
+        self._api_calls_count = api_calls_count
+
+    @property
+    def license(self):
+        """Gets the license of this WorkerTemplate.  # noqa: E501
+
+        License type (e.g., MIT, Apache, GPL)  # noqa: E501
+
+        :return: The license of this WorkerTemplate.  # noqa: E501
+        :rtype: str
+        """
+        return self._license
+
+    @license.setter
+    def license(self, license):
+        """Sets the license of this WorkerTemplate.
+
+        License type (e.g., MIT, Apache, GPL)  # noqa: E501
+
+        :param license: The license of this WorkerTemplate.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                license is not None and len(license) > 100):
+            raise ValueError("Invalid value for `license`, length must be less than or equal to `100`")  # noqa: E501
+
+        self._license = license
+
+    @property
+    def version(self):
+        """Gets the version of this WorkerTemplate.  # noqa: E501
+
+        Template version number  # noqa: E501
+
+        :return: The version of this WorkerTemplate.  # noqa: E501
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this WorkerTemplate.
+
+        Template version number  # noqa: E501
+
+        :param version: The version of this WorkerTemplate.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                version is not None and len(version) > 50):
+            raise ValueError("Invalid value for `version`, length must be less than or equal to `50`")  # noqa: E501
+
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

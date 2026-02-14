@@ -86,7 +86,8 @@ class MCP(object):
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
-        self.user = user
+        if user is not None:
+            self.user = user
 
     @property
     def id(self):
@@ -303,8 +304,6 @@ class MCP(object):
         :param user: The user of this MCP.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
 
         self._user = user
 

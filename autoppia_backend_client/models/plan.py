@@ -132,8 +132,8 @@ class Plan(object):
         if self.local_vars_configuration.client_side_validation and total_messages is None:  # noqa: E501
             raise ValueError("Invalid value for `total_messages`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                total_messages is not None and total_messages > 2147483647):  # noqa: E501
-            raise ValueError("Invalid value for `total_messages`, must be a value less than or equal to `2147483647`")  # noqa: E501
+                total_messages is not None and total_messages > 9223372036854775807):  # noqa: E501
+            raise ValueError("Invalid value for `total_messages`, must be a value less than or equal to `9223372036854775807`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
                 total_messages is not None and total_messages < 0):  # noqa: E501
             raise ValueError("Invalid value for `total_messages`, must be a value greater than or equal to `0`")  # noqa: E501

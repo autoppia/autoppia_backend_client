@@ -45,8 +45,10 @@ class WorkerConfig(object):
         'system_prompt_id': 'int',
         'mcp': 'MCP',
         'mcp_id': 'int',
+        'template': 'WorkerTemplate',
+        'template_id': 'int',
+        'workspace_id': 'int',
         'name': 'str',
-        'template_id': 'str',
         'repo': 'str',
         'docker_image': 'str',
         'ip': 'str',
@@ -54,11 +56,19 @@ class WorkerConfig(object):
         'whitelist': 'str',
         'arguments': 'str',
         'state': 'str',
+        'deployed_at': 'datetime',
+        'stopped_at': 'datetime',
+        'deployed_ip': 'str',
+        'deployed_port': 'int',
+        'k8s_pod_name': 'str',
+        'last_health_check': 'datetime',
+        'health_status': 'str',
         'avatar': 'str',
         'is_public': 'bool',
         'created_date': 'datetime',
         'updated_date': 'datetime',
-        'user': 'int'
+        'user': 'int',
+        'workspace': 'int'
     }
 
     attribute_map = {
@@ -73,8 +83,10 @@ class WorkerConfig(object):
         'system_prompt_id': 'system_prompt_id',
         'mcp': 'mcp',
         'mcp_id': 'mcp_id',
-        'name': 'name',
+        'template': 'template',
         'template_id': 'template_id',
+        'workspace_id': 'workspace_id',
+        'name': 'name',
         'repo': 'repo',
         'docker_image': 'docker_image',
         'ip': 'ip',
@@ -82,14 +94,22 @@ class WorkerConfig(object):
         'whitelist': 'whitelist',
         'arguments': 'arguments',
         'state': 'state',
+        'deployed_at': 'deployed_at',
+        'stopped_at': 'stopped_at',
+        'deployed_ip': 'deployed_ip',
+        'deployed_port': 'deployed_port',
+        'k8s_pod_name': 'k8s_pod_name',
+        'last_health_check': 'last_health_check',
+        'health_status': 'health_status',
         'avatar': 'avatar',
         'is_public': 'is_public',
         'created_date': 'created_date',
         'updated_date': 'updated_date',
-        'user': 'user'
+        'user': 'user',
+        'workspace': 'workspace'
     }
 
-    def __init__(self, id=None, user_integration=None, user_integration_ids=None, user_llm_model=None, user_llm_model_id=None, embedding_database=None, embedding_database_id=None, system_prompt=None, system_prompt_id=None, mcp=None, mcp_id=None, name=None, template_id=None, repo=None, docker_image=None, ip=None, port=None, whitelist=None, arguments=None, state=None, avatar=None, is_public=None, created_date=None, updated_date=None, user=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, user_integration=None, user_integration_ids=None, user_llm_model=None, user_llm_model_id=None, embedding_database=None, embedding_database_id=None, system_prompt=None, system_prompt_id=None, mcp=None, mcp_id=None, template=None, template_id=None, workspace_id=None, name=None, repo=None, docker_image=None, ip=None, port=None, whitelist=None, arguments=None, state=None, deployed_at=None, stopped_at=None, deployed_ip=None, deployed_port=None, k8s_pod_name=None, last_health_check=None, health_status=None, avatar=None, is_public=None, created_date=None, updated_date=None, user=None, workspace=None, local_vars_configuration=None):  # noqa: E501
         """WorkerConfig - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -106,8 +126,10 @@ class WorkerConfig(object):
         self._system_prompt_id = None
         self._mcp = None
         self._mcp_id = None
-        self._name = None
+        self._template = None
         self._template_id = None
+        self._workspace_id = None
+        self._name = None
         self._repo = None
         self._docker_image = None
         self._ip = None
@@ -115,11 +137,19 @@ class WorkerConfig(object):
         self._whitelist = None
         self._arguments = None
         self._state = None
+        self._deployed_at = None
+        self._stopped_at = None
+        self._deployed_ip = None
+        self._deployed_port = None
+        self._k8s_pod_name = None
+        self._last_health_check = None
+        self._health_status = None
         self._avatar = None
         self._is_public = None
         self._created_date = None
         self._updated_date = None
         self._user = None
+        self._workspace = None
         self.discriminator = None
 
         if id is not None:
@@ -144,8 +174,13 @@ class WorkerConfig(object):
             self.mcp = mcp
         if mcp_id is not None:
             self.mcp_id = mcp_id
+        if template is not None:
+            self.template = template
+        if template_id is not None:
+            self.template_id = template_id
+        if workspace_id is not None:
+            self.workspace_id = workspace_id
         self.name = name
-        self.template_id = template_id
         self.repo = repo
         self.docker_image = docker_image
         self.ip = ip
@@ -154,6 +189,14 @@ class WorkerConfig(object):
         self.arguments = arguments
         if state is not None:
             self.state = state
+        self.deployed_at = deployed_at
+        self.stopped_at = stopped_at
+        self.deployed_ip = deployed_ip
+        self.deployed_port = deployed_port
+        self.k8s_pod_name = k8s_pod_name
+        self.last_health_check = last_health_check
+        if health_status is not None:
+            self.health_status = health_status
         self.avatar = avatar
         if is_public is not None:
             self.is_public = is_public
@@ -161,7 +204,9 @@ class WorkerConfig(object):
             self.created_date = created_date
         if updated_date is not None:
             self.updated_date = updated_date
-        self.user = user
+        if user is not None:
+            self.user = user
+        self.workspace = workspace
 
     @property
     def id(self):
@@ -395,6 +440,69 @@ class WorkerConfig(object):
         self._mcp_id = mcp_id
 
     @property
+    def template(self):
+        """Gets the template of this WorkerConfig.  # noqa: E501
+
+
+        :return: The template of this WorkerConfig.  # noqa: E501
+        :rtype: WorkerTemplate
+        """
+        return self._template
+
+    @template.setter
+    def template(self, template):
+        """Sets the template of this WorkerConfig.
+
+
+        :param template: The template of this WorkerConfig.  # noqa: E501
+        :type: WorkerTemplate
+        """
+
+        self._template = template
+
+    @property
+    def template_id(self):
+        """Gets the template_id of this WorkerConfig.  # noqa: E501
+
+
+        :return: The template_id of this WorkerConfig.  # noqa: E501
+        :rtype: int
+        """
+        return self._template_id
+
+    @template_id.setter
+    def template_id(self, template_id):
+        """Sets the template_id of this WorkerConfig.
+
+
+        :param template_id: The template_id of this WorkerConfig.  # noqa: E501
+        :type: int
+        """
+
+        self._template_id = template_id
+
+    @property
+    def workspace_id(self):
+        """Gets the workspace_id of this WorkerConfig.  # noqa: E501
+
+
+        :return: The workspace_id of this WorkerConfig.  # noqa: E501
+        :rtype: int
+        """
+        return self._workspace_id
+
+    @workspace_id.setter
+    def workspace_id(self, workspace_id):
+        """Sets the workspace_id of this WorkerConfig.
+
+
+        :param workspace_id: The workspace_id of this WorkerConfig.  # noqa: E501
+        :type: int
+        """
+
+        self._workspace_id = workspace_id
+
+    @property
     def name(self):
         """Gets the name of this WorkerConfig.  # noqa: E501
 
@@ -424,34 +532,6 @@ class WorkerConfig(object):
         self._name = name
 
     @property
-    def template_id(self):
-        """Gets the template_id of this WorkerConfig.  # noqa: E501
-
-
-        :return: The template_id of this WorkerConfig.  # noqa: E501
-        :rtype: str
-        """
-        return self._template_id
-
-    @template_id.setter
-    def template_id(self, template_id):
-        """Sets the template_id of this WorkerConfig.
-
-
-        :param template_id: The template_id of this WorkerConfig.  # noqa: E501
-        :type: str
-        """
-        # template_id is optional - removed None validation
-        if (self.local_vars_configuration.client_side_validation and
-                template_id is not None and len(template_id) > 255):
-            raise ValueError("Invalid value for `template_id`, length must be less than or equal to `255`")  # noqa: E501
-        if (self.local_vars_configuration.client_side_validation and
-                template_id is not None and len(template_id) < 1):
-            raise ValueError("Invalid value for `template_id`, length must be greater than or equal to `1`")  # noqa: E501
-
-        self._template_id = template_id
-
-    @property
     def repo(self):
         """Gets the repo of this WorkerConfig.  # noqa: E501
 
@@ -469,7 +549,8 @@ class WorkerConfig(object):
         :param repo: The repo of this WorkerConfig.  # noqa: E501
         :type: str
         """
-        # repo is optional - removed None validation
+        if self.local_vars_configuration.client_side_validation and repo is None:  # noqa: E501
+            raise ValueError("Invalid value for `repo`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
                 repo is not None and len(repo) > 255):
             raise ValueError("Invalid value for `repo`, length must be less than or equal to `255`")  # noqa: E501
@@ -497,7 +578,8 @@ class WorkerConfig(object):
         :param docker_image: The docker_image of this WorkerConfig.  # noqa: E501
         :type: str
         """
-        # docker_image is optional - removed None validation
+        if self.local_vars_configuration.client_side_validation and docker_image is None:  # noqa: E501
+            raise ValueError("Invalid value for `docker_image`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
                 docker_image is not None and len(docker_image) > 255):
             raise ValueError("Invalid value for `docker_image`, length must be less than or equal to `255`")  # noqa: E501
@@ -550,11 +632,11 @@ class WorkerConfig(object):
         :type: int
         """
         if (self.local_vars_configuration.client_side_validation and
-                port is not None and port > 2147483647):  # noqa: E501
-            raise ValueError("Invalid value for `port`, must be a value less than or equal to `2147483647`")  # noqa: E501
+                port is not None and port > 9223372036854775807):  # noqa: E501
+            raise ValueError("Invalid value for `port`, must be a value less than or equal to `9223372036854775807`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                port is not None and port < -2147483648):  # noqa: E501
-            raise ValueError("Invalid value for `port`, must be a value greater than or equal to `-2147483648`")  # noqa: E501
+                port is not None and port < -9223372036854775808):  # noqa: E501
+            raise ValueError("Invalid value for `port`, must be a value greater than or equal to `-9223372036854775808`")  # noqa: E501
 
         self._port = port
 
@@ -632,6 +714,171 @@ class WorkerConfig(object):
             )
 
         self._state = state
+
+    @property
+    def deployed_at(self):
+        """Gets the deployed_at of this WorkerConfig.  # noqa: E501
+
+
+        :return: The deployed_at of this WorkerConfig.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._deployed_at
+
+    @deployed_at.setter
+    def deployed_at(self, deployed_at):
+        """Sets the deployed_at of this WorkerConfig.
+
+
+        :param deployed_at: The deployed_at of this WorkerConfig.  # noqa: E501
+        :type: datetime
+        """
+
+        self._deployed_at = deployed_at
+
+    @property
+    def stopped_at(self):
+        """Gets the stopped_at of this WorkerConfig.  # noqa: E501
+
+
+        :return: The stopped_at of this WorkerConfig.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._stopped_at
+
+    @stopped_at.setter
+    def stopped_at(self, stopped_at):
+        """Sets the stopped_at of this WorkerConfig.
+
+
+        :param stopped_at: The stopped_at of this WorkerConfig.  # noqa: E501
+        :type: datetime
+        """
+
+        self._stopped_at = stopped_at
+
+    @property
+    def deployed_ip(self):
+        """Gets the deployed_ip of this WorkerConfig.  # noqa: E501
+
+
+        :return: The deployed_ip of this WorkerConfig.  # noqa: E501
+        :rtype: str
+        """
+        return self._deployed_ip
+
+    @deployed_ip.setter
+    def deployed_ip(self, deployed_ip):
+        """Sets the deployed_ip of this WorkerConfig.
+
+
+        :param deployed_ip: The deployed_ip of this WorkerConfig.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                deployed_ip is not None and len(deployed_ip) > 255):
+            raise ValueError("Invalid value for `deployed_ip`, length must be less than or equal to `255`")  # noqa: E501
+
+        self._deployed_ip = deployed_ip
+
+    @property
+    def deployed_port(self):
+        """Gets the deployed_port of this WorkerConfig.  # noqa: E501
+
+
+        :return: The deployed_port of this WorkerConfig.  # noqa: E501
+        :rtype: int
+        """
+        return self._deployed_port
+
+    @deployed_port.setter
+    def deployed_port(self, deployed_port):
+        """Sets the deployed_port of this WorkerConfig.
+
+
+        :param deployed_port: The deployed_port of this WorkerConfig.  # noqa: E501
+        :type: int
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                deployed_port is not None and deployed_port > 9223372036854775807):  # noqa: E501
+            raise ValueError("Invalid value for `deployed_port`, must be a value less than or equal to `9223372036854775807`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                deployed_port is not None and deployed_port < -9223372036854775808):  # noqa: E501
+            raise ValueError("Invalid value for `deployed_port`, must be a value greater than or equal to `-9223372036854775808`")  # noqa: E501
+
+        self._deployed_port = deployed_port
+
+    @property
+    def k8s_pod_name(self):
+        """Gets the k8s_pod_name of this WorkerConfig.  # noqa: E501
+
+
+        :return: The k8s_pod_name of this WorkerConfig.  # noqa: E501
+        :rtype: str
+        """
+        return self._k8s_pod_name
+
+    @k8s_pod_name.setter
+    def k8s_pod_name(self, k8s_pod_name):
+        """Sets the k8s_pod_name of this WorkerConfig.
+
+
+        :param k8s_pod_name: The k8s_pod_name of this WorkerConfig.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                k8s_pod_name is not None and len(k8s_pod_name) > 255):
+            raise ValueError("Invalid value for `k8s_pod_name`, length must be less than or equal to `255`")  # noqa: E501
+
+        self._k8s_pod_name = k8s_pod_name
+
+    @property
+    def last_health_check(self):
+        """Gets the last_health_check of this WorkerConfig.  # noqa: E501
+
+
+        :return: The last_health_check of this WorkerConfig.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._last_health_check
+
+    @last_health_check.setter
+    def last_health_check(self, last_health_check):
+        """Sets the last_health_check of this WorkerConfig.
+
+
+        :param last_health_check: The last_health_check of this WorkerConfig.  # noqa: E501
+        :type: datetime
+        """
+
+        self._last_health_check = last_health_check
+
+    @property
+    def health_status(self):
+        """Gets the health_status of this WorkerConfig.  # noqa: E501
+
+
+        :return: The health_status of this WorkerConfig.  # noqa: E501
+        :rtype: str
+        """
+        return self._health_status
+
+    @health_status.setter
+    def health_status(self, health_status):
+        """Sets the health_status of this WorkerConfig.
+
+
+        :param health_status: The health_status of this WorkerConfig.  # noqa: E501
+        :type: str
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                health_status is not None and len(health_status) > 50):
+            raise ValueError("Invalid value for `health_status`, length must be less than or equal to `50`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                health_status is not None and len(health_status) < 1):
+            raise ValueError("Invalid value for `health_status`, length must be greater than or equal to `1`")  # noqa: E501
+
+        self._health_status = health_status
 
     @property
     def avatar(self):
@@ -735,10 +982,29 @@ class WorkerConfig(object):
         :param user: The user of this WorkerConfig.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
 
         self._user = user
+
+    @property
+    def workspace(self):
+        """Gets the workspace of this WorkerConfig.  # noqa: E501
+
+
+        :return: The workspace of this WorkerConfig.  # noqa: E501
+        :rtype: int
+        """
+        return self._workspace
+
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this WorkerConfig.
+
+
+        :param workspace: The workspace of this WorkerConfig.  # noqa: E501
+        :type: int
+        """
+
+        self._workspace = workspace
 
     def to_dict(self):
         """Returns the model properties as a dict"""

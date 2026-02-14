@@ -35,62 +35,77 @@ class Task(object):
     """
     openapi_types = {
         'id': 'int',
-        'description': 'str',
-        'expected_output': 'str',
-        'expected_tool_called': 'str',
-        'evaluation_criteria': 'str',
-        'category': 'str',
-        'completed': 'bool',
-        'created_date': 'datetime',
-        'updated_date': 'datetime',
-        'user': 'int'
+        'task_id': 'str',
+        'parent_task_id': 'str',
+        'capability': 'str',
+        'input': 'object',
+        'output': 'object',
+        'metadata': 'object',
+        'status': 'str',
+        'error': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
+        'workspace': 'int',
+        'core_worker': 'int'
     }
 
     attribute_map = {
         'id': 'id',
-        'description': 'description',
-        'expected_output': 'expected_output',
-        'expected_tool_called': 'expected_tool_called',
-        'evaluation_criteria': 'evaluation_criteria',
-        'category': 'category',
-        'completed': 'completed',
-        'created_date': 'created_date',
-        'updated_date': 'updated_date',
-        'user': 'user'
+        'task_id': 'task_id',
+        'parent_task_id': 'parent_task_id',
+        'capability': 'capability',
+        'input': 'input',
+        'output': 'output',
+        'metadata': 'metadata',
+        'status': 'status',
+        'error': 'error',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at',
+        'workspace': 'workspace',
+        'core_worker': 'core_worker'
     }
 
-    def __init__(self, id=None, description=None, expected_output=None, expected_tool_called=None, evaluation_criteria=None, category=None, completed=None, created_date=None, updated_date=None, user=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, id=None, task_id=None, parent_task_id=None, capability=None, input=None, output=None, metadata=None, status=None, error=None, created_at=None, updated_at=None, workspace=None, core_worker=None, local_vars_configuration=None):  # noqa: E501
         """Task - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._id = None
-        self._description = None
-        self._expected_output = None
-        self._expected_tool_called = None
-        self._evaluation_criteria = None
-        self._category = None
-        self._completed = None
-        self._created_date = None
-        self._updated_date = None
-        self._user = None
+        self._task_id = None
+        self._parent_task_id = None
+        self._capability = None
+        self._input = None
+        self._output = None
+        self._metadata = None
+        self._status = None
+        self._error = None
+        self._created_at = None
+        self._updated_at = None
+        self._workspace = None
+        self._core_worker = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        self.description = description
-        self.expected_output = expected_output
-        self.expected_tool_called = expected_tool_called
-        self.evaluation_criteria = evaluation_criteria
-        self.category = category
-        if completed is not None:
-            self.completed = completed
-        if created_date is not None:
-            self.created_date = created_date
-        if updated_date is not None:
-            self.updated_date = updated_date
-        self.user = user
+        self.task_id = task_id
+        self.parent_task_id = parent_task_id
+        self.capability = capability
+        if input is not None:
+            self.input = input
+        if output is not None:
+            self.output = output
+        if metadata is not None:
+            self.metadata = metadata
+        if status is not None:
+            self.status = status
+        self.error = error
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
+        self.workspace = workspace
+        self.core_worker = core_worker
 
     @property
     def id(self):
@@ -114,223 +129,283 @@ class Task(object):
         self._id = id
 
     @property
-    def description(self):
-        """Gets the description of this Task.  # noqa: E501
+    def task_id(self):
+        """Gets the task_id of this Task.  # noqa: E501
 
 
-        :return: The description of this Task.  # noqa: E501
+        :return: The task_id of this Task.  # noqa: E501
         :rtype: str
         """
-        return self._description
+        return self._task_id
 
-    @description.setter
-    def description(self, description):
-        """Sets the description of this Task.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this Task.
 
 
-        :param description: The description of this Task.  # noqa: E501
+        :param task_id: The task_id of this Task.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and description is None:  # noqa: E501
-            raise ValueError("Invalid value for `description`, must not be `None`")  # noqa: E501
+        if self.local_vars_configuration.client_side_validation and task_id is None:  # noqa: E501
+            raise ValueError("Invalid value for `task_id`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                description is not None and len(description) < 1):
-            raise ValueError("Invalid value for `description`, length must be greater than or equal to `1`")  # noqa: E501
+                task_id is not None and len(task_id) > 100):
+            raise ValueError("Invalid value for `task_id`, length must be less than or equal to `100`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                task_id is not None and len(task_id) < 1):
+            raise ValueError("Invalid value for `task_id`, length must be greater than or equal to `1`")  # noqa: E501
 
-        self._description = description
+        self._task_id = task_id
 
     @property
-    def expected_output(self):
-        """Gets the expected_output of this Task.  # noqa: E501
+    def parent_task_id(self):
+        """Gets the parent_task_id of this Task.  # noqa: E501
 
 
-        :return: The expected_output of this Task.  # noqa: E501
+        :return: The parent_task_id of this Task.  # noqa: E501
         :rtype: str
         """
-        return self._expected_output
+        return self._parent_task_id
 
-    @expected_output.setter
-    def expected_output(self, expected_output):
-        """Sets the expected_output of this Task.
+    @parent_task_id.setter
+    def parent_task_id(self, parent_task_id):
+        """Sets the parent_task_id of this Task.
 
 
-        :param expected_output: The expected_output of this Task.  # noqa: E501
+        :param parent_task_id: The parent_task_id of this Task.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and expected_output is None:  # noqa: E501
-            raise ValueError("Invalid value for `expected_output`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                expected_output is not None and len(expected_output) < 1):
-            raise ValueError("Invalid value for `expected_output`, length must be greater than or equal to `1`")  # noqa: E501
+                parent_task_id is not None and len(parent_task_id) > 100):
+            raise ValueError("Invalid value for `parent_task_id`, length must be less than or equal to `100`")  # noqa: E501
 
-        self._expected_output = expected_output
+        self._parent_task_id = parent_task_id
 
     @property
-    def expected_tool_called(self):
-        """Gets the expected_tool_called of this Task.  # noqa: E501
+    def capability(self):
+        """Gets the capability of this Task.  # noqa: E501
 
 
-        :return: The expected_tool_called of this Task.  # noqa: E501
+        :return: The capability of this Task.  # noqa: E501
         :rtype: str
         """
-        return self._expected_tool_called
+        return self._capability
 
-    @expected_tool_called.setter
-    def expected_tool_called(self, expected_tool_called):
-        """Sets the expected_tool_called of this Task.
+    @capability.setter
+    def capability(self, capability):
+        """Sets the capability of this Task.
 
 
-        :param expected_tool_called: The expected_tool_called of this Task.  # noqa: E501
+        :param capability: The capability of this Task.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and expected_tool_called is None:  # noqa: E501
-            raise ValueError("Invalid value for `expected_tool_called`, must not be `None`")  # noqa: E501
+        if self.local_vars_configuration.client_side_validation and capability is None:  # noqa: E501
+            raise ValueError("Invalid value for `capability`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                expected_tool_called is not None and len(expected_tool_called) < 1):
-            raise ValueError("Invalid value for `expected_tool_called`, length must be greater than or equal to `1`")  # noqa: E501
+                capability is not None and len(capability) > 100):
+            raise ValueError("Invalid value for `capability`, length must be less than or equal to `100`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                capability is not None and len(capability) < 1):
+            raise ValueError("Invalid value for `capability`, length must be greater than or equal to `1`")  # noqa: E501
 
-        self._expected_tool_called = expected_tool_called
+        self._capability = capability
 
     @property
-    def evaluation_criteria(self):
-        """Gets the evaluation_criteria of this Task.  # noqa: E501
+    def input(self):
+        """Gets the input of this Task.  # noqa: E501
 
 
-        :return: The evaluation_criteria of this Task.  # noqa: E501
-        :rtype: str
+        :return: The input of this Task.  # noqa: E501
+        :rtype: object
         """
-        return self._evaluation_criteria
+        return self._input
 
-    @evaluation_criteria.setter
-    def evaluation_criteria(self, evaluation_criteria):
-        """Sets the evaluation_criteria of this Task.
+    @input.setter
+    def input(self, input):
+        """Sets the input of this Task.
 
 
-        :param evaluation_criteria: The evaluation_criteria of this Task.  # noqa: E501
-        :type: str
+        :param input: The input of this Task.  # noqa: E501
+        :type: object
         """
-        if self.local_vars_configuration.client_side_validation and evaluation_criteria is None:  # noqa: E501
-            raise ValueError("Invalid value for `evaluation_criteria`, must not be `None`")  # noqa: E501
-        if (self.local_vars_configuration.client_side_validation and
-                evaluation_criteria is not None and len(evaluation_criteria) < 1):
-            raise ValueError("Invalid value for `evaluation_criteria`, length must be greater than or equal to `1`")  # noqa: E501
 
-        self._evaluation_criteria = evaluation_criteria
+        self._input = input
 
     @property
-    def category(self):
-        """Gets the category of this Task.  # noqa: E501
+    def output(self):
+        """Gets the output of this Task.  # noqa: E501
 
 
-        :return: The category of this Task.  # noqa: E501
+        :return: The output of this Task.  # noqa: E501
+        :rtype: object
+        """
+        return self._output
+
+    @output.setter
+    def output(self, output):
+        """Sets the output of this Task.
+
+
+        :param output: The output of this Task.  # noqa: E501
+        :type: object
+        """
+
+        self._output = output
+
+    @property
+    def metadata(self):
+        """Gets the metadata of this Task.  # noqa: E501
+
+
+        :return: The metadata of this Task.  # noqa: E501
+        :rtype: object
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        """Sets the metadata of this Task.
+
+
+        :param metadata: The metadata of this Task.  # noqa: E501
+        :type: object
+        """
+
+        self._metadata = metadata
+
+    @property
+    def status(self):
+        """Gets the status of this Task.  # noqa: E501
+
+
+        :return: The status of this Task.  # noqa: E501
         :rtype: str
         """
-        return self._category
+        return self._status
 
-    @category.setter
-    def category(self, category):
-        """Sets the category of this Task.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this Task.
 
 
-        :param category: The category of this Task.  # noqa: E501
+        :param status: The status of this Task.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and category is None:  # noqa: E501
-            raise ValueError("Invalid value for `category`, must not be `None`")  # noqa: E501
-        allowed_values = ["web_search", "web_scraping", "api", "database", "email", "general"]  # noqa: E501
-        if self.local_vars_configuration.client_side_validation and category not in allowed_values:  # noqa: E501
+        allowed_values = ["pending", "running", "succeeded", "failed", "partial"]  # noqa: E501
+        if self.local_vars_configuration.client_side_validation and status not in allowed_values:  # noqa: E501
             raise ValueError(
-                "Invalid value for `category` ({0}), must be one of {1}"  # noqa: E501
-                .format(category, allowed_values)
+                "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
+                .format(status, allowed_values)
             )
 
-        self._category = category
+        self._status = status
 
     @property
-    def completed(self):
-        """Gets the completed of this Task.  # noqa: E501
+    def error(self):
+        """Gets the error of this Task.  # noqa: E501
 
 
-        :return: The completed of this Task.  # noqa: E501
-        :rtype: bool
+        :return: The error of this Task.  # noqa: E501
+        :rtype: str
         """
-        return self._completed
+        return self._error
 
-    @completed.setter
-    def completed(self, completed):
-        """Sets the completed of this Task.
+    @error.setter
+    def error(self, error):
+        """Sets the error of this Task.
 
 
-        :param completed: The completed of this Task.  # noqa: E501
-        :type: bool
+        :param error: The error of this Task.  # noqa: E501
+        :type: str
         """
 
-        self._completed = completed
+        self._error = error
 
     @property
-    def created_date(self):
-        """Gets the created_date of this Task.  # noqa: E501
+    def created_at(self):
+        """Gets the created_at of this Task.  # noqa: E501
 
 
-        :return: The created_date of this Task.  # noqa: E501
+        :return: The created_at of this Task.  # noqa: E501
         :rtype: datetime
         """
-        return self._created_date
+        return self._created_at
 
-    @created_date.setter
-    def created_date(self, created_date):
-        """Sets the created_date of this Task.
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Task.
 
 
-        :param created_date: The created_date of this Task.  # noqa: E501
+        :param created_at: The created_at of this Task.  # noqa: E501
         :type: datetime
         """
 
-        self._created_date = created_date
+        self._created_at = created_at
 
     @property
-    def updated_date(self):
-        """Gets the updated_date of this Task.  # noqa: E501
+    def updated_at(self):
+        """Gets the updated_at of this Task.  # noqa: E501
 
 
-        :return: The updated_date of this Task.  # noqa: E501
+        :return: The updated_at of this Task.  # noqa: E501
         :rtype: datetime
         """
-        return self._updated_date
+        return self._updated_at
 
-    @updated_date.setter
-    def updated_date(self, updated_date):
-        """Sets the updated_date of this Task.
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this Task.
 
 
-        :param updated_date: The updated_date of this Task.  # noqa: E501
+        :param updated_at: The updated_at of this Task.  # noqa: E501
         :type: datetime
         """
 
-        self._updated_date = updated_date
+        self._updated_at = updated_at
 
     @property
-    def user(self):
-        """Gets the user of this Task.  # noqa: E501
+    def workspace(self):
+        """Gets the workspace of this Task.  # noqa: E501
 
 
-        :return: The user of this Task.  # noqa: E501
+        :return: The workspace of this Task.  # noqa: E501
         :rtype: int
         """
-        return self._user
+        return self._workspace
 
-    @user.setter
-    def user(self, user):
-        """Sets the user of this Task.
+    @workspace.setter
+    def workspace(self, workspace):
+        """Sets the workspace of this Task.
 
 
-        :param user: The user of this Task.  # noqa: E501
+        :param workspace: The workspace of this Task.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
+        if self.local_vars_configuration.client_side_validation and workspace is None:  # noqa: E501
+            raise ValueError("Invalid value for `workspace`, must not be `None`")  # noqa: E501
 
-        self._user = user
+        self._workspace = workspace
+
+    @property
+    def core_worker(self):
+        """Gets the core_worker of this Task.  # noqa: E501
+
+
+        :return: The core_worker of this Task.  # noqa: E501
+        :rtype: int
+        """
+        return self._core_worker
+
+    @core_worker.setter
+    def core_worker(self, core_worker):
+        """Sets the core_worker of this Task.
+
+
+        :param core_worker: The core_worker of this Task.  # noqa: E501
+        :type: int
+        """
+
+        self._core_worker = core_worker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

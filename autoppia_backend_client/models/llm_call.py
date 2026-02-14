@@ -80,7 +80,8 @@ class LLMCall(object):
         self.llm = llm
         if created_at is not None:
             self.created_at = created_at
-        self.user = user
+        if user is not None:
+            self.user = user
 
     @property
     def id(self):
@@ -124,8 +125,8 @@ class LLMCall(object):
         if self.local_vars_configuration.client_side_validation and input_tokens is None:  # noqa: E501
             raise ValueError("Invalid value for `input_tokens`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                input_tokens is not None and input_tokens > 2147483647):  # noqa: E501
-            raise ValueError("Invalid value for `input_tokens`, must be a value less than or equal to `2147483647`")  # noqa: E501
+                input_tokens is not None and input_tokens > 9223372036854775807):  # noqa: E501
+            raise ValueError("Invalid value for `input_tokens`, must be a value less than or equal to `9223372036854775807`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
                 input_tokens is not None and input_tokens < 0):  # noqa: E501
             raise ValueError("Invalid value for `input_tokens`, must be a value greater than or equal to `0`")  # noqa: E501
@@ -153,8 +154,8 @@ class LLMCall(object):
         if self.local_vars_configuration.client_side_validation and output_tokens is None:  # noqa: E501
             raise ValueError("Invalid value for `output_tokens`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                output_tokens is not None and output_tokens > 2147483647):  # noqa: E501
-            raise ValueError("Invalid value for `output_tokens`, must be a value less than or equal to `2147483647`")  # noqa: E501
+                output_tokens is not None and output_tokens > 9223372036854775807):  # noqa: E501
+            raise ValueError("Invalid value for `output_tokens`, must be a value less than or equal to `9223372036854775807`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
                 output_tokens is not None and output_tokens < 0):  # noqa: E501
             raise ValueError("Invalid value for `output_tokens`, must be a value greater than or equal to `0`")  # noqa: E501
@@ -275,8 +276,6 @@ class LLMCall(object):
         :param user: The user of this LLMCall.  # noqa: E501
         :type: int
         """
-        if self.local_vars_configuration.client_side_validation and user is None:  # noqa: E501
-            raise ValueError("Invalid value for `user`, must not be `None`")  # noqa: E501
 
         self._user = user
 
